@@ -33,7 +33,7 @@
       </view>
       
       <view class="plus-text">
-        <view class="tn-text-bold">韵科食谱北北，微信号：<text class="tn-text-bold tn-text-xxl" @click="copyWechat">tnkewo</text> </view>
+        <view class="tn-text-bold">金牌厨师小美，微信号：<text class="tn-text-bold tn-text-xxl" @click="copyWechat">tnkewo</text> </view>
         <view class="">（如需入群，可备注：进微信群）</view>
         <view class="">（如需合作，可备注：商业合作）</view>
         <view class="tn-margin-bottom-xl">（如需会员，可备注：咨询会员）</view>

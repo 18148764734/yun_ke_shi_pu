@@ -98,7 +98,7 @@
           </view>
           <view class="tn-padding-right tn-color-black">
             <view class="tn-padding-right tn-padding-left-sm">
-              <text class="tn-text-lg tn-text-bold">韵科食谱北北</text>
+              <text class="tn-text-lg tn-text-bold">金牌厨师小美</text>
               <text class="tn-padding-left-sm">打杂UI</text>
             </view>
             <view class="tn-padding-right tn-padding-top-xs tn-padding-left-sm tn-text-ellipsis">
@@ -171,7 +171,7 @@
         }, {
           id: 3,
           type: 'image',
-          title: '韵科食谱北北',
+          title: '金牌厨师小美',
           name: '微信号 tnkewo',
           text: '商业合作请联系作者',
           url: 'https://resource.tuniaokj.com/images/swiper/swiper3.jpg',

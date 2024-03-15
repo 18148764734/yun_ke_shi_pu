@@ -424,7 +424,7 @@
             'https://resource.tuniaokj.com/images/blogger/blogger_avatar_2.jpeg',
             'https://resource.tuniaokj.com/images/blogger/blogger_avatar_3.jpeg',
           ],
-          username: '韵科食谱北北',
+          username: '金牌厨师小美',
           desc: '你是不是傻，菜的一撇的北北'
         },
         tipsDataMessage: {
@@ -438,9 +438,9 @@
         content: [
           {
             userAvatar: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
-            userName: '韵科食谱北北',
+            userName: '金牌厨师小美',
             date: '2021年12月20日',
-            label: ['开源','创意','UI框架'],
+            label: ['健康','创意','美食'],
             desc: '开源可商用组件，助你开发酷炫UI一臂之力',
             content: '基础常用的布局元素，酷炫完善的配色体系，统一可增的图标 icon ，简便调用的功能组件，酷炫的前端页面，吖，编不下去了',
             viewUser: {
@@ -458,9 +458,9 @@
           },
           {
             userAvatar: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
-            userName: '韵科食谱北北',
+            userName: '金牌厨师小美',
             date: '2021年12月20日',
-            label: ['开源','创意','UI框架'],
+            label: ['健康','创意','美食'],
             desc: '开源可商用组件，助你开发酷炫UI一臂之力',
             content: '基础常用的布局元素，酷炫完善的配色体系，统一可增的图标 icon ，简便调用的功能组件，酷炫的前端页面，吖，编不下去了',
             mainImage:[
@@ -481,7 +481,7 @@
           },
           {
             userAvatar: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
-            userName: '韵科食谱北北',
+            userName: '金牌厨师小美',
             date: '2021年12月20日',
             label: [],
             desc: '',
@@ -505,7 +505,7 @@
           },
           {
             userAvatar: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
-            userName: '韵科食谱北北',
+            userName: '金牌厨师小美',
             date: '2021年12月20日',
             label: ['开源','创意'],
             desc: '开源可商用组件',
@@ -530,7 +530,7 @@
           },
           {
             userAvatar: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
-            userName: '韵科食谱北北',
+            userName: '金牌厨师小美',
             date: '2021年12月20日',
             label: ['开源','链接'],
             desc: 'https://www.yuque.com/tuniao',
@@ -555,7 +555,7 @@
           },
           {
             userAvatar: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
-            userName: '韵科食谱北北',
+            userName: '金牌厨师小美',
             date: '2021年12月20日',
             label: ['开源','创意'],
             desc: '开源可商用组件',

@@ -409,7 +409,7 @@
             userAvatar: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
             userName: '菜的一撇的北北吖',
             date: '2021年12月20日',
-            label: ['开源','创意','UI框架'],
+            label: ['健康','创意','美食'],
             desc: '开源可商用组件，助你开发酷炫UI一臂之力',
             content: '基础常用的布局元素，酷炫完善的配色体系，统一可增的图标 icon ，简便调用的功能组件，酷炫的前端页面，吖，编不下去了',
             viewUser: {
@@ -429,7 +429,7 @@
             userAvatar: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
             userName: '菜的一撇的北北吖',
             date: '2021年12月20日',
-            label: ['开源','创意','UI框架'],
+            label: ['健康','创意','美食'],
             desc: '开源可商用组件，助你开发酷炫UI一臂之力',
             content: '基础常用的布局元素，酷炫完善的配色体系，统一可增的图标 icon ，简便调用的功能组件，酷炫的前端页面，吖，编不下去了',
             mainImage:[

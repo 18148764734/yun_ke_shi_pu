@@ -453,7 +453,7 @@
         }, {
           id: 3,
           type: 'image',
-          title: '韵科食谱北北',
+          title: '金牌厨师小美',
           name: '微信号 tnkewo',
           text: '商业合作请联系作者',
           url: 'https://resource.tuniaokj.com/images/swiper/swiper3.jpg',

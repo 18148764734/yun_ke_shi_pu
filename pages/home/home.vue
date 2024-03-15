@@ -166,7 +166,7 @@
 
 		<view class="tn-flex tn-flex-row-between tn-margin-top" @click="tn('/circlePages/business')">
 			<view class="justify-content-item tn-margin tn-text-bold tn-text-xxl">
-				推荐名片
+				名人堂
 			</view>
 			<view class="justify-content-item tn-margin tn-text-lg tn-color-grey">
 				<text class="tn-padding-xs">全部</text>
@@ -238,7 +238,7 @@
 		<view class="">
 			<view class="tn-flex tn-flex-row-between" @click="tn('/activityPages/project')">
 				<view class="justify-content-item tn-margin tn-text-bold tn-text-xxl">
-					热门项目
+					赛事活动
 				</view>
 				<view class="justify-content-item tn-margin tn-text-lg tn-color-grey">
 					<text class="tn-padding-xs">全部</text>
