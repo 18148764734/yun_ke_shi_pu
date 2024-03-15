@@ -96,7 +96,7 @@
         <view class="nav_title--wrap">
           <view class="nav_title tn-cool-bg-color-15">
             <text class="tn-icon-sword tn-padding-right-sm tn-text-xxl"></text>
-            <text class="tn-text-xl">战力榜单 · 全球排行</text>
+            <text class="tn-text-xl">名人堂 · 超级榜单</text>
             <text class="tn-icon-sword tn-padding-left-sm tn-text-xxl"></text>
           </view>
         </view>
@@ -213,7 +213,7 @@
             desc: '傲视宗师',
             color: 'indigo',
             mainImage:[
-              'https://resource.tuniaokj.com/images/shop/computer2.jpg',
+              'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg',
               'https://resource.tuniaokj.com/images/shop/prototype2.jpg',
             ],
             viewUser: {

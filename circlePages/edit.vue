@@ -143,7 +143,7 @@
           },
           {
             color: 'brown',
-            title: "营养课堂",
+            title: "烹饪技巧",
           },
           {
             color: 'yellowgreen',

@@ -125,7 +125,7 @@
                 { image: 'https://resource.tuniaokj.com/images/shop/prototype1.jpg', title: '海报设计'},
                 { image: 'https://resource.tuniaokj.com/images/shop/prototype2.jpg', title: '精美页面'},
                 { image: 'https://resource.tuniaokj.com/images/shop/computer1.jpg', title: '设计师电脑'},
-                { image: 'https://resource.tuniaokj.com/images/shop/computer2.jpg', title: '轻薄本'},
+                { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg', title: '轻薄本'},
                 { image: 'https://resource.tuniaokj.com/images/shop/phonecase1.jpg', title: '5G手机'},
                 { image: 'https://resource.tuniaokj.com/images/shop/phonecase2.jpg', title: '游戏手机'},
                 { image: 'https://resource.tuniaokj.com/images/shop/watch1.jpg', title: '智能手表'},

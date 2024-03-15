@@ -583,7 +583,7 @@
             userName: '可我会像',
             date: '2021年12月20日',
             label: ['99积分'],
-            desc: '热门食谱',
+            desc: '开源可商用组件',
             mainImage: 'https://resource.tuniaokj.com/images/shop/prototype2.jpg',
             viewUser: {
               latestUserAvatar: [
@@ -603,7 +603,7 @@
             userName: '可我会像',
             date: '2021年12月20日',
             label: ['66积分'],
-            desc: '热门食谱',
+            desc: '开源可商用组件',
             mainImage: 'https://resource.tuniaokj.com/images/shop/prototype1.jpg',
             viewUser: {
               latestUserAvatar: [
@@ -623,8 +623,8 @@
             userName: '可我会像',
             date: '2021年12月20日',
             label: ['1266积分'],
-            desc: '热门食谱',
-            mainImage: 'https://resource.tuniaokj.com/images/shop/computer2.jpg',
+            desc: '开源可商用组件',
+            mainImage: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg',
             viewUser: {
               latestUserAvatar: [
                 {src: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg'},
@@ -665,7 +665,7 @@
             userName: '抓住那只猪',
             date: '2021年12月20日',
             label: ['烤肉','烤肉'],
-            desc: '免费热门食谱',
+            desc: '免费开源可商用组件',
             mainImage: 'https://resource.tuniaokj.com/images/shop/phonecase1.jpg',
             viewUser: {
               latestUserAvatar: [
@@ -685,7 +685,7 @@
             userName: '你的小可爱',
             date: '2021年12月20日',
             label: ['烤肉','烤肉'],
-            desc: '免费热门食谱',
+            desc: '免费开源可商用组件',
             mainImage: 'https://resource.tuniaokj.com/images/shop/prototype2.jpg',
             viewUser: {
               latestUserAvatar: [
@@ -701,11 +701,11 @@
             likeCount: 62
           },
           {
-            userAvatar: 'https://resource.tuniaokj.com/images/shop/computer2.jpg',
+            userAvatar: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg',
             userName: '菜的一撇的北北',
             date: '2021年12月20日',
             label: ['烤肉','烤肉'],
-            desc: '免费热门食谱',
+            desc: '免费开源可商用组件',
             mainImage: 'https://resource.tuniaokj.com/images/shop/phonecase2.jpg',
             viewUser: {
               latestUserAvatar: [
@@ -745,7 +745,7 @@
             userName: '低产似东东',
             date: '2021年12月20日',
             label: ['烤肉','烤肉'],
-            desc: '免费热门食谱',
+            desc: '免费开源可商用组件',
             mainImage: 'https://resource.tuniaokj.com/images/shop/sticker.jpg',
             viewUser: {
               latestUserAvatar: [
@@ -765,7 +765,7 @@
             userName: '你的名字',
             date: '2021年12月20日',
             label: ['烤肉','烤肉'],
-            desc: '免费热门食谱',
+            desc: '免费开源可商用组件',
             mainImage: 'https://resource.tuniaokj.com/images/shop/card.jpg',
             viewUser: {
               latestUserAvatar: [
@@ -794,7 +794,7 @@
           },
           {
             title: '韵科食谱科技 开发便携笔记本 告别笨重外出',
-            mainImage: 'https://resource.tuniaokj.com/images/shop/computer2.jpg',
+            mainImage: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg',
             storeType: 1, // 1 自营 2 第三方店铺
             newProduct: false, // 是否为新品
             tags: ['免息'],

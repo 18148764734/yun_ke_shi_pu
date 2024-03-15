@@ -40,7 +40,7 @@
           { src: 'https://resource.tuniaokj.com/images/shop/card.jpg' },
           { src: 'https://resource.tuniaokj.com/images/shop/phonecase2.jpg' },
           { src: 'https://resource.tuniaokj.com/images/shop/computer1.jpg' },
-          { src: 'https://resource.tuniaokj.com/images/shop/computer2.jpg' },
+          { src: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg' },
           { src: 'https://resource.tuniaokj.com/images/shop/content.jpg' },
           { src: 'https://resource.tuniaokj.com/images/shop/cup1.jpg' },
           { src: 'https://resource.tuniaokj.com/images/shop/cup2.jpg' },

@@ -74,7 +74,7 @@
               <text>广州大学华软软件学院</text>
             </view>
             <view class="resume2">
-              <text>学习课程：数据结构与算法、嵌入式系统设计与实践Ⅱ、内核驱动程序开发、Illustrator软件应用、移动互联网营养课堂、复变函数与积分变换、日语Ⅱ等</text>
+              <text>学习课程：数据结构与算法、嵌入式系统设计与实践Ⅱ、内核驱动程序开发、Illustrator软件应用、移动互联网烹饪技巧、复变函数与积分变换、日语Ⅱ等</text>
             </view>
           </view>
         </view>
@@ -132,7 +132,7 @@
             <text>真乐发科技</text>
           </view>
           <view class="resume2">
-            <text>原型设计，交互设计，营养课堂，前端界面编写；主要负责公司erp系统的搭建与上线，根据需求，深入、细致地为用户提供项目上的建议与解决办法，提供服务器代理服务，帮助同事使用erp项目</text>
+            <text>原型设计，交互设计，烹饪技巧，前端界面编写；主要负责公司erp系统的搭建与上线，根据需求，深入、细致地为用户提供项目上的建议与解决办法，提供服务器代理服务，帮助同事使用erp项目</text>
           </view>
         </view>
         <view class='king-item tn-color-red tn-icon-circle-fill'>

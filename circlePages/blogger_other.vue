@@ -456,7 +456,7 @@
             desc: '',
             content: '',
             mainImage:[
-              'https://resource.tuniaokj.com/images/shop/computer2.jpg',
+              'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg',
               'https://resource.tuniaokj.com/images/shop/prototype2.jpg',
             ],
             viewUser: {
@@ -477,7 +477,7 @@
             userName: '菜的一撇的北北吖',
             date: '2021年12月20日',
             label: ['开源','创意'],
-            desc: '热门食谱',
+            desc: '开源可商用组件',
             content: '基础常用的布局元素，酷炫完善的配色体系，统一可增的图标 icon ，简便调用的功能组件，酷炫的前端页面，吖，编不下去了 基础常用的布局元素，酷炫完善的配色体系，统一可增的图标 icon ，简便调用的功能组件，酷炫的前端页面，吖，编不下去了',
             mainImage:[
               'https://resource.tuniaokj.com/images/swiper/swiper2.jpg',
@@ -527,7 +527,7 @@
             userName: '菜的一撇的北北吖',
             date: '2021年12月20日',
             label: ['开源','创意'],
-            desc: '热门食谱',
+            desc: '开源可商用组件',
             mainImage:[
               'https://resource.tuniaokj.com/images/blogger/y11.jpg',
               'https://resource.tuniaokj.com/images/blogger/y33.jpg',

@@ -233,7 +233,7 @@
               desc: '傲视宗师',
               color: 'indigo',
               mainImage:[
-                'https://resource.tuniaokj.com/images/shop/computer2.jpg',
+                'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg',
                 'https://resource.tuniaokj.com/images/shop/prototype2.jpg',
               ],
               viewUser: {
@@ -427,10 +427,10 @@
             userName: '可我会像',
             date: '2022年5月20日',
             color: 'blue',
-            label: ['营养课堂'],
+            label: ['烹饪技巧'],
             title: '为什么资讯不显示时间',
             desc: '你确定你经常更新文章吗？',
-            mainImage: 'https://resource.tuniaokj.com/images/shop/computer2.jpg',
+            mainImage: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg',
             viewUser: {
               latestUserAvatar: [{
                   src: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg'
@@ -485,7 +485,7 @@
             userName: '可我会像',
             date: '2022年5月20日',
             color: 'orange',
-            label: ['营养课堂'],
+            label: ['烹饪技巧'],
             title: '语雀素材地址资源',
             desc: '韵科食谱UI素材免费可商用',
             mainImage: 'https://resource.tuniaokj.com/images/shop/phonecase2.jpg',

@@ -80,7 +80,7 @@
       <view class="plus-text">
         <view class="tn-text-bold tn-text-xxl"> <text class="tn-icon-moon-fill tn-padding-right-xs"></text> 关于作者 <text class="tn-icon-moon-fill tn-padding-left-xs"></text></view>
         <view class="">蔡北北，95年，广州</view>
-        <view class="">浮夸营养课堂</view>
+        <view class="">浮夸烹饪技巧</view>
         <view class="">菜鸡软件开发</view>
         <view class="">祭天产品经理</view>
         <view class="">背锅项目经理</view>

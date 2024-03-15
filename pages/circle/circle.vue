@@ -523,7 +523,7 @@
           bloggerList: [{
             id: 0,
             type: 'image',
-            name: '营养知识',
+            name: '聊天交友',
             text: '629人关注',
             url: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
           }, {
@@ -531,29 +531,29 @@
             type: 'image',
             name: '美食点评',
             text: '688人关注',
-            url: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg',
+            url: 'https://media.istockphoto.com/id/1324465031/photo/high-angle-view-close-up-asian-woman-using-meal-delivery-service-ordering-food-online-with.webp?s=2048x2048&w=is&k=20&c=i4knp7jfBRCcWQaE4zv_S4uTs-lrQKCLl-X4OH7I7LQ=',
           }, {
             id: 2,
             type: 'image',
             name: '科学养生',
             text: '552人关注',
-            url: 'https://resource.tuniaokj.com/images/blogger/avatar_4.jpeg',
+            url: 'https://tse4-mm.cn.bing.net/th/id/OIP-C.x5c2BQI2aWAxF2EFGogyWQAAAA?rs=1&pid=ImgDetMain',
           }, {
             id: 3,
             type: 'image',
             name: '低卡美食',
             text: '105人关注',
-            url: 'https://resource.tuniaokj.com/images/blogger/avatar_2.jpeg',
+            url: 'https://tse3-mm.cn.bing.net/th/id/OIP-C.Gmwu2VgI8pMgRgRGmK19jQHaFj?rs=1&pid=ImgDetMain',
           }, {
             id: 4,
             type: 'image',
-            name: '聊天交友',
+            name: '营养知识',
             text: '387人关注',
-            url: 'https://resource.tuniaokj.com/images/blogger/avatar_3.jpeg',
+            url: 'https://img.zcool.cn/community/0119ae554b407f000001bf725a3994.jpg@1280w_1l_2o_100sh.jpg',
           }, {
             id: 5,
             type: 'image',
-            name: '海大交流',
+            name: '二次元圈',
             text: '643人关注',
             url: 'https://resource.tuniaokj.com/images/blogger/content_1.jpeg',
           }],
@@ -611,7 +611,7 @@
               desc: '',
               content: '',
               mainImage:[
-                'https://resource.tuniaokj.com/images/shop/computer2.jpg',
+                'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg',
                 'https://resource.tuniaokj.com/images/shop/prototype2.jpg',
               ],
               viewUser: {
@@ -632,7 +632,7 @@
               userName: '金牌厨师小美',
               date: '2022年5月20日',
               label: ['开源','创意'],
-              desc: '热门食谱',
+              desc: '开源可商用组件',
               content: '基础常用的布局元素，酷炫完善的配色体系，统一可增的图标 icon ，简便调用的功能组件，酷炫的前端页面，吖，编不下去了 基础常用的布局元素，酷炫完善的配色体系，统一可增的图标 icon ，简便调用的功能组件，酷炫的前端页面，吖，编不下去了',
               mainImage:[
                 'https://resource.tuniaokj.com/images/swiper/swiper2.jpg',
@@ -682,7 +682,7 @@
               userName: '金牌厨师小美',
               date: '2022年5月20日',
               label: ['开源','创意'],
-              desc: '热门食谱',
+              desc: '开源可商用组件',
               mainImage:[
                 'https://resource.tuniaokj.com/images/blogger/y11.jpg',
                 'https://resource.tuniaokj.com/images/blogger/y33.jpg',
@@ -770,7 +770,7 @@
               label: ['纪念日'],
               title: '常常忘记纪念日？',
               desc: '纪念日提醒：预约接龙的用户，微信上将收到纪念日提醒通知',
-              mainImage: 'https://resource.tuniaokj.com/images/shop/computer2.jpg',
+              mainImage: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg',
               viewUser: {
                 latestUserAvatar: [{
                     src: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg'

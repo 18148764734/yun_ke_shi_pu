@@ -424,7 +424,7 @@
 				}],
 
 				tuniaoData: [{
-						title: '营养课堂',
+						title: '烹饪技巧',
 						icon: 'image-text-fill',
 						color: '#F33F5A',
 						value: '详情'
