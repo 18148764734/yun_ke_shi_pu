@@ -195,7 +195,7 @@
             userName: '可我会像',
             date: '2021年12月20日',
             label: ['开源','创意'],
-            desc: '开源可商用组件',
+            desc: '热门食谱',
             mainImage:[
               'https://resource.tuniaokj.com/images/shop/prototype1.jpg',
             ],
@@ -217,7 +217,7 @@
             userName: '可我会像',
             date: '2021年12月20日',
             label: ['开源','创意'],
-            desc: '开源可商用组件',
+            desc: '热门食谱',
             mainImage:[
               'https://resource.tuniaokj.com/images/shop/prototype2.jpg',
             ],
@@ -239,7 +239,7 @@
             userName: '可我会像',
             date: '2021年12月20日',
             label: ['开源','创意'],
-            desc: '开源可商用组件',
+            desc: '热门食谱',
             mainImage:[
               'https://resource.tuniaokj.com/images/shop/computer2.jpg',
             ],
@@ -283,7 +283,7 @@
             userName: '可我会像',
             date: '2021年12月20日',
             label: ['开源','创意'],
-            desc: '开源可商用组件',
+            desc: '热门食谱',
             mainImage:[
               'https://resource.tuniaokj.com/images/shop/phonecase1.jpg',
             ],

@@ -324,7 +324,7 @@
             userName: '可我会像',
             date: '2022年5月20日',
             label: ['健康','创意','美食'],
-            desc: '开源可商用组件，助你开发酷炫UI一臂之力',
+            desc: '男人会做饭，生活更浪漫',
             content: '基础常用的布局元素，酷炫完善的配色体系，统一可增的图标 icon ，简便调用的功能组件，酷炫的前端页面，吖，编不下去了',
             viewUser: {
               latestUserAvatar: [
@@ -344,7 +344,7 @@
             userName: '可我会像',
             date: '2022年5月20日',
             label: ['健康','创意','美食'],
-            desc: '开源可商用组件，助你开发酷炫UI一臂之力',
+            desc: '男人会做饭，生活更浪漫',
             content: '基础常用的布局元素，酷炫完善的配色体系，统一可增的图标 icon ，简便调用的功能组件，酷炫的前端页面，吖，编不下去了',
             mainImage:[
               'https://resource.tuniaokj.com/images/blogger/content_1.jpeg'
@@ -391,7 +391,7 @@
             userName: '可我会像',
             date: '2022年5月20日',
             label: ['开源','创意'],
-            desc: '开源可商用组件',
+            desc: '热门食谱',
             content: '基础常用的布局元素，酷炫完善的配色体系，统一可增的图标 icon ，简便调用的功能组件，酷炫的前端页面，吖，编不下去了 基础常用的布局元素，酷炫完善的配色体系，统一可增的图标 icon ，简便调用的功能组件，酷炫的前端页面，吖，编不下去了',
             mainImage:[
               'https://resource.tuniaokj.com/images/swiper/swiper2.jpg',
@@ -441,7 +441,7 @@
             userName: '可我会像',
             date: '2022年5月20日',
             label: ['开源','创意'],
-            desc: '开源可商用组件',
+            desc: '热门食谱',
             mainImage:[
               'https://resource.tuniaokj.com/images/blogger/y11.jpg',
               'https://resource.tuniaokj.com/images/blogger/y33.jpg',

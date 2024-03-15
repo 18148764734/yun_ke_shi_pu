@@ -504,7 +504,7 @@
             userName: '抓住那只猪',
             date: '2021年12月20日',
             label: ['烤肉','烤肉'],
-            desc: '开源可商用组件',
+            desc: '热门食谱',
             mainImage: 'https://resource.tuniaokj.com/images/shop/phonecase1.jpg',
             viewUser: {
               latestUserAvatar: [
@@ -524,7 +524,7 @@
             userName: '五彩斑斓的黑',
             date: '2021年12月20日',
             label: ['炸串','火锅'],
-            desc: '开源可商用组件',
+            desc: '热门食谱',
             mainImage: 'https://resource.tuniaokj.com/images/shop/prototype1.jpg',
             viewUser: {
               latestUserAvatar: [
@@ -544,7 +544,7 @@
             userName: '北北你真菜',
             date: '2021年12月20日',
             label: ['烤肉','烤肉'],
-            desc: '开源可商用组件',
+            desc: '热门食谱',
             mainImage: 'https://resource.tuniaokj.com/images/shop/computer2.jpg',
             viewUser: {
               latestUserAvatar: [
@@ -564,7 +564,7 @@
             userName: '你的小可爱',
             date: '2021年12月20日',
             label: ['烤肉','烤肉'],
-            desc: '开源可商用组件',
+            desc: '热门食谱',
             mainImage: 'https://resource.tuniaokj.com/images/shop/prototype2.jpg',
             viewUser: {
               latestUserAvatar: [
@@ -584,7 +584,7 @@
             userName: '菜的一撇的北北',
             date: '2021年12月20日',
             label: ['烤肉','烤肉'],
-            desc: '开源可商用组件',
+            desc: '热门食谱',
             mainImage: 'https://resource.tuniaokj.com/images/shop/phonecase2.jpg',
             viewUser: {
               latestUserAvatar: [
@@ -626,7 +626,7 @@
             userName: '可我会像',
             date: '2021年12月20日',
             label: ['开源','创意'],
-            desc: '开源可商用组件',
+            desc: '热门食谱',
             mainImage:[
               'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg',
             ],
@@ -648,7 +648,7 @@
             userName: '可我会像',
             date: '2021年12月20日',
             label: ['开源','创意'],
-            desc: '开源可商用组件',
+            desc: '热门食谱',
             mainImage:[
               'https://resource.tuniaokj.com/images/blogger/avatar_3.jpeg',
             ],
@@ -692,7 +692,7 @@
             userName: '可我会像',
             date: '2021年12月20日',
             label: ['开源','创意'],
-            desc: '开源可商用组件',
+            desc: '热门食谱',
             mainImage:[
               'https://resource.tuniaokj.com/images/blogger/avatar_4.jpeg',
             ],

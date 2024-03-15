@@ -238,7 +238,7 @@
 		<view class="">
 			<view class="tn-flex tn-flex-row-between" @click="tn('/activityPages/project')">
 				<view class="justify-content-item tn-margin tn-text-bold tn-text-xxl">
-					赛事活动
+					书籍推荐
 				</view>
 				<view class="justify-content-item tn-margin tn-text-lg tn-color-grey">
 					<text class="tn-padding-xs">全部</text>
@@ -249,19 +249,19 @@
 			<view class="tn-flex tn-margin-left tn-margin-right tn-margin-top-sm" @click="tn('/circlePages/news')">
 				<view class="tn-flex-2">
 					<view class="image-pic tn-margin-right tn-shadow-blur"
-						style="background-image:url('https://resource.tuniaokj.com/images/content/rodion.jpg')">
+						style="background-image:url('https://pic1.zhimg.com/80/v2-3dfba5616658eb21ea7f1bdee4cf4646_720w.webp?source=1def8aca')">
 						<view class="image-tuniao1">
 						</view>
 					</view>
 				</view>
 				<view class="tn-flex-1">
 					<view class="image-pic tn-shadow-blur"
-						style="background-image:url('https://resource.tuniaokj.com/images/shop/phonecase1.jpg')">
+						style="background-image:url('https://picx.zhimg.com/80/v2-6e94069c22c26a920ed1e6ae2139f81f_720w.webp?source=1def8aca')">
 						<view class="image-tuniao2">
 						</view>
 					</view>
 					<view class="image-pic tn-margin-top tn-shadow-blur"
-						style="background-image:url('https://resource.tuniaokj.com/images/shop/banner1.jpg')">
+						style="background-image:url('https://pic1.zhimg.com/80/v2-5c782bd3f448d418d30085bb8da78113_720w.webp?source=1def8aca')">
 						<view class="image-tuniao2">
 						</view>
 					</view>
@@ -442,7 +442,7 @@
 						value: '详情'
 					},
 					{
-						title: '',
+						title: '赛事活动',
 						icon: 'bankcard-fill',
 						color: '#5177EE',
 						value: '敬请期待'
