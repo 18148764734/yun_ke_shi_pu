@@ -214,7 +214,7 @@
             color: 'indigo',
             mainImage:[
               'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg',
-              'https://resource.tuniaokj.com/images/shop/prototype2.jpg',
+              'https://www.foodiesfeed.com/wp-content/uploads/2023/04/cake-with-blueberries-cinematic-shot.jpg',
             ],
             viewUser: {
               latestUserAvatar: [
@@ -238,9 +238,9 @@
             desc: '超凡大师',
             color: 'brown',
             mainImage:[
-              'https://resource.tuniaokj.com/images/swiper/swiper2.jpg',
-              'https://resource.tuniaokj.com/images/swiper/swiper3.jpg',
-              'https://resource.tuniaokj.com/images/swiper/swiper4.jpg',
+              'https://www.foodiesfeed.com/wp-content/uploads/2023/04/open-sandwich-with-salmon-cream-avocado.jpg',
+              'https://www.foodiesfeed.com/wp-content/uploads/2023/11/portobello-mushroom-burger.jpg',
+              'https://www.foodiesfeed.com/wp-content/uploads/2023/09/cherries-full-frame-background.jpg',
             ],
             viewUser: {
               latestUserAvatar: [
@@ -264,7 +264,7 @@
             desc: '璀璨钻石',
             color: 'grey',
             mainImage:[
-              'https://resource.tuniaokj.com/images/shop/watch1.jpg',
+              'https://www.foodiesfeed.com/wp-content/uploads/2023/08/indian-chicken-curry-bowl.jpg',
               'https://resource.tuniaokj.com/images/shop/watch2.jpg',
               'https://resource.tuniaokj.com/images/shop/pillow2.jpg',
               'https://resource.tuniaokj.com/images/shop/pillow.jpg',

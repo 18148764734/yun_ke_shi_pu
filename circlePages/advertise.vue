@@ -174,7 +174,7 @@
           title: '金牌厨师小美',
           name: '微信号 tnkewo',
           text: '商业合作请联系作者',
-          url: 'https://resource.tuniaokj.com/images/swiper/swiper3.jpg',
+          url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/11/portobello-mushroom-burger.jpg',
         }, {
           id: 4,
           type: 'image',

@@ -37,7 +37,7 @@
               
               <view class="order__item__content tn-flex tn-flex-direction-row tn-flex-nowrap tn-flex-col-center tn-flex-row-center">
                 <view class="order__item__content__image">
-                  <image src="https://resource.tuniaokj.com/images/shop/prototype2.jpg" mode="scaleToFill"></image>
+                  <image src="https://www.foodiesfeed.com/wp-content/uploads/2023/04/cake-with-blueberries-cinematic-shot.jpg" mode="scaleToFill"></image>
                 </view>
                 <view class="order__item__content__title">
                   韵科食谱官方设计 酷炫效果展示 让用户眼前一亮的赶脚
@@ -195,7 +195,7 @@
                     <image src="https://resource.tuniaokj.com/images/shop/computer1.jpg" mode="scaleToFill"></image>
                   </view>
                   <view class="order__item__content__image">
-                    <image src="https://resource.tuniaokj.com/images/shop/watch1.jpg" mode="scaleToFill"></image>
+                    <image src="https://www.foodiesfeed.com/wp-content/uploads/2023/08/indian-chicken-curry-bowl.jpg" mode="scaleToFill"></image>
                   </view>
                 </view>
                 <view class="order__item__content__info tn-flex tn-flex-direction-column tn-flex-col-center tn-flex-row-center">

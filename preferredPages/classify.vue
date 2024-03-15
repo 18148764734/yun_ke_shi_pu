@@ -122,13 +122,13 @@
             {
               title: '推荐分类',
               classify: [
-                { image: 'https://resource.tuniaokj.com/images/shop/prototype1.jpg', title: '海报设计'},
-                { image: 'https://resource.tuniaokj.com/images/shop/prototype2.jpg', title: '精美页面'},
+                { image: 'https://media.istockphoto.com/id/172284556/photo/after-the-meal.jpg?b=1&s=612x612&w=0&k=20&c=Xpz8yHTvP9t9yHaotDVGKJv3INzHK59Xv_M1WboKTF0=', title: '海报设计'},
+                { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/cake-with-blueberries-cinematic-shot.jpg', title: '精美页面'},
                 { image: 'https://resource.tuniaokj.com/images/shop/computer1.jpg', title: '设计师电脑'},
                 { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg', title: '轻薄本'},
-                { image: 'https://resource.tuniaokj.com/images/shop/phonecase1.jpg', title: '5G手机'},
-                { image: 'https://resource.tuniaokj.com/images/shop/phonecase2.jpg', title: '游戏手机'},
-                { image: 'https://resource.tuniaokj.com/images/shop/watch1.jpg', title: '智能手表'},
+                { image: 'https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.webp?s=2048x2048&w=is&k=20&c=-sKMI5AnnBXqC8sG-c3HbduAKD4viGYfbPeHFVBEf8I=', title: '5G手机'},
+                { image: 'https://media.istockphoto.com/id/1144823591/photo/spaghetti-in-a-dish-on-a-white-background.webp?s=2048x2048&w=is&k=20&c=taGTmOYdyRkB3EytecqG3uguX_mpbZBqx5j_l7GgT4s=', title: '游戏手机'},
+                { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/08/indian-chicken-curry-bowl.jpg', title: '智能手表'},
                 { image: 'https://resource.tuniaokj.com/images/shop/watch2.jpg', title: '运动手表'},
                 
               ]
@@ -136,9 +136,9 @@
             {
               title: '专场推荐',
               classify: [
-                { image: 'https://resource.tuniaokj.com/images/shop/phonecase1.jpg', title: '5G手机'},
-                { image: 'https://resource.tuniaokj.com/images/shop/phonecase2.jpg', title: '游戏手机'},
-                { image: 'https://resource.tuniaokj.com/images/shop/watch1.jpg', title: '智能手表'},
+                { image: 'https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.webp?s=2048x2048&w=is&k=20&c=-sKMI5AnnBXqC8sG-c3HbduAKD4viGYfbPeHFVBEf8I=', title: '5G手机'},
+                { image: 'https://media.istockphoto.com/id/1144823591/photo/spaghetti-in-a-dish-on-a-white-background.webp?s=2048x2048&w=is&k=20&c=taGTmOYdyRkB3EytecqG3uguX_mpbZBqx5j_l7GgT4s=', title: '游戏手机'},
+                { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/08/indian-chicken-curry-bowl.jpg', title: '智能手表'},
                 { image: 'https://resource.tuniaokj.com/images/shop/watch2.jpg', title: '运动手表'},
                 { image: 'https://resource.tuniaokj.com/images/shop/card.jpg', title: '韵科食谱服务'}
               ]

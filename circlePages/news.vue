@@ -151,7 +151,7 @@
             label: ['小程序'],
             title: '小程序官网源码，开源欢迎白嫖嗷嗷',
             desc: '小程序前端源码开源，欢迎白嫖嗷嗷，可以的话，插件市场三连支持一下',
-            mainImage: 'https://resource.tuniaokj.com/images/shop/prototype2.jpg',
+            mainImage: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/cake-with-blueberries-cinematic-shot.jpg',
             viewUser: {
               latestUserAvatar: [
                 {src: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg'},
