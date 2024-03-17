@@ -430,19 +430,13 @@
 						value: '详情'
 					},
 					{
-						title: '新食研发',
-						icon: 'data-fill',
-						color: '#FFC32E',
-						value: '详情'
-					},
-					{
 						title: '养生知识',
 						icon: 'statistics-fill',
 						color: '#954FF6',
 						value: '详情'
 					},
 					{
-						title: '赛事活动',
+						title: '',
 						icon: 'bankcard-fill',
 						color: '#5177EE',
 						value: '敬请期待'

@@ -74,7 +74,6 @@
       return {
         // 侧边栏分类数据
         tabbar: [
-          '健康美食大礼包',
           '低卡美食',
           '美味美食',
           '营养美食',
@@ -96,23 +95,13 @@
             {
               title: '推荐分类',
               classify: [
-                { image: 'https://media.istockphoto.com/id/172284556/photo/after-the-meal.jpg?b=1&s=612x612&w=0&k=20&c=Xpz8yHTvP9t9yHaotDVGKJv3INzHK59Xv_M1WboKTF0=', title: '蓝莓'},
-                { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/cake-with-blueberries-cinematic-shot.jpg', title: '美食157'},
-                { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg', title: '美食513'},
-                { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg', title: '美食157'},
-                { image: 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=', title: '美食157'},
-                { image: 'https://media.istockphoto.com/id/1144823591/photo/spaghetti-in-a-dish-on-a-white-background.webp?s=2048x2048&w=is&k=20&c=taGTmOYdyRkB3EytecqG3uguX_mpbZBqx5j_l7GgT4s=', title: '美食957'},
-                
+                { image: 'https://media.istockphoto.com/id/172284556/photo/after-the-meal.jpg?b=1&s=612x612&w=0&k=20&c=Xpz8yHTvP9t9yHaotDVGKJv3INzHK59Xv_M1WboKTF0=', title: '羊肉炖胡萝卜'},
               ]
             },
             {
-              title: '专场推荐',
+              title: '其他',
               classify: [
-                { image: 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=', title: '美食157'},
-                { image: 'https://media.istockphoto.com/id/1144823591/photo/spaghetti-in-a-dish-on-a-white-background.webp?s=2048x2048&w=is&k=20&c=taGTmOYdyRkB3EytecqG3uguX_mpbZBqx5j_l7GgT4s=', title: '游戏手机'},
-                { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/08/indian-chicken-curry-bowl.jpg', title: '美食157'},
-                { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg', title: '美食157'},
-                { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg', title: '美食157'}
+                { image: 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=', title: '羊肉炖胡萝卜'},
               ]
             },
           ]

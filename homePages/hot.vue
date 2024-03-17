@@ -168,35 +168,23 @@
     data(){
       return {
         cardCur: 0,
-        swiperList: [{
-          id: 0,
-          type: 'image',
-          name: '看书20分钟',
-          text: '静下心看《读者》',
-          url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/09/peaches.jpg',
-        }, {
-          id: 1,
-          type: 'image',
-          name: '创新一个轮播',
-          text: '在韵科食谱UI新增创意轮播',
-          url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/09/beef-cut-close-up.jpg',
-        }, {
+        swiperList: [ {
           id: 2,
           type: 'image',
-          name: '坚持早起',
-          text: '早上9点前起床',
+          name: '牛肉的神奇功效',
+          text: '富含高蛋白',
           url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/09/beef-cut-close-up.jpg',
         }, {
           id: 3,
           type: 'image',
-          name: '和群友吹水',
-          text: '技术的友情永不过时',
+          name: '曲奇饼',
+          text: '为什么这么受欢迎',
           url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/10/chocolate-cookies.jpg',
         }, {
           id: 4,
           type: 'image',
-          name: '散步找创意',
-          text: '每天散步30分钟',
+          name: '酸甜蓝莓',
+          text: '女士最爱',
           url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/03/blueberries-on-a-tree-macro-detail.jpg',
         }],
         content: [
@@ -332,7 +320,7 @@
             }
           ],
         planList: [{
-          name: '看书',
+          name: '',
           color: 'red',
           time: '2021-12-13 06:20',
         }, {
@@ -340,30 +328,9 @@
           color: 'cyan',
           time: '8:37',
         }, {
-          name: '做30个深蹲',
-          color: 'blue',
-        }, {
-          name: '散步',
-          color: 'green',
-        }, {
-          name: '写新的轮播效果',
-          color: 'orange',
-        }, {
           name: '吃早餐',
           color: 'purplered',
-        }, {
-          name: '陪猫猫玩',
-          color: 'purple',
-        }, {
-          name: '睡午觉',
-          color: 'brown',
-        }, {
-          name: '干饭饭',
-          color: 'yellowgreen',
-        }, {
-          name: '蔡猪北',
-          color: 'grey',
-        }],
+        }, ],
         news: [{
             userAvatar: 'https://resource.tuniaokj.com/images/blogger/avatar_4.jpeg',
             userName: '可我会像',
@@ -509,93 +476,6 @@
             commentCount: 32,
             likeCount: 91
           },
-          {
-            userAvatar: 'https://www.foodiesfeed.com/wp-content/uploads/2023/08/indian-chicken-curry-bowl.jpg',
-            userName: '可我会像',
-            date: '2022年5月20日',
-            color: 'purplered',
-            label: ['神器'],
-            title: '最强的视频转GIF工具',
-            desc: '神器推荐',
-            mainImage: 'https://www.foodiesfeed.com/wp-content/uploads/2023/08/indian-chicken-curry-bowl.jpg',
-            viewUser: {
-              latestUserAvatar: [{
-                  src: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg'
-                },
-                {
-                  src: 'https://resource.tuniaokj.com/images/blogger/avatar_2.jpeg'
-                },
-                {
-                  src: 'https://resource.tuniaokj.com/images/blogger/avatar_3.jpeg'
-                },
-                {
-                  src: 'https://resource.tuniaokj.com/images/blogger/avatar_4.jpeg'
-                },
-              ],
-              viewUserCount: 232
-            },
-            collectionCount: 776,
-            commentCount: 48,
-            likeCount: 86
-          },
-          {
-            userAvatar: 'https://resource.tuniaokj.com/images/shop/sticker.jpg',
-            userName: '可我会像',
-            date: '2022年5月20日',
-            color: 'purple',
-            label: ['粒子'],
-            title: '小程序粒子效果',
-            desc: '酷炫的小程序粒子效果一览',
-            mainImage: 'https://resource.tuniaokj.com/images/shop/sticker.jpg',
-            viewUser: {
-              latestUserAvatar: [{
-                  src: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg'
-                },
-                {
-                  src: 'https://resource.tuniaokj.com/images/blogger/avatar_2.jpeg'
-                },
-                {
-                  src: 'https://resource.tuniaokj.com/images/blogger/avatar_3.jpeg'
-                },
-                {
-                  src: 'https://resource.tuniaokj.com/images/blogger/avatar_4.jpeg'
-                },
-              ],
-              viewUserCount: 456
-            },
-            collectionCount: 342,
-            commentCount: 42,
-            likeCount: 76
-          },
-          {
-            userAvatar: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg',
-            userName: '可我会像',
-            date: '2022年5月20日',
-            color: 'brown',
-            label: ['工具'],
-            title: '小程序任意页面生成二维码',
-            desc: '二维码生成器',
-            mainImage: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg',
-            viewUser: {
-              latestUserAvatar: [{
-                  src: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg'
-                },
-                {
-                  src: 'https://resource.tuniaokj.com/images/blogger/avatar_2.jpeg'
-                },
-                {
-                  src: 'https://resource.tuniaokj.com/images/blogger/avatar_3.jpeg'
-                },
-                {
-                  src: 'https://resource.tuniaokj.com/images/blogger/avatar_4.jpeg'
-                },
-              ],
-              viewUserCount: 129
-            },
-            collectionCount: 265,
-            commentCount: 22,
-            likeCount: 62
-          }
         ],
       }
     },
