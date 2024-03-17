@@ -43,16 +43,7 @@
                 <view class="icon5__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur" style="background-image: url(https://resource.tuniaokj.com/images/icon/1.jpg);background-size:100% 100%;">
                 </view>
                 <view class="tn-color-black tn-text-center">
-                  <text class="tn-text-ellipsis">求职招聘</text>
-                </view>
-              </view>
-            </view>
-            <view class="tn-flex-1 tn-padding-sm tn-margin-xs tn-radius">
-              <view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
-                <view class="icon5__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur" style="background-image: url(https://resource.tuniaokj.com/images/icon/2.jpg);background-size:100% 100%;">
-                </view>
-                <view class="tn-color-black tn-text-center">
-                  <text class="tn-text-ellipsis">考研学习</text>
+                  <text class="tn-text-ellipsis">厨师招新</text>
                 </view>
               </view>
             </view>
@@ -111,7 +102,6 @@
        <image src="https://resource.tuniaokj.com/images/gravity/1/2.png" mode="widthFix"></image>
      </view> -->
      
-     <!-- 保留 -->
     <!-- <view class="item__3 item__animation" :style="{transform: `translateX(${translateInfo[2].x}rpx)`}">
        <image src="https://resource.tuniaokj.com/images/gravity/1/3.png" mode="widthFix"></image>
      </view> -->
@@ -135,29 +125,29 @@
         swiperList: [{
           id: 0,
           type: 'image',
-          title: '海量分享',
-          name: '总有你想不到的创意',
-          text: '用最少的代码做最骚的效果',
-          url: 'https://resource.tuniaokj.com/images/swiper/adno4.jpg',
+          title: '海量食谱',
+          name: '总有你想不到的美食',
+          text: '用最少的食材做最骚的美食',
+          url: 'https://media.istockphoto.com/id/1159204281/photo/healthy-food-for-balanced-flexitarian-mediterranean-diet-concept.webp?s=2048x2048&w=is&k=20&c=Mav-2PEhRXUsxPjGCyrlnkOFiwmN1Bz6UKHJmrxZGes=',
         }, {
           id: 1,
           type: 'image',
           title: '愉快玩耍',
           name: '寻找一起成长的小伙伴',
-          text: '欢迎加入东东们',
-          url: 'https://resource.tuniaokj.com/images/swiper/adno2.jpg',
+          text: '欢迎加入美食圈',
+          url: 'https://media.istockphoto.com/id/1128687123/photo/shopping-bag-full-of-fresh-vegetables-and-fruits.webp?s=2048x2048&w=is&k=20&c=0JBSwrIo2X2Xj9eCyb0cVTF3DGFosHExsun8wvEtjAM=',
         }, {
           id: 2,
           type: 'image',
           title: '营养均衡',
           name: '更多彩蛋等你探索',
           text: '开启全新的探索之旅',
-          url: 'https://resource.tuniaokj.com/images/swiper/adno5.jpg',
+          url: 'https://media.istockphoto.com/id/1284690585/photo/colorful-vegetables-and-fruits-vegan-food-in-rainbow-colors.webp?s=2048x2048&w=is&k=20&c=rofZcHwLMQ4j5qQJMrqCltz9MaFvRiJQIQYoZSQqyGY=',
         }, {
           id: 3,
           type: 'image',
-          title: '悄悄开源',
-          name: '商业合作请联系作者',
+          title: '韵科食谱',
+          name: '商业合作请联系HRK',
           text: '微信号 tnkewo',
           url: 'https://resource.tuniaokj.com/images/swiper/adno3.jpg',
         }],

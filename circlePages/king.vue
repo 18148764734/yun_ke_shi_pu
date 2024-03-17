@@ -28,7 +28,7 @@
         <view class='tn-margin tn-padding-top-sm'>
           <view class="tn-text-bold">
             <text class='tn-text-xxl tn-padding-right'>徐圆圆</text>
-            <text class='tn-text-lg tn-color-gray'>打杂专业户</text>
+            <text class='tn-text-lg tn-color-gray'>金牌厨师</text>
           </view>
           <view class="tn-margin-top-lg">
             <text class="tn-text-lg">微信：tnkewo</text>
@@ -52,9 +52,9 @@
         <view class='king-item tn-color-red tn-icon-circle-fill'>
           <view class="resume2">
             <text class="">
-              一个喜欢Ul，喜欢设计的自由开发者，性格外向，擅于与人交流
+              一个喜欢烹饪，喜欢折腾新美食的自由主义者，性格外向，擅于与人交流
               最大的兴趣爱好莫过于种花种草，例如黄莹草，一种有太阳有水分就拼命长的小草
-              对用户需求敏感，创新能力强，有较强的产品设计能力
+              对食材敏感，创新能力强，有较强的美食设计能力
             </text>
           </view>
 

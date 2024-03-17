@@ -13,7 +13,7 @@
     <view class="tn-margin-top-sm" :style="{paddingTop: vuex_custom_bar_height + 'px'}">
       <view class="tn-flex tn-flex-row-between">
         <view class="justify-content-item tn-margin tn-text-bold tn-text-xl">
-          热榜推荐
+          每日资讯
         </view>
         <view class="tn-margin" style="font-size: 50rpx;">
           <text class="tn-icon-data"></text>
@@ -173,31 +173,31 @@
           type: 'image',
           name: '看书20分钟',
           text: '静下心看《读者》',
-          url: 'https://resource.tuniaokj.com/images/swiper/ad3.jpg',
+          url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/09/peaches.jpg',
         }, {
           id: 1,
           type: 'image',
           name: '创新一个轮播',
           text: '在韵科食谱UI新增创意轮播',
-          url: 'https://resource.tuniaokj.com/images/swiper/ad2.jpg',
+          url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/09/beef-cut-close-up.jpg',
         }, {
           id: 2,
           type: 'image',
           name: '坚持早起',
           text: '早上9点前起床',
-          url: 'https://resource.tuniaokj.com/images/swiper/ad4.jpg',
+          url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/09/beef-cut-close-up.jpg',
         }, {
           id: 3,
           type: 'image',
           name: '和群友吹水',
           text: '技术的友情永不过时',
-          url: 'https://resource.tuniaokj.com/images/swiper/ad5.jpg',
+          url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/10/chocolate-cookies.jpg',
         }, {
           id: 4,
           type: 'image',
           name: '散步找创意',
           text: '每天散步30分钟',
-          url: 'https://resource.tuniaokj.com/images/new/banner1.jpg',
+          url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/03/blueberries-on-a-tree-macro-detail.jpg',
         }],
         content: [
             {
@@ -286,7 +286,7 @@
               mainImage:[
                 'https://www.foodiesfeed.com/wp-content/uploads/2023/08/indian-chicken-curry-bowl.jpg',
                 'https://resource.tuniaokj.com/images/shop/watch2.jpg',
-                'https://resource.tuniaokj.com/images/shop/pillow2.jpg',
+                'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=',
                 'https://resource.tuniaokj.com/images/shop/pillow.jpg',
               ],
               viewUser: {
@@ -371,7 +371,7 @@
             color: 'red',
             label: ['小程序'],
             title: '全新出发，新版本已上线，欢迎三连',
-            desc: '小程序前端源码，免费开源，欢迎白嫖嗷嗷，可以的话，插件市场三连支持一下',
+            desc: '每日养生知识分享，免费开源，欢迎白嫖嗷嗷，可以的话，插件市场三连支持一下',
             mainImage: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/cake-with-blueberries-cinematic-shot.jpg',
             viewUser: {
               latestUserAvatar: [{
@@ -400,7 +400,7 @@
             color: 'cyan',
             label: ['模型'],
             title: '3D模型了解一下？',
-            desc: '一个拥有大量3D模型的网站',
+            desc: '每日养生知识分享',
             mainImage: 'https://media.istockphoto.com/id/172284556/photo/after-the-meal.jpg?b=1&s=612x612&w=0&k=20&c=Xpz8yHTvP9t9yHaotDVGKJv3INzHK59Xv_M1WboKTF0=',
             viewUser: {
               latestUserAvatar: [{
@@ -459,7 +459,7 @@
             label: ['创意'],
             title: '创意一点点',
             desc: '创意灵感从这里开始',
-            mainImage: 'https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.webp?s=2048x2048&w=is&k=20&c=-sKMI5AnnBXqC8sG-c3HbduAKD4viGYfbPeHFVBEf8I=',
+            mainImage: 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=',
             viewUser: {
               latestUserAvatar: [{
                   src: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg'

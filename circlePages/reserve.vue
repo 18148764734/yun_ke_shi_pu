@@ -154,7 +154,7 @@
           {src: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg'},
           {src: 'https://resource.tuniaokj.com/images/blogger/avatar_4.jpeg'},
           {src: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg'},
-          {src: 'https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.webp?s=2048x2048&w=is&k=20&c=-sKMI5AnnBXqC8sG-c3HbduAKD4viGYfbPeHFVBEf8I='},
+          {src: 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70='},
           {src: 'https://resource.tuniaokj.com/images/blogger/avatar_3.jpeg'},
           {src: 'https://resource.tuniaokj.com/images/shop/cup1.jpg'},
           {src: 'https://resource.tuniaokj.com/images/blogger/avatar_4.jpeg'},

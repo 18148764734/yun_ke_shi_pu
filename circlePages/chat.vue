@@ -414,7 +414,7 @@
           <view class="tn-flex tn-flex-row-between tn-flex-col-center">
             <view class="justify-content-item">
               <view class="tn-flex tn-flex-col-top tn-flex-row-left">
-                <view class="logo-pic tn-shadow-blur tn-margin-top-sm" style="background-image:url('https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.webp?s=2048x2048&w=is&k=20&c=-sKMI5AnnBXqC8sG-c3HbduAKD4viGYfbPeHFVBEf8I=')">
+                <view class="logo-pic tn-shadow-blur tn-margin-top-sm" style="background-image:url('https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=')">
                   <view class="logo-image" >
                   </view>
                 </view>
@@ -446,7 +446,7 @@
           <view class="tn-flex tn-flex-row-between tn-flex-col-center">
             <view class="justify-content-item">
               <view class="tn-flex tn-flex-col-top tn-flex-row-left">
-                <view class="logo-pic tn-shadow-blur tn-margin-top-sm" style="background-image:url('https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.webp?s=2048x2048&w=is&k=20&c=-sKMI5AnnBXqC8sG-c3HbduAKD4viGYfbPeHFVBEf8I=')">
+                <view class="logo-pic tn-shadow-blur tn-margin-top-sm" style="background-image:url('https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=')">
                   <view class="logo-image" >
                   </view>
                 </view>

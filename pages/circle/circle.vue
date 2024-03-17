@@ -661,7 +661,7 @@
               mainImage:[
                 'https://www.foodiesfeed.com/wp-content/uploads/2023/08/indian-chicken-curry-bowl.jpg',
                 'https://resource.tuniaokj.com/images/shop/watch2.jpg',
-                'https://resource.tuniaokj.com/images/shop/pillow2.jpg',
+                'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=',
                 'https://resource.tuniaokj.com/images/shop/pillow.jpg',
               ],
               viewUser: {
@@ -799,7 +799,7 @@
               label: ['团购接龙'],
               title: '冰箱空空如也？一起团购屯菜吖',
               desc: '团购活动：预约接龙的用户，将参与一起来买菜',
-              mainImage: 'https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.webp?s=2048x2048&w=is&k=20&c=-sKMI5AnnBXqC8sG-c3HbduAKD4viGYfbPeHFVBEf8I=',
+              mainImage: 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=',
               viewUser: {
                 latestUserAvatar: [{
                     src: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg'
@@ -939,10 +939,10 @@
           ],
           adList: [
             {image: 'https://resource.tuniaokj.com/images/swiper/ad1.jpg'},
-            {image: 'https://resource.tuniaokj.com/images/swiper/ad2.jpg'},
-            {image: 'https://resource.tuniaokj.com/images/swiper/ad3.jpg'},
-            {image: 'https://resource.tuniaokj.com/images/swiper/ad4.jpg'},
-            {image: 'https://resource.tuniaokj.com/images/swiper/ad5.jpg'}
+            {image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/09/beef-cut-close-up.jpg'},
+            {image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/09/peaches.jpg'},
+            {image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/09/beef-cut-close-up.jpg'},
+            {image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/10/chocolate-cookies.jpg'}
           ],
           adAutoplay: false,
           

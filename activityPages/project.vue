@@ -164,30 +164,30 @@
           type: 'image',
           title: '',
           name: '',
-          url: 'https://resource.tuniaokj.com/images/new/banner1.jpg',
+          url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/03/blueberries-on-a-tree-macro-detail.jpg',
         }, {
           id: 1,
           type: 'image',
           title: '',
           name: '',
-          url: 'https://resource.tuniaokj.com/images/new/banner1.jpg',
+          url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/03/blueberries-on-a-tree-macro-detail.jpg',
         }, {
           id: 2,
           type: 'image',
           title: '',
           name: '',
-          url: 'https://resource.tuniaokj.com/images/new/banner1.jpg',
+          url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/03/blueberries-on-a-tree-macro-detail.jpg',
         }, {
           id: 3,
           type: 'image',
           title: '',
           name: '',
-          url: 'https://resource.tuniaokj.com/images/new/banner1.jpg',
+          url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/03/blueberries-on-a-tree-macro-detail.jpg',
         }],
         list: [
-          '感谢内测群的20位小伙伴，感谢他们的不杀之恩！',
-          '感谢DCloud以及Gitee官方的鼓励和认可！',
-          '感谢各位开发者的问题反馈和慷慨赞赏！'
+          '感谢大家的贡献',
+          '感谢大家的悬赏',
+          '感谢集美的问题反馈和慷慨赞赏！'
         ],
         content: [
           {
@@ -263,7 +263,7 @@
             label: ['站点','链接'],
             desc: 'https://www.yuque.com/tuniao',
             mainImage:[
-              'https://resource.tuniaokj.com/images/shop/pillow2.jpg',
+              'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=',
             ],
             viewUser: {
               latestUserAvatar: [
@@ -285,7 +285,7 @@
             label: ['开源','创意'],
             desc: '美食素材分享',
             mainImage:[
-              'https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.webp?s=2048x2048&w=is&k=20&c=-sKMI5AnnBXqC8sG-c3HbduAKD4viGYfbPeHFVBEf8I=',
+              'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=',
             ],
             viewUser: {
               latestUserAvatar: [

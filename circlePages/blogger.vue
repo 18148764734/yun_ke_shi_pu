@@ -537,7 +537,7 @@
             mainImage:[
               'https://www.foodiesfeed.com/wp-content/uploads/2023/08/indian-chicken-curry-bowl.jpg',
               'https://resource.tuniaokj.com/images/shop/watch2.jpg',
-              'https://resource.tuniaokj.com/images/shop/pillow2.jpg',
+              'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=',
               'https://resource.tuniaokj.com/images/shop/pillow.jpg',
             ],
             viewUser: {
@@ -583,10 +583,10 @@
         // adSwiperCurrentIndex: 0,
         adList: [
           {image: 'https://resource.tuniaokj.com/images/swiper/ad1.jpg'},
-          {image: 'https://resource.tuniaokj.com/images/swiper/ad2.jpg'},
-          {image: 'https://resource.tuniaokj.com/images/swiper/ad3.jpg'},
-          {image: 'https://resource.tuniaokj.com/images/swiper/ad4.jpg'},
-          {image: 'https://resource.tuniaokj.com/images/swiper/ad5.jpg'}
+          {image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/09/beef-cut-close-up.jpg'},
+          {image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/09/peaches.jpg'},
+          {image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/09/beef-cut-close-up.jpg'},
+          {image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/10/chocolate-cookies.jpg'}
         ],
         adAutoplay: false
       }

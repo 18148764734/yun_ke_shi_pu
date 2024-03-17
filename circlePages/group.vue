@@ -239,15 +239,15 @@
         }, {
           id: 1,
           type: 'image',
-          url: 'https://resource.tuniaokj.com/images/swiper/adno4.jpg',
+          url: 'https://media.istockphoto.com/id/1159204281/photo/healthy-food-for-balanced-flexitarian-mediterranean-diet-concept.webp?s=2048x2048&w=is&k=20&c=Mav-2PEhRXUsxPjGCyrlnkOFiwmN1Bz6UKHJmrxZGes=',
         }, {
           id: 2,
           type: 'image',
-          url: 'https://resource.tuniaokj.com/images/swiper/adno5.jpg',
+          url: 'https://media.istockphoto.com/id/1284690585/photo/colorful-vegetables-and-fruits-vegan-food-in-rainbow-colors.webp?s=2048x2048&w=is&k=20&c=rofZcHwLMQ4j5qQJMrqCltz9MaFvRiJQIQYoZSQqyGY=',
         }, {
           id: 3,
           type: 'image',
-          url: 'https://resource.tuniaokj.com/images/swiper/adno2.jpg',
+          url: 'https://media.istockphoto.com/id/1128687123/photo/shopping-bag-full-of-fresh-vegetables-and-fruits.webp?s=2048x2048&w=is&k=20&c=0JBSwrIo2X2Xj9eCyb0cVTF3DGFosHExsun8wvEtjAM=',
         },
         {
           id: 4,
@@ -360,7 +360,7 @@
             mainImage:[
               'https://www.foodiesfeed.com/wp-content/uploads/2023/08/indian-chicken-curry-bowl.jpg',
               'https://resource.tuniaokj.com/images/shop/watch2.jpg',
-              'https://resource.tuniaokj.com/images/shop/pillow2.jpg',
+              'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=',
               'https://resource.tuniaokj.com/images/shop/pillow.jpg',
             ],
             viewUser: {

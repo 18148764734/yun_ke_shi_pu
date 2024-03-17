@@ -65,7 +65,7 @@
             color: 'red',
             label: ['小程序'],
             title: '全新出发，新版本已上线，欢迎三连',
-            desc: '小程序前端源码，免费开源，欢迎白嫖嗷嗷，可以的话，插件市场三连支持一下',
+            desc: '每日养生知识分享，免费开源，欢迎白嫖嗷嗷，可以的话，插件市场三连支持一下',
             mainImage: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/cake-with-blueberries-cinematic-shot.jpg',
             viewUser: {
               latestUserAvatar: [{
@@ -94,7 +94,7 @@
             color: 'cyan',
             label: ['模型'],
             title: '3D模型了解一下？',
-            desc: '一个拥有大量3D模型的网站',
+            desc: '每日养生知识分享',
             mainImage: 'https://media.istockphoto.com/id/172284556/photo/after-the-meal.jpg?b=1&s=612x612&w=0&k=20&c=Xpz8yHTvP9t9yHaotDVGKJv3INzHK59Xv_M1WboKTF0=',
             viewUser: {
               latestUserAvatar: [{
@@ -153,7 +153,7 @@
             label: ['创意'],
             title: '创意一点点',
             desc: '创意灵感从这里开始',
-            mainImage: 'https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.webp?s=2048x2048&w=is&k=20&c=-sKMI5AnnBXqC8sG-c3HbduAKD4viGYfbPeHFVBEf8I=',
+            mainImage: 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=',
             viewUser: {
               latestUserAvatar: [{
                   src: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg'

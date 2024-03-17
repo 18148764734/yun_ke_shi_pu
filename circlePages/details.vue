@@ -154,7 +154,7 @@
             </view>
             <view class="tn-padding-right tn-padding-left-sm">
               <view class="tn-padding-right tn-text-df tn-text-bold tn-color-black">
-                抓住那只高产母猪
+                低卡食材
               </view>
               <view class="tn-padding-right tn-text-ellipsis tn-text-xs tn-color-gray" style="padding-top: 5rpx;">
                 2022年5月26日
@@ -420,7 +420,7 @@
             mainImage:[
               'https://www.foodiesfeed.com/wp-content/uploads/2023/08/indian-chicken-curry-bowl.jpg',
               'https://resource.tuniaokj.com/images/shop/watch2.jpg',
-              'https://resource.tuniaokj.com/images/shop/pillow2.jpg',
+              'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=',
               'https://resource.tuniaokj.com/images/shop/pillow.jpg',
             ],
             viewUser: {

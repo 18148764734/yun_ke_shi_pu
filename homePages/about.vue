@@ -11,7 +11,7 @@
     
     <canvas canvas-id="bubble" id="bubble" class="bubble" :style="{width: `${windowWidth}px`, height: `${windowHeight}px`}"></canvas>
     
-    <view class="container about-bg" style="background-image:url('https://resource.tuniaokj.com/images/about/about.png')">
+    <view class="container about-bg" style="background-image:url('https://www.foodiesfeed.com/wp-content/uploads/2023/09/fresh-berries.jpg')">
     </view>
     
     <button class='' open-type="contact">

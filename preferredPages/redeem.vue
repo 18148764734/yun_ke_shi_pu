@@ -154,7 +154,7 @@
             date: '2021年12月20日',
             label: ['9999积分'],
             desc: '美食素材分享',
-            mainImage: 'https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.webp?s=2048x2048&w=is&k=20&c=-sKMI5AnnBXqC8sG-c3HbduAKD4viGYfbPeHFVBEf8I=',
+            mainImage: 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=',
             viewUser: {
               latestUserAvatar: [
                 {src: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg'},

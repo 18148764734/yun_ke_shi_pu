@@ -74,43 +74,17 @@
       return {
         // 侧边栏分类数据
         tabbar: [
-          '推荐分类',
-          '医疗保健',
-          '运动户外',
-          '电脑办公',
-          '家电',
-          '宠物鲜花',
-          '食品酒饮',
-          '个护清洁',
-          '手机',
-          '数码',
-          '母婴童装',
-          '京东国际',
-          '汽摩生活',
-          '美妆护肤',
-          '箱包',
-          '鞋靴',
-          '钟表珠宝',
-          '玩具乐器',
-          '内衣配饰',
-          '生鲜',
-          '家居厨具',
-          '男装',
-          '二手商品',
-          '女装',
-          '家具家装',
-          '奢侈品',
-          '计生情趣',
-          '医药',
-          '生活旅行',
-          '韵科食谱服务',
+          '健康美食',
+          '低卡美食',
+          '美味美食',
+          '营养美食',
         ],
         // 分类里面的内容信息
         classifyContent: {
           // 推荐商品
           recommendProduct: [
             {image: 'https://resource.tuniaokj.com/images/shop/banner1.jpg', title: '推荐商品1'},
-            {image: 'https://resource.tuniaokj.com/images/new/banner1.jpg', title: '推荐商品2'},
+            {image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/03/blueberries-on-a-tree-macro-detail.jpg', title: '推荐商品2'},
             {image: 'https://resource.tuniaokj.com/images/shop/banner2.jpg', title: '推荐商品3'}
           ],
           // 子栏目
@@ -122,25 +96,34 @@
             {
               title: '推荐分类',
               classify: [
-                { image: 'https://media.istockphoto.com/id/172284556/photo/after-the-meal.jpg?b=1&s=612x612&w=0&k=20&c=Xpz8yHTvP9t9yHaotDVGKJv3INzHK59Xv_M1WboKTF0=', title: '海报设计'},
-                { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/cake-with-blueberries-cinematic-shot.jpg', title: '精美页面'},
-                { image: 'https://resource.tuniaokj.com/images/shop/computer1.jpg', title: '设计师电脑'},
-                { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg', title: '轻薄本'},
-                { image: 'https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.webp?s=2048x2048&w=is&k=20&c=-sKMI5AnnBXqC8sG-c3HbduAKD4viGYfbPeHFVBEf8I=', title: '5G手机'},
-                { image: 'https://media.istockphoto.com/id/1144823591/photo/spaghetti-in-a-dish-on-a-white-background.webp?s=2048x2048&w=is&k=20&c=taGTmOYdyRkB3EytecqG3uguX_mpbZBqx5j_l7GgT4s=', title: '游戏手机'},
-                { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/08/indian-chicken-curry-bowl.jpg', title: '智能手表'},
-                { image: 'https://resource.tuniaokj.com/images/shop/watch2.jpg', title: '运动手表'},
+                { image: 'https://media.istockphoto.com/id/172284556/photo/after-the-meal.jpg?b=1&s=612x612&w=0&k=20&c=Xpz8yHTvP9t9yHaotDVGKJv3INzHK59Xv_M1WboKTF0=', title: '蓝莓'},
+                { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/cake-with-blueberries-cinematic-shot.jpg', title: '美食157'},
+                { image: 'https://resource.tuniaokj.com/images/shop/computer1.jpg', title: '美食513'},
+                { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg', title: '美食157'},
+                { image: 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=', title: '美食157'},
+                { image: 'https://media.istockphoto.com/id/1144823591/photo/spaghetti-in-a-dish-on-a-white-background.webp?s=2048x2048&w=is&k=20&c=taGTmOYdyRkB3EytecqG3uguX_mpbZBqx5j_l7GgT4s=', title: '美食957'},
                 
               ]
             },
             {
               title: '专场推荐',
               classify: [
-                { image: 'https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.webp?s=2048x2048&w=is&k=20&c=-sKMI5AnnBXqC8sG-c3HbduAKD4viGYfbPeHFVBEf8I=', title: '5G手机'},
+                { image: 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=', title: '美食157'},
                 { image: 'https://media.istockphoto.com/id/1144823591/photo/spaghetti-in-a-dish-on-a-white-background.webp?s=2048x2048&w=is&k=20&c=taGTmOYdyRkB3EytecqG3uguX_mpbZBqx5j_l7GgT4s=', title: '游戏手机'},
-                { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/08/indian-chicken-curry-bowl.jpg', title: '智能手表'},
-                { image: 'https://resource.tuniaokj.com/images/shop/watch2.jpg', title: '运动手表'},
-                { image: 'https://resource.tuniaokj.com/images/shop/card.jpg', title: '韵科食谱服务'}
+                { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/08/indian-chicken-curry-bowl.jpg', title: '美食157'},
+                { image: 'https://resource.tuniaokj.com/images/shop/watch2.jpg', title: '美食157'},
+                { image: 'https://resource.tuniaokj.com/images/shop/card.jpg', title: '美食157'}
+              ]
+            },
+            {
+              title: '专场推荐',
+              classify: [
+                { image: 'https://resource.tuniaokj.com/images/shop/bag1.jpg', title: '美食157'},
+                { image: 'https://resource.tuniaokj.com/images/shop/bag2.jpg', title: '美食157'},
+                { image: 'https://resource.tuniaokj.com/images/shop/cup1.jpg', title: '美食157'},
+                { image: 'https://resource.tuniaokj.com/images/shop/cup2.jpg', title: '美食157'},
+                { image: 'https://resource.tuniaokj.com/images/shop/pillow.jpg', title: '美食157'},
+                { image: 'https://resource.tuniaokj.com/images/shop/sticker.jpg', title: '美食157'}
               ]
             },
             {
@@ -151,18 +134,7 @@
                 { image: 'https://resource.tuniaokj.com/images/shop/cup1.jpg', title: '奶茶杯'},
                 { image: 'https://resource.tuniaokj.com/images/shop/cup2.jpg', title: '纸杯'},
                 { image: 'https://resource.tuniaokj.com/images/shop/pillow.jpg', title: '抱枕'},
-                { image: 'https://resource.tuniaokj.com/images/shop/sticker.jpg', title: '贴纸'}
-              ]
-            },
-            {
-              title: '专场推荐',
-              classify: [
-                { image: 'https://resource.tuniaokj.com/images/shop/bag1.jpg', title: '环保袋'},
-                { image: 'https://resource.tuniaokj.com/images/shop/bag2.jpg', title: '手提袋'},
-                { image: 'https://resource.tuniaokj.com/images/shop/cup1.jpg', title: '奶茶杯'},
-                { image: 'https://resource.tuniaokj.com/images/shop/cup2.jpg', title: '纸杯'},
-                { image: 'https://resource.tuniaokj.com/images/shop/pillow.jpg', title: '抱枕'},
-                { image: 'https://resource.tuniaokj.com/images/shop/pillow2.jpg', title: '蓝色抱枕'}
+                { image: 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=', title: '蓝色抱枕'}
               ]
             }
           ]

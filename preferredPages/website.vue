@@ -48,7 +48,7 @@
                 </view>
                 <view class="tn-padding-right tn-color-black">
                   <view class="tn-padding-right tn-padding-left-sm tn-text-lg tn-text-bold">
-                    抓住那只高产母猪
+                    低卡食材1
                   </view>
                   <view class="tn-padding-right tn-padding-top-xs tn-text-ellipsis tn-padding-left-sm">
                     <text class="tn-color-purplered tn-icon-flower-fill tn-text-lg"></text>
@@ -84,7 +84,7 @@
                 </view>
                 <view class="tn-padding-right tn-color-black">
                   <view class="tn-padding-right tn-padding-left-sm tn-text-lg tn-text-bold">
-                    抓住那只高产母猪
+                    低卡食材2
                   </view>
                   <view class="tn-padding-right tn-padding-top-xs tn-text-ellipsis tn-padding-left-sm">
                     <text class="tn-color-purplered tn-icon-flower-fill tn-text-lg"></text>
@@ -120,7 +120,7 @@
                 </view>
                 <view class="tn-padding-right tn-color-black">
                   <view class="tn-padding-right tn-padding-left-sm tn-text-lg tn-text-bold">
-                    抓住那只高产母猪
+                    低卡食材3
                   </view>
                   <view class="tn-padding-right tn-padding-top-xs tn-text-ellipsis tn-padding-left-sm">
                     <text class="tn-color-purplered tn-icon-flower-fill tn-text-lg"></text>
@@ -156,7 +156,7 @@
                 </view>
                 <view class="tn-padding-right tn-color-black">
                   <view class="tn-padding-right tn-padding-left-sm tn-text-lg tn-text-bold">
-                    抓住那只高产母猪
+                    低卡食材4
                   </view>
                   <view class="tn-padding-right tn-padding-top-xs tn-text-ellipsis tn-padding-left-sm">
                     <text class="tn-color-purplered tn-icon-flower-fill tn-text-lg"></text>
@@ -345,21 +345,21 @@
           title: '韵科食谱南南',
           name: '欢迎加入东东们',
           text: '如果你也有不错的作品',
-          url: 'https://resource.tuniaokj.com/images/swiper/ad2.jpg',
+          url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/09/beef-cut-close-up.jpg',
         }, {
           id: 2,
           type: 'image',
           title: '韵科食谱西西',
           name: '一起玩转scss',
           text: '用最少的代码做最骚的效果',
-          url: 'https://resource.tuniaokj.com/images/swiper/ad3.jpg',
+          url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/09/peaches.jpg',
         }, {
           id: 3,
           type: 'image',
           title: '金牌厨师小美',
           name: '微信号 tnkewo',
           text: '商业合作请联系作者',
-          url: 'https://resource.tuniaokj.com/images/swiper/ad4.jpg',
+          url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/09/beef-cut-close-up.jpg',
         }],
         current: 0,
         fixedList: [
@@ -435,7 +435,7 @@
             date: '2021年12月20日',
             label: ['烤肉','烤肉'],
             desc: '免费美食素材分享',
-            mainImage: 'https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.webp?s=2048x2048&w=is&k=20&c=-sKMI5AnnBXqC8sG-c3HbduAKD4viGYfbPeHFVBEf8I=',
+            mainImage: 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=',
             viewUser: {
               latestUserAvatar: [
                 {src: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg'},

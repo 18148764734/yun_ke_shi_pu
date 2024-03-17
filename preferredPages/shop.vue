@@ -145,7 +145,7 @@
       <view class="nav_title--wrap">
         <view class="nav_title tn-bg-black">
           <!-- <text class="tn-icon-relation tn-padding-right-sm tn-text-xxl"></text> -->
-          <text class="tn-text-xl">产品中心 · 优质项目</text>
+          <text class="tn-text-xl">美食圈 · 优质文章</text>
           <!-- <text class="tn-icon-relation tn-padding-left-sm tn-text-xxl"></text> -->
         </view>
       </view>
@@ -456,15 +456,15 @@
         }, {
           id: 1,
           type: 'image',
-          url: 'https://resource.tuniaokj.com/images/swiper/adno4.jpg',
+          url: 'https://media.istockphoto.com/id/1159204281/photo/healthy-food-for-balanced-flexitarian-mediterranean-diet-concept.webp?s=2048x2048&w=is&k=20&c=Mav-2PEhRXUsxPjGCyrlnkOFiwmN1Bz6UKHJmrxZGes=',
         }, {
           id: 2,
           type: 'image',
-          url: 'https://resource.tuniaokj.com/images/swiper/adno5.jpg',
+          url: 'https://media.istockphoto.com/id/1284690585/photo/colorful-vegetables-and-fruits-vegan-food-in-rainbow-colors.webp?s=2048x2048&w=is&k=20&c=rofZcHwLMQ4j5qQJMrqCltz9MaFvRiJQIQYoZSQqyGY=',
         }, {
           id: 3,
           type: 'image',
-          url: 'https://resource.tuniaokj.com/images/swiper/adno2.jpg',
+          url: 'https://media.istockphoto.com/id/1128687123/photo/shopping-bag-full-of-fresh-vegetables-and-fruits.webp?s=2048x2048&w=is&k=20&c=0JBSwrIo2X2Xj9eCyb0cVTF3DGFosHExsun8wvEtjAM=',
         }],
         cardCur2: 0,
         swiperList2: [{
@@ -505,7 +505,7 @@
             date: '2021年12月20日',
             label: ['烤肉','烤肉'],
             desc: '美食素材分享',
-            mainImage: 'https://media.istockphoto.com/id/1189709277/photo/pasta-penne-with-roasted-tomato-sauce-mozzarella-cheese-grey-stone-background-top-view.webp?s=2048x2048&w=is&k=20&c=-sKMI5AnnBXqC8sG-c3HbduAKD4viGYfbPeHFVBEf8I=',
+            mainImage: 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=',
             viewUser: {
               latestUserAvatar: [
                 {src: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg'},
@@ -716,8 +716,8 @@
             date: '2021年12月20日',
             color: 'red',
             label: ['小程序'],
-            title: '小程序官网源码，开源欢迎白嫖嗷嗷',
-            desc: '小程序前端源码开源，欢迎白嫖嗷嗷，可以的话，插件市场三连支持一下',
+            title: '免费食谱分享，开源欢迎白嫖嗷嗷',
+            desc: '每日养生知识分享开源，欢迎白嫖嗷嗷，可以的话，插件市场三连支持一下',
             mainImage: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/cake-with-blueberries-cinematic-shot.jpg',
             viewUser: {
               latestUserAvatar: [
