@@ -123,32 +123,20 @@
         tagList: [
           {
             color: 'red',
-            title: "救救孩子",
+            title: "食材分享",
           },
           {
             color: 'cyan',
-            title: "今天的Bug写了吗",
+            title: "今日推荐食谱",
           },
           {
             color: 'blue',
-            title: "北北猪",
+            title: "厨师小美",
           },
           {
             color: 'green',
-            title: "捉住那只北北猪",
+            title: "烹饪技巧",
           },
-          {
-            color: 'orange',
-            title: "祭天叭，产品经理",
-          },
-          {
-            color: 'purple',
-            title: "快醒醒，来需求了",
-          },
-          {
-            color: 'brown',
-            title: "夏天的第一个Bug",
-          }
         ],
         content: [{
             userAvatar: 'https://resource.tuniaokj.com/images/blogger/avatar_4.jpeg',
@@ -243,7 +231,7 @@
             date: '2021年12月20日',
             color: 'green',
             label: ['创意'],
-            title: '创意一点点',
+            title: '美食灵感',
             desc: '创意灵感从这里开始',
             mainImage: 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=',
             viewUser: {
