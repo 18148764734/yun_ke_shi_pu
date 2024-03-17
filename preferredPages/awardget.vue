@@ -392,7 +392,7 @@
             label: ['工具'],
             title: '仙味麻辣烫·米粉',
             desc: '二维码生成器',
-            mainImage: 'https://resource.tuniaokj.com/images/shop/card.jpg',
+            mainImage: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg',
             viewUser: {
               latestUserAvatar: [{
                   src: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg'

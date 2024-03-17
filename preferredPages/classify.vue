@@ -74,7 +74,7 @@
       return {
         // 侧边栏分类数据
         tabbar: [
-          '健康美食',
+          '健康美食大礼包',
           '低卡美食',
           '美味美食',
           '营养美食',
@@ -98,7 +98,7 @@
               classify: [
                 { image: 'https://media.istockphoto.com/id/172284556/photo/after-the-meal.jpg?b=1&s=612x612&w=0&k=20&c=Xpz8yHTvP9t9yHaotDVGKJv3INzHK59Xv_M1WboKTF0=', title: '蓝莓'},
                 { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/cake-with-blueberries-cinematic-shot.jpg', title: '美食157'},
-                { image: 'https://resource.tuniaokj.com/images/shop/computer1.jpg', title: '美食513'},
+                { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg', title: '美食513'},
                 { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg', title: '美食157'},
                 { image: 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=', title: '美食157'},
                 { image: 'https://media.istockphoto.com/id/1144823591/photo/spaghetti-in-a-dish-on-a-white-background.webp?s=2048x2048&w=is&k=20&c=taGTmOYdyRkB3EytecqG3uguX_mpbZBqx5j_l7GgT4s=', title: '美食957'},
@@ -111,32 +111,10 @@
                 { image: 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=', title: '美食157'},
                 { image: 'https://media.istockphoto.com/id/1144823591/photo/spaghetti-in-a-dish-on-a-white-background.webp?s=2048x2048&w=is&k=20&c=taGTmOYdyRkB3EytecqG3uguX_mpbZBqx5j_l7GgT4s=', title: '游戏手机'},
                 { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/08/indian-chicken-curry-bowl.jpg', title: '美食157'},
-                { image: 'https://resource.tuniaokj.com/images/shop/watch2.jpg', title: '美食157'},
-                { image: 'https://resource.tuniaokj.com/images/shop/card.jpg', title: '美食157'}
+                { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg', title: '美食157'},
+                { image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg', title: '美食157'}
               ]
             },
-            {
-              title: '专场推荐',
-              classify: [
-                { image: 'https://resource.tuniaokj.com/images/shop/bag1.jpg', title: '美食157'},
-                { image: 'https://resource.tuniaokj.com/images/shop/bag2.jpg', title: '美食157'},
-                { image: 'https://resource.tuniaokj.com/images/shop/cup1.jpg', title: '美食157'},
-                { image: 'https://resource.tuniaokj.com/images/shop/cup2.jpg', title: '美食157'},
-                { image: 'https://resource.tuniaokj.com/images/shop/pillow.jpg', title: '美食157'},
-                { image: 'https://resource.tuniaokj.com/images/shop/sticker.jpg', title: '美食157'}
-              ]
-            },
-            {
-              title: '专场推荐',
-              classify: [
-                { image: 'https://resource.tuniaokj.com/images/shop/bag1.jpg', title: '环保袋'},
-                { image: 'https://resource.tuniaokj.com/images/shop/bag2.jpg', title: '手提袋'},
-                { image: 'https://resource.tuniaokj.com/images/shop/cup1.jpg', title: '奶茶杯'},
-                { image: 'https://resource.tuniaokj.com/images/shop/cup2.jpg', title: '纸杯'},
-                { image: 'https://resource.tuniaokj.com/images/shop/pillow.jpg', title: '抱枕'},
-                { image: 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=', title: '蓝色抱枕'}
-              ]
-            }
           ]
         },
         // 分类菜单item的信息

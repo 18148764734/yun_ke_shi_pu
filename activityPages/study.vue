@@ -153,7 +153,7 @@
           title: '韵科食谱西西',
           name: '一起玩转scss',
           text: '用最少的代码做最骚的效果',
-          url: 'https://resource.tuniaokj.com/images/swiper/deer.jpg',
+          url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/09/tacos-top-view.jpg',
           pngurl: 'https://resource.tuniaokj.com/images/swiper/c4d1.png'
         }, {
           id: 3,

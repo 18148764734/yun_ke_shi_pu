@@ -37,9 +37,9 @@
           { src: 'https://resource.tuniaokj.com/images/shop/banner1.jpg' },
           { src: 'https://resource.tuniaokj.com/images/shop/banner2.jpg' },
           { src: 'https://resource.tuniaokj.com/images/shop/banner3.jpg' },
-          { src: 'https://resource.tuniaokj.com/images/shop/card.jpg' },
+          { src: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg' },
           { src: 'https://media.istockphoto.com/id/1144823591/photo/spaghetti-in-a-dish-on-a-white-background.webp?s=2048x2048&w=is&k=20&c=taGTmOYdyRkB3EytecqG3uguX_mpbZBqx5j_l7GgT4s=' },
-          { src: 'https://resource.tuniaokj.com/images/shop/computer1.jpg' },
+          { src: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg' },
           { src: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg' },
           { src: 'https://resource.tuniaokj.com/images/shop/content.jpg' },
           { src: 'https://resource.tuniaokj.com/images/shop/cup1.jpg' },
@@ -48,13 +48,13 @@
           { src: 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=' },
           { src: 'https://media.istockphoto.com/id/1144823591/photo/spaghetti-in-a-dish-on-a-white-background.webp?s=2048x2048&w=is&k=20&c=taGTmOYdyRkB3EytecqG3uguX_mpbZBqx5j_l7GgT4s=' },
           { src: 'https://resource.tuniaokj.com/images/shop/pillow.jpg' },
-          { src: 'https://resource.tuniaokj.com/images/shop/computer1.jpg' },
+          { src: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg' },
           { src: 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=' },
           { src: 'https://media.istockphoto.com/id/172284556/photo/after-the-meal.jpg?b=1&s=612x612&w=0&k=20&c=Xpz8yHTvP9t9yHaotDVGKJv3INzHK59Xv_M1WboKTF0=' },
           { src: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/cake-with-blueberries-cinematic-shot.jpg' },
           { src: 'https://resource.tuniaokj.com/images/shop/sticker.jpg' },
           { src: 'https://www.foodiesfeed.com/wp-content/uploads/2023/08/indian-chicken-curry-bowl.jpg' },
-          { src: 'https://resource.tuniaokj.com/images/shop/watch2.jpg' },
+          { src: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg' },
           { src: 'https://resource.tuniaokj.com/images/shop/pillow.jpg' }
         ]
       }

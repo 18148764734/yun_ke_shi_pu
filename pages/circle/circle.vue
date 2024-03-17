@@ -660,7 +660,7 @@
               desc: 'https://www.yuque.com/tuniao',
               mainImage:[
                 'https://www.foodiesfeed.com/wp-content/uploads/2023/08/indian-chicken-curry-bowl.jpg',
-                'https://resource.tuniaokj.com/images/shop/watch2.jpg',
+                'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg',
                 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=',
                 'https://resource.tuniaokj.com/images/shop/pillow.jpg',
               ],
@@ -915,7 +915,7 @@
               label: ['新疆出游'],
               title: '一起组队去新疆看西西',
               desc: '旅游出行：一起去新疆看西西',
-              mainImage: 'https://resource.tuniaokj.com/images/shop/card.jpg',
+              mainImage: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg',
               viewUser: {
                 latestUserAvatar: [{
                     src: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg'

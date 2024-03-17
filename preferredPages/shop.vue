@@ -71,7 +71,7 @@
             </view>
           </view>
         </view>
-        <view class="tn-flex-1 tn-margin-xs tn-radius">
+        <!-- <view class="tn-flex-1 tn-margin-xs tn-radius">
           <view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
             <view class="icon9__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur tn-bg-red tn-color-white">
               <view class="tn-icon-copy"></view>
@@ -100,7 +100,7 @@
               <text class="tn-text-ellipsis">打卡攻略</text>
             </view>
           </view>
-        </view>
+        </view> -->
         <view class="tn-flex-1 tn-margin-xs tn-radius" @tap="showLandscape">
           <view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
             <view class="icon9__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur tn-bg-purple tn-color-white">
@@ -740,7 +740,7 @@
             label: ['工具'],
             title: '小程序任意页面生成二维码',
             desc: '二维码生成器',
-            mainImage: 'https://resource.tuniaokj.com/images/shop/card.jpg',
+            mainImage: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg',
             viewUser: {
               latestUserAvatar: [
                 {src: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg'},

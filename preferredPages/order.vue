@@ -136,7 +136,7 @@
               <view class="order__item__content tn-flex tn-flex-direction-row tn-flex-nowrap tn-flex-col-center tn-flex-row-between">
                 <view class="tn-flex tn-flex-nowrap tn-flex-direction-row tn-flex-col-center tn-flex-row-left">
                   <view class="order__item__content__image">
-                    <image src="https://resource.tuniaokj.com/images/shop/card.jpg" mode="scaleToFill"></image>
+                    <image src="https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg" mode="scaleToFill"></image>
                   </view>
                   <view class="order__item__content__image">
                     <image src="https://resource.tuniaokj.com/images/shop/cup1.jpg" mode="scaleToFill"></image>
@@ -189,10 +189,10 @@
               <view class="order__item__content tn-flex tn-flex-direction-row tn-flex-nowrap tn-flex-col-center tn-flex-row-between">
                 <view class="tn-flex tn-flex-nowrap tn-flex-direction-row tn-flex-col-center tn-flex-row-left">
                   <view class="order__item__content__image">
-                    <image src="https://resource.tuniaokj.com/images/shop/card.jpg" mode="scaleToFill"></image>
+                    <image src="https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg" mode="scaleToFill"></image>
                   </view>
                   <view class="order__item__content__image">
-                    <image src="https://resource.tuniaokj.com/images/shop/computer1.jpg" mode="scaleToFill"></image>
+                    <image src="https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg" mode="scaleToFill"></image>
                   </view>
                   <view class="order__item__content__image">
                     <image src="https://www.foodiesfeed.com/wp-content/uploads/2023/08/indian-chicken-curry-bowl.jpg" mode="scaleToFill"></image>
@@ -242,7 +242,7 @@
               <view class="order__item__content tn-flex tn-flex-direction-row tn-flex-nowrap tn-flex-col-center tn-flex-row-between">
                 <view class="tn-flex tn-flex-nowrap tn-flex-direction-row tn-flex-col-center tn-flex-row-left">
                   <view class="order__item__content__image">
-                    <image src="https://resource.tuniaokj.com/images/shop/card.jpg" mode="scaleToFill"></image>
+                    <image src="https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg" mode="scaleToFill"></image>
                   </view>
                   <view class="order__item__content__image">
                     <image src="https://resource.tuniaokj.com/images/shop/pillow.jpg" mode="scaleToFill"></image>

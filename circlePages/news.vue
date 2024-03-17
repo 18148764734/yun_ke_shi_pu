@@ -15,16 +15,15 @@
     <view class="tn-margin-top-xs" :style="{paddingTop: vuex_custom_bar_height + 'px'}">
       <view class="nav_title--wrap">
         <view class="nav_title tn-cool-bg-color-6">
-          <!-- <text class="tn-icon-fire tn-padding-right-sm"></text> -->
-            韵科食谱上线啦
-          <!-- <text class="tn-icon-fire tn-padding-left-sm"></text> -->
+          <text class="tn-icon-fire tn-padding-right-sm"></text>
+            养生书籍
+          <text class="tn-icon-fire tn-padding-left-sm"></text>
         </view>
       </view>
       
       
       <view class="news-img tn-padding">
-        <image src='https://resource.tuniaokj.com/images/advertise/1.jpg' mode='widthFix' class=''></image>
-        <image src='https://resource.tuniaokj.com/images/advertise/2.jpg' mode='widthFix' class=''></image>
+        <image src='https://pic1.zhimg.com/80/v2-3dfba5616658eb21ea7f1bdee4cf4646_720w.webp?source=1def8aca' mode='widthFix' class=''></image>
         <!-- <image src='https://resource.tuniaokj.com/images/advertise/3.jpg' mode='widthFix' class=''></image>
         <image src='https://resource.tuniaokj.com/images/advertise/4.jpg' mode='widthFix' class=''></image> -->
         <!-- <image src='https://resource.tuniaokj.com/images/advertise/5.jpg' mode='widthFix' class=''></image> -->
@@ -34,7 +33,6 @@
         <image src='https://resource.tuniaokj.com/images/advertise/tabbar4.jpg' mode='widthFix' class=''></image>
         <image src='https://resource.tuniaokj.com/images/advertise/tabbar5.jpg' mode='widthFix' class=''></image> -->
         <!-- <image src='https://resource.tuniaokj.com/images/advertise/7.jpg' mode='widthFix' class=''></image> -->
-        <image src='https://resource.tuniaokj.com/images/advertise/8.jpg' mode='widthFix' class=''></image>
         <!-- <image src='https://resource.tuniaokj.com/images/advertise/10.jpg' mode='widthFix' class=''></image> -->
       </view>
       
@@ -173,7 +171,7 @@
             label: ['工具'],
             title: '小程序任意页面生成二维码',
             desc: '二维码生成器',
-            mainImage: 'https://resource.tuniaokj.com/images/shop/card.jpg',
+            mainImage: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg',
             viewUser: {
               latestUserAvatar: [
                 {src: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg'},

@@ -49,7 +49,7 @@
             <view class="tn-flex tn-flex-row-center tn-flex-col-center">
               <view class="tn-padding-right tn-text-ellipsis tn-text-left">
                 <view class="tn-padding-right tn-color-black tn-text-bold tn-text-xxl">
-                  让我们一同探索未知
+                  韵科食谱
                 </view>
                 <view class="tn-padding-right tn-padding-top tn-text-df">一同前往无限可能</view>
               </view>
@@ -68,7 +68,7 @@
       </view>
       
       <view class="detail-img tn-padding">
-        <image src='https://resource.tuniaokj.com/images/advertise/1.jpg' mode='widthFix' class=''></image>
+        <image src='https://www.foodiesfeed.com/wp-content/uploads/2023/11/portobello-mushroom-burger.jpg' mode='widthFix' class=''></image>
         <image src='https://resource.tuniaokj.com/images/advertise/2.jpg' mode='widthFix' class=''></image>
         <image src='https://resource.tuniaokj.com/images/advertise/3.jpg' mode='widthFix' class=''></image>
         <image src='https://resource.tuniaokj.com/images/advertise/4.jpg' mode='widthFix' class=''></image>
@@ -167,7 +167,7 @@
           title: '韵科食谱西西',
           name: '一起玩转scss',
           text: '用最少的代码做最骚的效果',
-          url: 'https://resource.tuniaokj.com/images/swiper/deer.jpg',
+          url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/09/tacos-top-view.jpg',
         }, {
           id: 3,
           type: 'image',

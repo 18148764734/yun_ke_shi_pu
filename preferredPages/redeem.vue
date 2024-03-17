@@ -234,7 +234,7 @@
             date: '2021年12月20日',
             label: ['899积分'],
             desc: '美食素材分享',
-            mainImage: 'https://resource.tuniaokj.com/images/shop/card.jpg',
+            mainImage: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg',
             viewUser: {
               latestUserAvatar: [
                 {src: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg'},

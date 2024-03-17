@@ -80,23 +80,13 @@
           </view>
         </view>
       </view>
-      <view class="tn-flex-1 tn-padding-sm tn-radius" @click="tn('/activityPages/project')">
-        <view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
-          <view class="icon4__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur">
-            <view class="tn-icon-trophy-fill tn-cool-color-icon4 tn-cool-bg-color-15"></view>
-          </view>  
-          <view class="tn-color-gray--dark tn-text-center">
-            <text class="tn-text-ellipsis">开源项目</text>
-          </view>
-        </view>
-      </view>
       <view class="tn-flex-1 tn-padding-sm tn-radius" @click="tn('/activityPages/map')">
         <view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
           <view class="icon4__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur">
             <view class="tn-icon-map-fill tn-cool-color-icon4 tn-cool-bg-color-8"></view>
           </view>  
           <view class="tn-color-gray--dark tn-text-center">
-            <text class="tn-text-ellipsis">地图打卡</text>
+            <text class="tn-text-ellipsis">美食店打卡</text>
           </view>
         </view>
       </view>
@@ -106,7 +96,7 @@
             <view class="tn-icon-creative-fill tn-cool-color-icon4 tn-cool-bg-color-3"></view>
           </view>  
           <view class="tn-color-gray--dark tn-text-center">
-            <text class="tn-text-ellipsis">课程学习</text>
+            <text class="tn-text-ellipsis">烹饪技巧</text>
           </view>
         </view>
       </view>
@@ -117,7 +107,7 @@
       <view class="nav_title--wrap">
         <view class="nav_title tn-cool-bg-color-15">
           <text class="tn-icon-star tn-padding-right-sm"></text>
-            工 / 具 / 集 / 合
+            小  创 意 
           <text class="tn-icon-star tn-padding-left-sm"></text>
         </view>
       </view>
@@ -178,77 +168,17 @@
         swiperList: [{
           id: 0,
           type: 'image',
-          url: 'https://resource.tuniaokj.com/images/index_bg/pro1.jpg',
+          url: 'https://www.foodiesfeed.com/wp-content/uploads/2021/05/forest-fruit-waffle.jpg',
         }, {
           id: 1,
           type: 'image',
-          url: 'https://resource.tuniaokj.com/images/index_bg/pro2.jpg',
+          url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/grilled-shrimps-with-lemon.jpg',
         }, {
           id: 2,
           type: 'image',
-          url: 'https://resource.tuniaokj.com/images/index_bg/pro3.jpg',
-        }, {
-          id: 3,
-          type: 'image',
-          url: 'https://resource.tuniaokj.com/images/index_bg/pro4.jpg',
-        },{
-          id: 4,
-          type: 'image',
-          url: 'https://resource.tuniaokj.com/images/index_bg/pro5.jpg',
-        },{
-          id: 5,
-          type: 'image',
-          url: 'https://resource.tuniaokj.com/images/index_bg/pro6.jpg',
-        }],
+          url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/grilled-shrimps-with-lemon.jpg',
+        }, ],
         list1: [
-          {
-            icon: 'honor-fill',
-            title: '称呼计算器',
-            join: '629',
-            color: 'blue'
-          },
-          {
-            icon: 'count-fill',
-            title: '支付宝语音生成',
-            join: '268',
-            color: 'purplered'
-          },
-          {
-            icon: 'gloves-fill',
-            title: '一周天气预报',
-            join: '332',
-            color: 'cyan'
-          },
-          {
-            icon: 'trusty-fill',
-            title: '今日星座运势',
-            join: '106',
-            color: 'orangeyellow'
-          },
-          {
-            icon: 'hardware-fill',
-            title: '来碗毒鸡汤',
-            join: '98',
-            color: 'indigo'
-          },
-          {
-            icon: 'baby-fill',
-            title: '垃圾分一分',
-            join: '57',
-            color: 'red'
-          },
-          {
-            icon: 'safe-fill',
-            title: '手持弹幕',
-            join: '76',
-            color: 'green'
-          },
-          {
-            icon: 'flag-fill',
-            title: '孩子取名',
-            join: '225',
-            color: 'orange'
-          },
           {
             icon: 'topics-fill',
             title: '午餐吃什么',

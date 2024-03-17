@@ -449,7 +449,7 @@
           title: '韵科食谱西西',
           name: '一起玩转scss',
           text: '用最少的代码做最骚的效果',
-          url: 'https://resource.tuniaokj.com/images/swiper/deer.jpg',
+          url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/09/tacos-top-view.jpg',
         }, {
           id: 3,
           type: 'image',
@@ -766,7 +766,7 @@
             date: '2021年12月20日',
             label: ['烤肉','烤肉'],
             desc: '免费美食素材分享',
-            mainImage: 'https://resource.tuniaokj.com/images/shop/card.jpg',
+            mainImage: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg',
             viewUser: {
               latestUserAvatar: [
                 {src: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg'},
@@ -786,7 +786,7 @@
         data: [
           {
             title: '韵科食谱科技 设计师专属笔记本 告别卡慢热',
-            mainImage: 'https://resource.tuniaokj.com/images/shop/computer1.jpg',
+            mainImage: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg',
             storeType: 1, // 1 自营 2 第三方店铺
             newProduct: true, // 是否为新品
             tags: ['满1000减80','免息'],
@@ -826,7 +826,7 @@
           },
           {
             title: '韵科食谱科技 页面设计 专为第三方提供精美酷炫页面',
-            mainImage: 'https://resource.tuniaokj.com/images/shop/card.jpg',
+            mainImage: 'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg',
             storeType: 2, // 1 自营 2 第三方店铺
             newProduct: false, // 是否为新品
             tags: ['酷炫'],
