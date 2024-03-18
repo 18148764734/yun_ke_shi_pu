@@ -19,27 +19,27 @@
 		},
 		"author": {
 			"title": "作者",
-			"bsonType": "object",
-			"properties": {
-				"city": {
-					"bsonType": "string",
-					"title": "城市"
-				},
-				"street": {
-					"bsonType": "string",
-					"title": "街道"
-				}
-			}
+			"bsonType": "string"
 		},
 		"title": {
 			"title": "标题",
 			"bsonType": "string"
 		},
-		"needs":{
+		"needs": {
 			"title": "所需食材",
 			"arrayType": "object",
-			"bsonType": "array"
-			
+			"bsonType": "array",
+			"properties": {
+				"key": {
+					"bsonType": "string",
+					"title": "食材名"
+				},
+				"value": {
+					"bsonType": "string",
+					"title": "食材含量"
+				}
+				
+			}
 		}
 	}
 }

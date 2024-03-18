@@ -13,12 +13,14 @@
 		},
 		methods: {
 			addresume() {
-				db.collection("A-users").add({
-					"userName": "18148764734",
-					"password": "qq830303",
+				db.collection("article").add({
+					title:"标题1",
+					swiperImgs:[],
+					author:"",
+					needs:[{key:"素材"}]
 				}).then((res) => {
 					// res 为数据库查询结果
-					console.log(res)
+					db.collection("article").get();
 				}).catch((err) => {
 					console.log(err.message)
 				});
