@@ -55,7 +55,7 @@
             </view>
             <view class="tn-padding-right">
               <view class="tn-padding-right tn-padding-left-sm tn-text-xl tn-text-bold">
-                <text class="tn-color-brown--dark">抓住那只北北猪</text>
+                <text class="tn-color-brown--dark">{{userName}}</text>
               </view>
               <view class="tn-padding-right tn-padding-top-xs tn-padding-left-sm tn-text-ellipsis">
                 <text class="tn-color-brown" style="opacity: 0.5;">认证会员</text>
@@ -178,16 +178,6 @@
               </view>
             </view>
           </view>
-          <view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/minePages/collect')">
-            <view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
-              <view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-bg-orange">
-                <view class="tn-icon-star" style="color: #080808;"></view>
-              </view>
-              <view class="tn-text-center">
-                <text class="tn-text-ellipsis">好物收藏</text>
-              </view>
-            </view>
-          </view>
           <view class="tn-padding-sm tn-margin-xs tn-radius" @click="navAddress">
             <view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
               <view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-bg-orange">
@@ -195,16 +185,6 @@
               </view>
               <view class="tn-text-center">
                 <text class="tn-text-ellipsis">收货地址</text>
-              </view>
-            </view>
-          </view>
-          <view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/minePages/set')">
-            <view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
-              <view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-bg-orange">
-                <view class="tn-icon-set" style="color: #080808;"></view>
-              </view>
-              <view class="tn-text-center">
-                <text class="tn-text-ellipsis">全局设置</text>
               </view>
             </view>
           </view>
@@ -297,6 +277,7 @@
     name: 'Mine',
     data() {
       return {
+				userName:uni.getStorageSync("userName")
       }
     },
     methods: {

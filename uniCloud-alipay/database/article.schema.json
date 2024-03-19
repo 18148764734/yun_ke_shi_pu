@@ -18,7 +18,11 @@
 			"description": "轮播图数组"
 		},
 		"author": {
-			"title": "作者",
+			"title": "作者名字",
+			"bsonType": "string"
+		},
+		"authorId": {
+			"title": "作者id",
 			"bsonType": "string"
 		},
 		"title": {
@@ -38,8 +42,14 @@
 					"bsonType": "string",
 					"title": "食材含量"
 				}
-				
 			}
+		},
+		"steps":{
+			"title": "做法步骤",
+			"bsonType": "array",
+			"arrayType": "string"
 		}
+		
+		
 	}
 }

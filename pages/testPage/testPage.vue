@@ -17,10 +17,11 @@
 					title:"标题1",
 					swiperImgs:[],
 					author:"",
-					needs:[{key:"素材"}]
-				}).then((res) => {
+					needs:[{key:"素材",value1:"50ss"}]
+				}).then(async (r) => {
 					// res 为数据库查询结果
-					db.collection("article").get();
+					let res = await db.collection("article").get();
+					console.log(res);
 				}).catch((err) => {
 					console.log(err.message)
 				});

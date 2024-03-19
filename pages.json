@@ -246,7 +246,7 @@
 			{
 				"path": "classify",
 				"style": {
-					"navigationBarTitleText": "美食分类",
+					"navigationBarTitleText": "食谱分类",
 					"enablePullDownRefresh": false
 				}
 			},

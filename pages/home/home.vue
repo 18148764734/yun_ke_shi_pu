@@ -64,7 +64,7 @@
 						<view class="tn-icon-flower-fill tn-three"></view>
 					</view>
 					<view class="tn-color-black tn-text-center">
-						<text class="tn-text-ellipsis">美食分类</text>
+						<text class="tn-text-ellipsis">食谱分类</text>
 					</view>
 				</view>
 			</view>
@@ -113,7 +113,7 @@
 						<view class="tn-icon-flower-fill"></view>
 					</view>
 					<view class="tn-color-black tn-text-center">
-						<text class="tn-text-ellipsis">美食分类</text>
+						<text class="tn-text-ellipsis">食谱分类</text>
 					</view>
 				</view>
 			</view>
@@ -143,10 +143,10 @@
 		<!-- 方式12 end-->
 
 		<!-- banner start-->
-		<view class="tn-flex tn-flex-wrap tn-padding-xs" @click="tn('/circlePages/advertise')">
+		<view class="tn-flex tn-flex-wrap tn-padding-xs" @click="tn('/circlePages/advertise?id=1')">
 			<view class="" style="width: 100%;">
 				<image class="image"
-          src="https://mp-def56af1-b497-4158-bdaa-adb4eb12820e.cdn.bspapp.com/毕业设计/胶囊图.png"
+          src="https://env-00jx4xgopeln.normal.cloudstatic.cn/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/%E8%83%B6%E5%9B%8A.png"
           mode="scaleToFill"
         />
 			</view>

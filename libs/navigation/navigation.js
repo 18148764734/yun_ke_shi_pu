@@ -177,7 +177,7 @@ export default {
         },
         {
           icon: 'code',
-          title: '美食分类',
+          title: '食谱分类',
           url: '/preferredPages/classify',
           author: '韵科食谱'
         },

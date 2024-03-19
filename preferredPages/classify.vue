@@ -2,7 +2,7 @@
   <view class="template-classify">
     
     <!-- 顶部自定义导航 -->
-    <tn-nav-bar fixed :bottomShadow="false">美食分类</tn-nav-bar>
+    <tn-nav-bar fixed :bottomShadow="false">食谱分类</tn-nav-bar>
     
     <view class="tn-classify__wrap" :style="{paddingTop: vuex_custom_bar_height + 'px'}">
       
