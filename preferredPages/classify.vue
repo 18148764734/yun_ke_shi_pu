@@ -33,7 +33,7 @@
           <!-- 右边容器 -->
           <scroll-view class="tn-classify__right-box" scroll-y :scroll-top="rightScrollViewTop" :style="{height: scrollViewHeight + 'px'}">
             <block v-if="classifyContent.subClassify && classifyContent.subClassify.length > 0">
-              <view class="tn-classify__content" @click="tn('/preferredPages/product')">
+              <view class="tn-classify__content" @click="tn('/preferredPages/product?id=1')">
                 <!-- 推荐商品轮播图 -->
                 <view class="tn-classify__content__recomm">
                   <tn-swiper v-if="classifyContent.recommendProduct.length > 0" class="tn-classify__content__recomm__swiper" :list="classifyContent.recommendProduct" :height="100" :effect3d="true" mode=""></tn-swiper>
