@@ -48,6 +48,14 @@
 			"title": "做法步骤",
 			"bsonType": "array",
 			"arrayType": "string"
+		},
+		"description":{
+			"title": "描述",
+			"bsonType": "string"
+		},
+		"classify":{
+			"title": "分类",
+			"bsonType": "string"
 		}
 		
 		

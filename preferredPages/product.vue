@@ -9,14 +9,14 @@
 		</tn-nav-bar>
 
 		<swiper class="card-swiper" :circular="true" :autoplay="true" duration="500" interval="5000" @change="cardSwiper">
-			<swiper-item v-for="(item, index) in swiperList" :key="index" :class="cardCur == index ? 'cur' : ''">
+			<swiper-item v-for="(item, index) in data.swiperImgs" :key="index" :class="cardCur == index ? 'cur' : ''">
 				<view class="swiper-item image-banner">
-					<image :src="item.url" mode="aspectFill" v-if="item.type == 'image'"></image>
+					<image :src="item" mode="aspectFill"></image>
 				</view>
 			</swiper-item>
 		</swiper>
 		<view class="indication">
-			<block v-for="(item, index) in swiperList" :key="index">
+			<block v-for="(item, index) in data.swiperImgs" :key="index">
 				<view class="spot" :class="cardCur == index ? 'active' : ''"></view>
 			</block>
 		</view>
@@ -24,7 +24,7 @@
 		<view class="tn-margin">
 			<view class="tn-flex tn-flex-row-between">
 				<view class="justify-content-item tn-text-bold tn-text-xxl">
-					红焖羊肉胡萝卜
+					{{data.title}}
 				</view>
 			</view>
 			<view class="tn-flex tn-flex-row-between tn-margin-top">
@@ -45,8 +45,8 @@
 				所需食材
 			</view>
 
-			<view class="justify-content-item tn-color-gray">
-				羊肉 500克 <br />
+			<view class="justify-content-item tn-color-gray" v-for="(item,index) in data.needs" :key="index">
+				<!-- 羊肉 500克 <br />
 				胡萝卜 <br />
 				2 根(350克左右) <br />
 				大葱 50克 <br />
@@ -54,13 +54,28 @@
 				冰糖 40克 黄豆酱油 30克 <br />
 				料酒 10克 <br />
 				各种香料 见步骤图 <br />
-				盐 3克
+				盐 3克 -->
+				<text class="key">{{item.key+":"}}</text>
+				<text class="value">{{item.value}}</text>
 			</view>
 			<view class="justify-content-item tn-text-bold tn-text-xl">
 				做法步骤
 			</view>
 			<view class="justify-content-item tn-color-gray">
-				1、羊肉切块(大小随意，我切的大约为2.5厘米见方)，因为孩子不喜欢肥的和筋膜类，所以我用的羊腿肉，瘦肉多。当然也可以选其他部位哈。
+				
+				<view class="justify-content-item tn-color-gray" v-for="(item,index) in data.steps" :key="index">
+					<!-- 羊肉 500克 <br />
+					胡萝卜 <br />
+					2 根(350克左右) <br />
+					大葱 50克 <br />
+					姜片 10克 <br />
+					冰糖 40克 黄豆酱油 30克 <br />
+					料酒 10克 <br />
+					各种香料 见步骤图 <br />
+					盐 3克 -->
+					<text class="value">{{(index+1)+"、"+item}}</text>
+				</view>
+				<!-- 1、羊肉切块(大小随意，我切的大约为2.5厘米见方)，因为孩子不喜欢肥的和筋膜类，所以我用的羊腿肉，瘦肉多。当然也可以选其他部位哈。
 				2、胡萝卜去皮切滚刀块。 <br />
 				3、羊肉凉水下锅煮开，撇去浮沫 <br />
 				4、捞出备用 <br />
@@ -78,7 +93,7 @@
 				🌹这时我换用了小砂锅。
 				<br />
 				13、加入胡萝卜和盐继续炖20分钟。
-				<br />
+				<br /> -->
 			</view>
 			<view class="justify-content-item tn-text-bold tn-text-xl">
 				营养构成
@@ -130,7 +145,7 @@
 					</view>
 					<view class="tn-padding-right tn-color-black">
 						<view class="tn-padding-right tn-padding-left-sm tn-text-xl tn-text-bold">
-							小美
+							{{data.author}}
 						</view>
 						<view class="tn-padding-right tn-padding-top-xs tn-text-ellipsis tn-padding-left-sm">
 							<text class="tn-color-purplered tn-icon-flower-fill tn-text-lg"></text>
@@ -272,23 +287,33 @@
 				return this.$t.colorUtils.getRandomCoolBgClass();
 			},
 		},
-		onLoad: async function(params) {
-			console.log(this)
-			if (!params.data) {
-				this.tn('/index')
+		onLoad:async function(params) {
+			// console.log(params.id);
+			if (!params.id) {
+				// this.tn('/pages/index')
+			} else {
+				let res = await db.collection("article").where({
+					_id: params.id
+				}).get();
+				let data = res.result.data[0];
+				console.log(JSON.stringify(data));
+				this.data = data;
 			}
-			let {
-				result
-			} = await db.collection("article").where({
-				_id: params.id
-			}).get();
-			console.log(JSON.stringify(result));
 
 		}
 	};
 </script>
 
 <style lang="scss" scoped>
+	.key{
+		color: #783737;
+		font-size: 16px;
+		margin-right: 5px;
+	}
+	.value{
+		color: #9f2620;
+		font-size: 18px;
+	}
 	.justify-content-item {
 		margin: 10px;
 	}

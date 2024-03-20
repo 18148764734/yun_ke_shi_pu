@@ -41,11 +41,11 @@
                 
                 <!-- 分类内容子栏目 -->
                 <view v-for="(item,index) in classifyContent.subClassify" :key="index" class="tn-classify__content__sub-classify">
-                  <view class="tn-classify__content__sub-classify--title tn-text-lg tn-padding-top-sm">{{ item.title }}</view>
+                  <view class="tn-classify__content__sub-classify--title tn-text-lg tn-padding-top-sm">{{ item.classify }}</view>
                   
                   <view class="tn-classify__content__sub-classify__content tn-flex tn-flex-wrap tn-flex-col-center tn-flex-row-left">
                     <view
-                      v-for="(sub_item,sub_index) in item.classify"
+                      v-for="(sub_item,sub_index) in item.data"
                       :key="sub_index"
                       class="tn-classify__content__sub-classify__content__item tn-flex tn-flex-wrap tn-flex-row-center"
                     >
@@ -68,10 +68,13 @@
 </template>
 
 <script>
+	const db = uniCloud.database().collection("article");
   export default {
     name: 'templateShopClassify',
     data() {
       return {
+				totalList:[],
+				currentList:[],
         // 侧边栏分类数据
         tabbar: [
           '低卡美食',
@@ -86,22 +89,18 @@
             {image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/03/blueberries-on-a-tree-macro-detail.jpg', title: '推荐商品2'},
             {image: 'https://resource.tuniaokj.com/images/shop/banner2.jpg', title: '推荐商品3'}
           ],
-          // 子栏目
-          subClassifyTabbar: [],
-          // 显示子栏目分类选项
-          showSubClassifyTabbar: false,
           // 每个子栏目下的内容
           subClassify: [
             {
-              title: '推荐分类',
-              classify: [
+              classify: '推荐分类',
+              data: [
                 { image: 'https://media.istockphoto.com/id/172284556/photo/after-the-meal.jpg?b=1&s=612x612&w=0&k=20&c=Xpz8yHTvP9t9yHaotDVGKJv3INzHK59Xv_M1WboKTF0=', title: '羊肉炖胡萝卜'},
               ]
             },
             {
-              title: '其他',
-              classify: [
-                { image: 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=', title: '羊肉炖胡萝卜'},
+              classify: '其他',
+              data: [
+                { image: 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=', title: '羊肉炖胡萝卜2'},
               ]
             },
           ]
@@ -117,7 +116,8 @@
         // 右边scrollView的滚动高度
         rightScrollViewTop: 0,
         // 当前选中的tabbar序号
-        currentTabbarIndex: 0
+        currentTabbarIndex: 0,
+				
       }
     },
     computed: {
@@ -138,11 +138,14 @@
         }
       }
     },
-    onReady() {
+    onReady:async function() {
       this.$nextTick(() => {
         this.getScrollViewInfo()
         this.getTabbarItemRect()
       })
+			let res =await db.get();
+			this.totalList = res.result.data;
+			console.log(res.result.data)
     },
     methods: {
       // 跳转
