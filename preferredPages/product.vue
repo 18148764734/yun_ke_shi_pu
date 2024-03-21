@@ -64,36 +64,8 @@
 			<view class="justify-content-item tn-color-gray">
 				
 				<view class="justify-content-item tn-color-gray" v-for="(item,index) in data.steps" :key="index">
-					<!-- 羊肉 500克 <br />
-					胡萝卜 <br />
-					2 根(350克左右) <br />
-					大葱 50克 <br />
-					姜片 10克 <br />
-					冰糖 40克 黄豆酱油 30克 <br />
-					料酒 10克 <br />
-					各种香料 见步骤图 <br />
-					盐 3克 -->
 					<text class="value">{{(index+1)+"、"+item}}</text>
 				</view>
-				<!-- 1、羊肉切块(大小随意，我切的大约为2.5厘米见方)，因为孩子不喜欢肥的和筋膜类，所以我用的羊腿肉，瘦肉多。当然也可以选其他部位哈。
-				2、胡萝卜去皮切滚刀块。 <br />
-				3、羊肉凉水下锅煮开，撇去浮沫 <br />
-				4、捞出备用 <br />
-				5、胡萝卜过油炸一下 <br />
-				6、炸至焦边且变蔫儿，备用 <br />
-				7、大葱切大段，姜切大片，以方便之后捞出。
-				8、炒锅上火烧热，加少量底油，放入羊肉、大葱、姜和冰糖一起炒，转小火多炒一会儿，至肉有焦边，且冰糖几乎融化。
-				<br />
-				9、加酱油、料酒，继续炒一会儿。
-				酱油我用的龙和宽黄豆酱油，没有的话用别的，或红烧酱油，颜色自己掌握一下，因为各种酱油颜色不一样，所以自己调整一下用量。
-				<br />
-				11、参考图上香料的用量：草果(砸裂开)、肉蔻、桂皮、陈皮、小丁香、花椒、八角、小茴香。
-				<br />
-				12、加入肉锅中，且加入适量开水，小火炖40分钟左右。
-				🌹这时我换用了小砂锅。
-				<br />
-				13、加入胡萝卜和盐继续炖20分钟。
-				<br /> -->
 			</view>
 			<view class="justify-content-item tn-text-bold tn-text-xl">
 				营养构成
@@ -242,27 +214,15 @@
 				current: 0,
 				tagList: [{
 						color: "cyan",
-						title: "设计",
+						title: "美味",
 					},
 					{
 						color: "blue",
-						title: "韵科食谱",
+						title: "营养",
 					},
 					{
 						color: "green",
-						title: "互联网",
-					},
-					{
-						color: "orange",
-						title: "免费",
-					},
-					{
-						color: "purplered",
-						title: "配色",
-					},
-					{
-						color: "brown",
-						title: "插画",
+						title: "独家原创",
 					},
 				],
 				data: {},
@@ -290,7 +250,7 @@
 		onLoad:async function(params) {
 			// console.log(params.id);
 			if (!params.id) {
-				// this.tn('/pages/index')
+				this.tn('/preferredPages/classify')
 			} else {
 				let res = await db.collection("article").where({
 					_id: params.id

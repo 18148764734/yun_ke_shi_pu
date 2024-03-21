@@ -33,26 +33,26 @@
           <!-- 右边容器 -->
           <scroll-view class="tn-classify__right-box" scroll-y :scroll-top="rightScrollViewTop" :style="{height: scrollViewHeight + 'px'}">
             <block v-if="classifyContent.subClassify && classifyContent.subClassify.length > 0">
-              <view class="tn-classify__content" @click="tn('/preferredPages/product?id=1')">
+              <view class="tn-classify__content">
                 <!-- 推荐商品轮播图 -->
                 <view class="tn-classify__content__recomm">
                   <tn-swiper v-if="classifyContent.recommendProduct.length > 0" class="tn-classify__content__recomm__swiper" :list="classifyContent.recommendProduct" :height="100" :effect3d="true" mode=""></tn-swiper>
                 </view>
                 
                 <!-- 分类内容子栏目 -->
-                <view v-for="(item,index) in classifyContent.subClassify" :key="index" class="tn-classify__content__sub-classify">
-                  <view class="tn-classify__content__sub-classify--title tn-text-lg tn-padding-top-sm">{{ item.classify }}</view>
+                <view class="tn-classify__content__sub-classify">
+                  <view class="tn-classify__content__sub-classify--title tn-text-lg tn-padding-top-sm">{{ tabbar[currentTabbarIndex] }}</view>
                   
                   <view class="tn-classify__content__sub-classify__content tn-flex tn-flex-wrap tn-flex-col-center tn-flex-row-left">
                     <view
-                      v-for="(sub_item,sub_index) in item.data"
-                      :key="sub_index"
-                      class="tn-classify__content__sub-classify__content__item tn-flex tn-flex-wrap tn-flex-row-center"
+                      v-for="(item,index) in totalList"
+                      :key="index"
+                      class="tn-classify__content__sub-classify__content__item tn-flex tn-flex-wrap tn-flex-row-center"  @click="tn('/preferredPages/product?id='+item._id)"
                     >
                       <view class="tn-classify__content__sub-classify__content__image tn-flex tn-flex-col-center tn-flex-row-center">
-                        <image :src="sub_item.image" mode="aspectFill"></image>
+                        <image :src="item.swiperImgs[0]" mode="aspectFill"></image>
                       </view>
-                      <view class="tn-classify__content__sub-classify__content__title tn-margin-bottom-sm">{{ sub_item.title }}</view>
+                      <view class="tn-classify__content__sub-classify__content__title tn-margin-bottom-sm">{{ item.title }}</view>
                     </view>
                   </view>
                 </view>
@@ -75,6 +75,8 @@
       return {
 				totalList:[],
 				currentList:[],
+        // 当前选中的tabbar序号
+        currentTabbarIndex: 0,
         // 侧边栏分类数据
         tabbar: [
           '低卡美食',
@@ -92,17 +94,16 @@
           // 每个子栏目下的内容
           subClassify: [
             {
-              classify: '推荐分类',
               data: [
                 { image: 'https://media.istockphoto.com/id/172284556/photo/after-the-meal.jpg?b=1&s=612x612&w=0&k=20&c=Xpz8yHTvP9t9yHaotDVGKJv3INzHK59Xv_M1WboKTF0=', title: '羊肉炖胡萝卜'},
               ]
             },
-            {
-              classify: '其他',
-              data: [
-                { image: 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=', title: '羊肉炖胡萝卜2'},
-              ]
-            },
+            // {
+            //   classify: '其他',
+            //   data: [
+            //     { image: 'https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.webp?s=2048x2048&w=is&k=20&c=huNmFxMiCYegOjc5o1whnQbmSYyDIcES2SXABtJ0v70=', title: '羊肉炖胡萝卜2'},
+            //   ]
+            // },
           ]
         },
         // 分类菜单item的信息
@@ -115,8 +116,6 @@
         leftScrollViewTop: 0,
         // 右边scrollView的滚动高度
         rightScrollViewTop: 0,
-        // 当前选中的tabbar序号
-        currentTabbarIndex: 0,
 				
       }
     },
@@ -143,9 +142,9 @@
         this.getScrollViewInfo()
         this.getTabbarItemRect()
       })
-			let res =await db.get();
+			let res =await db.field("id,swiperImgs,title").get();
 			this.totalList = res.result.data;
-			console.log(res.result.data)
+			console.log(this.totalList[0])
     },
     methods: {
       // 跳转
