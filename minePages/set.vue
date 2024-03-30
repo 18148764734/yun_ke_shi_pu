@@ -115,7 +115,11 @@
       		});
       	}
       },
-    }
+    },
+		onShow(){
+			console.log(uni.getStorageSync("userName"))
+			if(!uni.getStorageSync("userName"))tn('/minePages/login')
+		}
   }
 </script>
 

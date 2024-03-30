@@ -3,14 +3,6 @@
 		"^tn-(.*)": "@/tuniao-ui/components/tn-$1/tn-$1.vue"
 	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-
-		{
-			"path": "pages/testPage/testPage",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-		},
 		{
 			"path": "pages/index",
 			"style": {
@@ -74,7 +66,8 @@
 				}
 			}
 		]
-	}, {
+	}, 
+	{
 		"root": "circlePages",
 		"pages": [{
 				"path": "blogger",
@@ -182,7 +175,8 @@
 				}
 			}
 		]
-	}, {
+	}, 
+	{
 		"root": "activityPages",
 		"pages": [{
 				"path": "map",
@@ -220,73 +214,9 @@
 				}
 			}
 		]
-	}, {
-		"root": "preferredPages",
-		"pages": [{
-				"path": "shop",
-				"style": {
-					"navigationBarTitleText": "优质商家",
-					"enablePullDownRefresh": false
-				}
-			},
-			{
-				"path": "product",
-				"style": {
-					"navigationBarTitleText": "商品详情",
-					"enablePullDownRefresh": false
-				}
-			},
-			{
-				"path": "order",
-				"style": {
-					"navigationBarTitleText": "历史订单",
-					"enablePullDownRefresh": false
-				}
-			},
-			{
-				"path": "classify",
-				"style": {
-					"navigationBarTitleText": "食谱分类",
-					"enablePullDownRefresh": false
-				}
-			},
-			{
-				"path": "photo",
-				"style": {
-					"navigationBarTitleText": "商家相册",
-					"enablePullDownRefresh": false
-				}
-			},
-			{
-				"path": "website",
-				"style": {
-					"navigationBarTitleText": "品牌官网",
-					"enablePullDownRefresh": false
-				}
-			},
-			{
-				"path": "redeem",
-				"style": {
-					"navigationBarTitleText": "积分兑换",
-					"enablePullDownRefresh": false
-				}
-			},
-			{
-				"path": "award",
-				"style": {
-					"navigationBarTitleText": "免单活动",
-					"enablePullDownRefresh": false
-				}
-			},
-			{
-				"path": "awardget",
-				"style": {
-					"navigationBarTitleText": "免单获取",
-					"enablePullDownRefresh": false
-				}
-			}
-		]
-	}, {
+	}, 
+	
+	{
 		"root": "minePages",
 		"pages": [{
 				"path": "protocol",

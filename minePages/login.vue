@@ -44,8 +44,7 @@
 								<view class="tn-icon-phone"></view>
 							</view>
 							<view class="login__info__item__input__content">
-								<input v-model="userName" maxlength="20" placeholder-class="input-placeholder"
-									placeholder="请输入用户名" />
+								<input v-model="userName" maxlength="20" placeholder-class="input-placeholder" placeholder="请输入用户名" />
 							</view>
 						</view>
 
@@ -114,26 +113,16 @@
 				</view>
 
 				<!-- 其他登录方式 -->
+				<!-- #ifdef MP-WEIXIN -->
 				<view class="login__way tn-flex tn-flex-col-center tn-flex-row-center">
-					<view class="tn-padding-sm tn-margin-xs">
+					<button open-type="getPhoneNumber" @getphonenumber="getPhoneNumber">
 						<view
 							class="login__way__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur tn-bg-green tn-color-white">
 							<view class="tn-icon-wechat-fill"></view>
 						</view>
-					</view>
-					<view class="tn-padding-sm tn-margin-xs">
-						<view
-							class="login__way__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur tn-bg-red tn-color-white">
-							<view class="tn-icon-sina"></view>
-						</view>
-					</view>
-					<view class="tn-padding-sm tn-margin-xs">
-						<view
-							class="login__way__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur tn-bg-blue tn-color-white">
-							<view class="tn-icon-qq"></view>
-						</view>
-					</view>
+					</button>
 				</view>
+				<!-- #endif -->
 			</view>
 
 			<!-- 底部背景图片-->
@@ -174,6 +163,35 @@
 			},
 		},
 		methods: {
+			async getPhoneNumber(e) {
+				console.log(e.detail.code) // 动态令牌
+				const token = await uni.request({
+					url: "https://api.weixin.qq.com/cgi-bin/token",
+					method: "GET",
+					data: {
+						appid: "wxdb4e55d43f1b1988",
+						secret: "199c0f5ff083b45c0fe84baf3b8c952b",
+						grant_type: "client_credential"
+					}
+				})
+				console.log(token[1].data.access_token);
+				const phoneRes = await uni.request({
+					url: "https://api.weixin.qq.com/wxa/business/getuserphonenumber?" + "appid=" + "wxdb4e55d43f1b1988" +
+						"&access_token=" + token[1].data.access_token,
+					method: "POST",
+					data: {
+						code: e.detail.code,
+					}
+				})
+				console.log(phoneRes[1].data.phone_info.phoneNumber);
+				if (phoneRes[1].data.phone_info.phoneNumber) {
+					uni.setStorageSync("userName", phoneRes[1].data.phone_info.phoneNumber);
+					this.$t.message.toast("登录成功");
+					uni.navigateTo({
+						url: "/pages/index",
+					});
+				}
+			},
 			// 切换模式
 			modeSwitch(index) {
 				this.currentModeIndex = index;
@@ -190,9 +208,17 @@
 				if (result.data.length != 0) {
 					uni.setStorageSync("userName", result.data[0].userName);
 					this.$t.message.toast("登录成功");
-					uni.navigateTo({
-						url: "/pages/index",
-					});
+					setTimeout(() => {
+						uni.navigateTo({
+							url: "/pages/index",
+						});
+					}, 1000)
+
+				} else {
+					uni.showToast({
+						title: "账号或密码错误",
+						icon: "error"
+					})
 				}
 			},
 			async registry() {

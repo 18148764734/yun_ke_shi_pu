@@ -99,6 +99,7 @@
 							<text class="key">{{(index+1)+"、"}}</text>
 							<uni-easyinput class="value" v-model="addData.swiperImgs[index]" placeholder="请输入图片链接" />
 						</view>
+						<button @click="uploadImg">上传图片</button>
 						<button class="button" type="primary" @click="addSteps">添加</button>
 						<button class="button" type="warn" @click="delSteps">删除</button>
 					</uni-forms-item>
@@ -231,6 +232,31 @@
 			this.handlePageScroll(e.scrollTop)
 		},
 		methods: {
+			uploadImg() {
+				uni.chooseImage({
+					count: 2,
+					success: (res) => {
+						res.tempFilePaths.map((item,index) => {
+							uniCloud.uploadFile({
+								cloudPath: this.addData.title + index + '.png',
+								filePath: item,
+								success: (res) => {
+									console.log(res);
+									this.addData.swiperImgs.push("https://env-00jx4xgopeln.normal.cloudstatic.cn/"+res.fileID)
+								},
+								fail(err) {
+									console.log(err);
+								}
+							})
+						})
+
+					},
+					fail(err) {
+						console.log(err)
+					}
+				})
+
+			},
 			addArticle() {
 				db.collection("article").add(this.addData).then(async (res) => {
 					// res 为数据库查询结果

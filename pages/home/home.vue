@@ -146,7 +146,7 @@
 		<view class="tn-flex tn-flex-wrap tn-padding-xs" @click="tn('/circlePages/advertise?id=1')">
 			<view class="" style="width: 100%;">
 				<image class="image"
-          src="https://env-00jx4xgopeln.normal.cloudstatic.cn/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/%E8%83%B6%E5%9B%8A.png"
+          src="https://env-00jx4xgopeln.normal.cloudstatic.cn/首页胶囊.png?expire_at=1711179533&er_sign=c7882189c06c439a9c8daee9fe4853c5"
           mode="scaleToFill"
         />
 			</view>
