@@ -68,28 +68,6 @@
 					</view>
 				</view>
 			</view>
-			<view class="tn-flex-1 tn-padding-sm tn-margin-xs tn-radius" @click="tn('/circlePages/business')">
-				<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
-					<view
-						class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur tn-main-gradient-purple--light tn-color-purple">
-						<view class="tn-icon-identity-fill tn-three"></view>
-					</view>
-					<view class="tn-color-black tn-text-center">
-						<text class="tn-text-ellipsis">金牌厨师</text>
-					</view>
-				</view>
-			</view>
-			<!-- <view class="tn-flex-1 tn-padding-sm tn-margin-xs tn-radius" @click="tn('/preferredPages/website')">
-				<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
-					<view
-						class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur tn-main-gradient-orange--light tn-color-orange">
-						<view class="tn-icon-star-fill tn-three"></view>
-					</view>
-					<view class="tn-color-black tn-text-center">
-						<text class="tn-text-ellipsis">精选食材</text>
-					</view>
-				</view>
-			</view> -->
 		</view>
 		<!-- 方式12 end-->
 
@@ -128,17 +106,6 @@
 					</view>
 				</view>
 			</view>
-			<view class="tn-flex-1 tn-padding-sm tn-margin-xs tn-radius" @click="tn('/preferredPages/website')">
-				<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
-					<view
-						class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur tn-main-gradient-orange--light tn-color-orange">
-						<view class="tn-icon-star-fill"></view>
-					</view>
-					<view class="tn-color-black tn-text-center">
-						<text class="tn-text-ellipsis">精选食材</text>
-					</view>
-				</view>
-			</view>
 		</view>
 		<!-- 方式12 end-->
 
@@ -146,9 +113,8 @@
 		<view class="tn-flex tn-flex-wrap tn-padding-xs" @click="tn('/pages/addData?id=1')">
 			<view class="" style="width: 100%;">
 				<image class="image"
-          src="https://env-00jx4xgopeln.normal.cloudstatic.cn/首页胶囊.png?expire_at=1711179533&er_sign=c7882189c06c439a9c8daee9fe4853c5"
-          mode="scaleToFill"
-        />
+					src="https://env-00jx4xgopeln.normal.cloudstatic.cn/首页胶囊.png?expire_at=1711179533&er_sign=c7882189c06c439a9c8daee9fe4853c5"
+					mode="scaleToFill" />
 			</view>
 		</view>
 		<!-- banner end-->
@@ -778,10 +744,10 @@
 		border-radius: 10rpx;
 	}
 
-  .image{
-    width: 100%;
-    height: 90px;
-  }
+	.image {
+		width: 100%;
+		height: 90px;
+	}
 
 	/* 胶囊banner*/
 	.image-capsule {

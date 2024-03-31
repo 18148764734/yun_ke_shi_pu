@@ -139,7 +139,7 @@
 				addData: {
 					title: "",
 					author: uni.getStorageSync("userName"),
-					authorId: "1",
+					authorId: "0",
 					needs: [{
 							key: "清水",
 							value: "500ml"
@@ -175,7 +175,7 @@
 						'肉酥骨烂，山药吸收了排骨的鲜味，不过最好喝的是汤，赶快来一碗吧！',
 					],
 					swiperImgs: [],
-					classify: "",
+					classify: "低卡美食",
 				},
 				cardCur: 0,
 				swiperList: [{
@@ -251,6 +251,9 @@
 					}).get();
 					uni.showToast({
 						title:"发布成功！"
+					})
+					uni.reLaunch({
+					    url: '/pages/addData'
 					})
 					console.log(res1);
 				}).catch((err) => {
