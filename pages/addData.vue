@@ -76,7 +76,7 @@
 						<uni-easyinput type="text" disabled v-model="addData.author" placeholder="请输入标题" />
 					</uni-forms-item>
 					<view class="divider" />
-					<uni-forms-item name="hobby" label="食材">
+					<uni-forms-item name="needs" label="食材">
 						<view class="item" v-for="(item,index) in addData.needs" :key="index">
 							<uni-easyinput class="key" type="text" v-model="item.key" placeholder="请输入食材名" />
 							<uni-easyinput class="value" type="text" v-model="item.value" placeholder="请输入用量" />
@@ -85,7 +85,7 @@
 						<button class="button" type="warn" @click="delNeeds">删除</button>
 					</uni-forms-item>
 					<view class="divider" />
-					<uni-forms-item name="hobby" label="步骤">
+					<uni-forms-item name="steps" label="步骤">
 						<view class="item" v-for="(item,index) in addData.steps" :key="index">
 							<text class="key">{{(index+1)+"、"}}</text>
 							<uni-easyinput class="value" type="textarea" v-model="addData.steps[index]" placeholder="请输入步骤" />
@@ -94,9 +94,13 @@
 						<button class="button" type="warn" @click="delSteps">删除</button>
 					</uni-forms-item>
 					<view class="divider" />
-					<uni-forms-item name="hobby" label="图片素材">
+					<uni-forms-item name="swiperImgs" label="图片素材">
 						<image v-for="(item,index) in addData.swiperImgs" :src="item" :key="index"></image>
 						<button @click="uploadImg" type="primary">上传图片</button>
+					</uni-forms-item>
+					<view class="divider" />
+					<uni-forms-item name="classify" label="分类">
+						<uni-data-select v-model="addData.classify" :localdata="range"></uni-data-select>
 					</uni-forms-item>
 					<view class="divider" />
 				</uni-forms>
@@ -106,60 +110,6 @@
 			</view>
 
 		</view>
-
-
-
-		<!-- <view id="top-info"
-			class="tn-footerfixed tn-flex tn-flex-row-between tn-flex-col-center tn-padding tn-safe-area-inset-bottom dd-glass"
-			:style="{transform: `translateY(${topInfoTranslateY}px)`}" @click="showModal">
-			<view class="justify-content-item tn-padding-bottom">
-				<view class="tn-flex tn-flex-col-center tn-flex-row-left">
-					<view class="user-pic">
-						<view class="user-image">
-							<view class="tn-shadow-blur"
-								style="background-image:url('https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg');width: 100rpx;height: 100rpx;background-size: cover;">
-							</view>
-						</view>
-					</view>
-					<view class="tn-padding-right tn-color-black">
-						<view class="tn-padding-right tn-padding-left-sm">
-							<text class="tn-text-lg tn-text-bold">金牌厨师小美</text>
-							<text class="tn-padding-left-sm">打杂UI</text>
-						</view>
-						<view class="tn-padding-right tn-padding-top-xs tn-padding-left-sm tn-text-ellipsis">
-							<text class="tn-color-blue--dark tn-text-bold">抓住那只猪科技有限公司</text>
-						</view>
-					</view>
-				</view>
-			</view>
-			<view class="justify-content-item tn-flex-col-center tn-flex-row-center tn-text-center tn-padding-bottom">
-				<view class="">
-					<text class="tn-icon-wechat-fill tn-color-green--dark" style="font-size: 50rpx;"></text>
-				</view>
-				<view class="">
-					<text class="tn-text-sm">加微信</text>
-				</view>
-			</view>
-		</view> -->
-
-		<!-- <tn-modal v-model="show1" :custom="true">
-			<view class="custom-modal-content">
-				<image @tap="previewQRCodeImage" src='https://resource.tuniaokj.com/images/advertise/qrcode.jpg'
-					mode='aspectFill' style="width: 100%;"></image>
-				<view class="tn-text-center tn-padding-top">作者微信：tnkewo</view>
-				<view class="tn-text-center tn-padding-top tn-text-lg">点击上图，可识别微信二维码</view>
-			</view>
-		</tn-modal> -->
-
-		<!-- 压屏窗-->
-		<!-- <tn-landscape :show="show2" @close="closeLandscape">
-			<view class="tn-text-center" @click="navTuniaoUI">
-				<image src="https://resource.tuniaokj.com/images/landscape/2022-new-year.png" mode="widthFix"></image>
-				<text class="tn-text-lg tn-color-white tn-padding-top-lg">—— 韵科食谱UI，2022年已上线 ——</text>
-			</view>
-		</tn-landscape> -->
-
-		<!-- <view class='tn-tabbar-height'></view> -->
 
 
 	</view>
@@ -173,7 +123,19 @@
 		mixins: [template_page_mixin],
 		data() {
 			return {
-
+				range: [{
+						value: "绝味美食",
+						text: "绝味美食"
+					},
+					{
+						value: "营养美食",
+						text: "营养美食"
+					},
+					{
+						value: "低卡美食",
+						text: "低卡美食"
+					},
+				],
 				addData: {
 					title: "",
 					author: uni.getStorageSync("userName"),
@@ -212,9 +174,8 @@
 						'起锅前只需要加入盐调味即可。撒上葱花，出锅。焯好后直接捞入砂锅，没有砂锅的用普通锅即可，水要适量增加一些，',
 						'肉酥骨烂，山药吸收了排骨的鲜味，不过最好喝的是汤，赶快来一碗吧！',
 					],
-					swiperImgs: [
-					],
-					classify:[]
+					swiperImgs: [],
+					classify: "",
 				},
 				cardCur: 0,
 				swiperList: [{
@@ -260,14 +221,15 @@
 					count: 1,
 					success: (res) => {
 						console.log(res);
-						console.log(this.addData.title + (this.addData.swiperImgs.length-1 || 0));
-						
+						console.log(this.addData.title + (this.addData.swiperImgs.length - 1 || 0));
+
 						uniCloud.uploadFile({
 							cloudPath: (this.addData.title + (this.addData.swiperImgs.length || 0)) + '.png',
 							filePath: res.tempFilePaths[0],
 							success: (res) => {
 								console.log(res);
-								this.addData.swiperImgs.push("https://env-00jx4xgopeln.normal.cloudstatic.cn" + res.fileID.substring(res.fileID.lastIndexOf("/"),res.fileID.length))
+								this.addData.swiperImgs.push("https://env-00jx4xgopeln.normal.cloudstatic.cn" + res.fileID
+									.substring(res.fileID.lastIndexOf("/"), res.fileID.length))
 							},
 							fail(err) {
 								console.log(err);
@@ -287,8 +249,15 @@
 					let res1 = await db.collection("article").where({
 						_id: res.result.id
 					}).get();
+					uni.showToast({
+						title:"发布成功！"
+					})
 					console.log(res1);
 				}).catch((err) => {
+					uni.showToast({
+						title:"发布失败!",
+						icon:'error'
+					})
 					console.log(err.message)
 				});
 			},

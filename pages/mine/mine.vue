@@ -133,13 +133,13 @@
 			<view class="about-shadow tn-margin-top-xl tn-padding-top-sm tn-padding-bottom-sm tn-bg-white">
 				<!-- 方式12 start-->
 				<view class="tn-flex tn-flex-row-center tn-radius tn-padding-top">
-					<view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/circlePages/blogger')">
+					<view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/review')">
 						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
 							<view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-bg-orange">
 								<view class="tn-icon-caring" style="color: #080808;"></view>
 							</view>
 							<view class="tn-text-center">
-								<text class="tn-text-ellipsis">我的圈子</text>
+								<text class="tn-text-ellipsis">管理员审核</text>
 							</view>
 						</view>
 					</view>

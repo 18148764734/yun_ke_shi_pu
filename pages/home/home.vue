@@ -57,7 +57,7 @@
 					</view>
 				</view>
 			</view>
-			<view class="tn-flex-1 tn-padding-sm tn-margin-xs tn-radius" @click="tn('/preferredPages/classify')">
+			<view class="tn-flex-1 tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/classify')">
 				<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
 					<view
 						class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur tn-main-gradient-indigo--light tn-color-indigo">
@@ -79,7 +79,7 @@
 					</view>
 				</view>
 			</view>
-			<view class="tn-flex-1 tn-padding-sm tn-margin-xs tn-radius" @click="tn('/preferredPages/website')">
+			<!-- <view class="tn-flex-1 tn-padding-sm tn-margin-xs tn-radius" @click="tn('/preferredPages/website')">
 				<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
 					<view
 						class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur tn-main-gradient-orange--light tn-color-orange">
@@ -89,7 +89,7 @@
 						<text class="tn-text-ellipsis">精选食材</text>
 					</view>
 				</view>
-			</view>
+			</view> -->
 		</view>
 		<!-- 方式12 end-->
 
@@ -106,7 +106,7 @@
 					</view>
 				</view>
 			</view>
-			<view class="tn-flex-1 tn-padding-sm tn-margin-xs tn-radius" @click="tn('/preferredPages/classify')">
+			<view class="tn-flex-1 tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/classify')">
 				<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
 					<view
 						class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur tn-main-gradient-indigo--light tn-color-indigo">
@@ -143,7 +143,7 @@
 		<!-- 方式12 end-->
 
 		<!-- banner start-->
-		<view class="tn-flex tn-flex-wrap tn-padding-xs" @click="tn('/circlePages/advertise?id=1')">
+		<view class="tn-flex tn-flex-wrap tn-padding-xs" @click="tn('/pages/addData?id=1')">
 			<view class="" style="width: 100%;">
 				<image class="image"
           src="https://env-00jx4xgopeln.normal.cloudstatic.cn/首页胶囊.png?expire_at=1711179533&er_sign=c7882189c06c439a9c8daee9fe4853c5"
@@ -152,17 +152,6 @@
 			</view>
 		</view>
 		<!-- banner end-->
-
-
-		<!--    <view class="tn-margin-top">
-      <view class="nav_title--wrap">
-        <view class="nav_title tn-cool-bg-color-5">
-          <text class="tn-icon-copy tn-padding-right-sm"></text>
-          推 / 荐 / 博 / 主
-          <text class="tn-icon-copy tn-padding-left-sm"></text>
-        </view>
-      </view>
-    </view> -->
 
 		<view class="tn-flex tn-flex-row-between tn-margin-top" @click="tn('/circlePages/business')">
 			<view class="justify-content-item tn-margin tn-text-bold tn-text-xxl">
