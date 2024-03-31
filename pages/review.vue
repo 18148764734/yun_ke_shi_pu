@@ -40,19 +40,17 @@
 				<view class="blogger-tips-data__message tn-flex tn-flex-row-center" @click="tn('/minePages/message')">
 					<view
 						class="blogger-tips-data__message__container tn-flex tn-flex-row-center tn-flex-col-center tn-bg-gray--light">
-						<view class="blogger-tips-data__message__avatar">
-							<tn-avatar class="" :src="tipsDataMessage.latestMessageUserAvatar" size="sm">
-							</tn-avatar>
+						<view style="border-radius: 50%;background-color: red;height: 20rpx;width: 20rpx;margin-left: 20rpx">
 						</view>
-						<view class="tn-padding-right tn-padding-left">{{ tipsDataMessage.messageCount }} 条未审核</view>
+						<view class="tn-padding-right tn-padding-left">{{ stateCount.messageCount }} 条未审核</view>
 					</view>
 				</view>
 				<view class="blogger-tips-data__info tn-flex">
-					<view class="tn-flex-1 tn-padding-sm tn-margin-xs">
+					<view class="tn-flex-1 tn-padding-sm tn-margin-xs" @click="changeState('0')">
 						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
 							<view class="">
 								<view class="tn-text-xxl tn-color-orange">
-									{{ $t.number.formatNumberAddPriceUnit(tipsDataMessage.likeCount) }}
+									{{ $t.number.formatNumberAddPriceUnit(stateCount.yetCount) }}
 								</view>
 							</view>
 							<view class="tn-margin-top-xs tn-color-gray tn-text-df tn-text-center">
@@ -61,11 +59,11 @@
 							</view>
 						</view>
 					</view>
-					<view class="tn-flex-1 tn-padding-sm tn-margin-xs">
+					<view class="tn-flex-1 tn-padding-sm tn-margin-xs" @click="changeState('1')">
 						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
 							<view class="">
 								<view class="tn-text-xxl tn-color-blue">
-									{{ $t.number.formatNumberAddPriceUnit(tipsDataMessage.hotReviewsCount) }}
+									{{ $t.number.formatNumberAddPriceUnit(stateCount.yesCount) }}
 								</view>
 							</view>
 							<view class="tn-margin-top-xs tn-color-gray tn-text-df tn-text-center">
@@ -74,11 +72,11 @@
 							</view>
 						</view>
 					</view>
-					<view class="tn-flex-1 tn-padding-sm tn-margin-xs">
+					<view class="tn-flex-1 tn-padding-sm tn-margin-xs" @click="changeState('2')">
 						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
 							<view class="">
 								<view class="tn-text-xxl tn-color-red">
-									{{ $t.number.formatNumberAddPriceUnit(tipsDataMessage.fansCount) }}
+									{{ $t.number.formatNumberAddPriceUnit(stateCount.noCount) }}
 								</view>
 							</view>
 							<view class="tn-margin-top-xs tn-color-gray tn-text-df tn-text-center">
@@ -102,18 +100,19 @@
 							<view class="tn-flex tn-flex-row-center">
 								<view class="tn-flex tn-flex-row-center tn-flex-col-center">
 									<view class="tn-padding-right tn-text-ellipsis">
-										<view class="tn-padding-right tn-padding-left-sm tn-text-bold tn-text-lg">{{"作者:" + item.author }}
+										<view class="tn-padding-right tn-padding-left-sm tn-text-bold tn-text-lg">{{ item.title }}
 										</view>
 										<!-- <view class="tn-padding-right tn-padding-left-sm tn-padding-top-xs tn-color-gray">{{ "2023年3" }}
 										</view> -->
 									</view>
-									<button type="primary" size="mini" style="margin-right: 20px;" @click="setType(item._id,1)">合格</button>
-									<button type="primary" style="background-color: red;" size="mini"  @click="setType(item._id,2)">不合格</button>
+									<view style="position: absolute;right: 30px;">
+										<button type="primary" size="mini" style="margin-right: 20px;" @click="setType(item._id,1)"
+											v-if="currentState!=='1'">合格</button>
+										<button type="primary" style="background-color: red;" size="mini" @click="setType(item._id,2)"
+											v-if="currentState!=='1'">不合格</button>
+									</view>
 								</view>
 							</view>
-						</view>
-						<view class="blogger__author__btn justify-content-item tn-flex-col-center tn-flex-row-center">
-							<text class="tn-icon-more-vertical tn-color-gray tn-text-bold tn-text-xxl"></text>
 						</view>
 					</view>
 
@@ -127,7 +126,7 @@
 						</view>
 						<!-- 不用限制长度了，因为发布的时候限制长度了-->
 						<text v-if="!item.label || item.label.length < 4"
-							class="blogger__title__content tn-flex-1 tn-text-justify tn-text-df">{{ item.title }}</text>
+							class="blogger__title__content tn-flex-1 tn-text-justify tn-text-df">{{"作者:" + item.author }}</text>
 					</view>
 
 					<!-- 内容太多疲劳了-->
@@ -286,26 +285,16 @@
 					username: "审核官：" + uni.getStorageSync("userName"),
 					title: '认真审核，服务至上'
 				},
-				tipsDataMessage: {
+				stateCount: {
 					latestMessageUserAvatar: 'https://resource.tuniaokj.com/images/blogger/avatar_2.jpeg',
 					messageCount: 3,
-					likeCount: 0,
-					hotReviewsCount: 1,
-					fansCount: 2,
-					focusCount: 2
+					yetCount: 0,
+					yesCount: 1,
+					noCount: 2,
 				},
-				content: [{
-					userAvatar: '',
-					_id: 1,
-					author: '金牌厨师小美',
-					date: '2023年4月1日',
-					label: ['暂未审核'],
-					title: '标题',
-					swiperImgs: [
-						'https://www.foodiesfeed.com/wp-content/uploads/2023/08/indian-chicken-curry-bowl.jpg',
-						'https://www.foodiesfeed.com/wp-content/uploads/2023/04/fresh-fruit-salad-with-mint.jpg',
-					]
-				}],
+				totalList: [],
+				currentState: "1",
+
 				// adSwiperCurrentIndex: 0,
 				adList: [{
 						image: 'https://www.foodiesfeed.com/wp-content/uploads/2023/09/peaches.jpg'
@@ -320,15 +309,14 @@
 				adAutoplay: false
 			}
 		},
-		computed: {},
+		computed: {
+			content() {
+				let res = this.totalList.filter(item => item.authorId === this.currentState)
+				return res;
+			},
+		},
 		async onLoad() {
-			this.initContentData()
-			this.contentHideShowHeight = uni.upx2px(56) * 3;
-			let res = await db.where({
-				authorId: "0"
-			}).field("id,swiperImgs,title,classify,author").get();
-			console.log(res)
-			this.content = res.result.data;
+			await this.init();
 		},
 		onReady() {
 			this.$nextTick(() => {
@@ -342,17 +330,26 @@
 			this.adAutoplay = false
 		},
 		methods: {
-			async setType(id,state){
+			async init() {
+				let res = await db.field("id,swiperImgs,title,classify,author,authorId").get();
+				this.totalList = res.result.data;
+				console.log(this.totalList)
+				this.initContentData()
+				this.stateCount.messageCount = this.stateCount.yetCount = this.totalList.filter(item => item.authorId === "0")
+					.length;
+				this.stateCount.yesCount = this.totalList.filter(item => item.authorId === "1").length;
+				this.stateCount.noCount = this.totalList.filter(item => item.authorId === "2").length;
+				this.contentHideShowHeight = uni.upx2px(56) * 3;
+			},
+			changeState(state) {
+				this.currentState = state;
+			},
+			async setType(id, state) {
 				let res = await db.doc(id).update({
-					authorId:JSON.stringify(state)
+					authorId: JSON.stringify(state)
 				});
 				console.log(res)
-				
-				let res1 = await db.where({
-					authorId: "0"
-				}).field("id,swiperImgs,title,classify,author").get();
-				console.log(res1)
-				this.content = res.result.data;
+				await this.init();
 			},
 			// 跳转
 			tn(e) {
