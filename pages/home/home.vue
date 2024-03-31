@@ -13,13 +13,13 @@
 					<!-- <view class="tn-icon-left"></view> -->
 				</view>
 				<!-- 搜索框 -->
-				<view class="custom-nav__search tn-flex tn-flex-col-center tn-flex-row-center" @click="tn('/homePages/search')">
+				<!-- <view class="custom-nav__search tn-flex tn-flex-col-center tn-flex-row-center" @click="tn('/homePages/search')">
 					<view class="custom-nav__search__box tn-flex tn-flex-col-center tn-flex-row-left"
 						style="background-color: rgba(230,230,230,0.3);">
 						<view class="custom-nav__search__icon tn-icon-search tn-color-white"></view>
 						<view class="custom-nav__search__text tn-padding-left-xs tn-color-white">搜索 韵科食谱</view>
 					</view>
-				</view>
+				</view> -->
 			</view>
 		</tn-nav-bar>
 
@@ -46,17 +46,6 @@
 
 		<!-- 方式12 start-->
 		<view v-if="isAndroid" class="tn-flex tn-margin-xs tn-padding-top-sm">
-			<view class="tn-flex-1 tn-padding-sm tn-margin-xs tn-radius" @click="tn('/homePages/hot')">
-				<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
-					<view
-						class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur tn-main-gradient-purplered--light tn-color-purplered">
-						<view class="tn-icon-fire-fill tn-three"></view>
-					</view>
-					<view class="tn-color-black tn-text-center">
-						<text class="tn-text-ellipsis">美食广场</text>
-					</view>
-				</view>
-			</view>
 			<view class="tn-flex-1 tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/classify')">
 				<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
 					<view
@@ -68,22 +57,23 @@
 					</view>
 				</view>
 			</view>
+			<view class="tn-flex-1 tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/people')">
+				<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
+					<view
+						class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur tn-main-gradient-purple--light tn-color-purple">
+						<view class="tn-icon-identity-fill"></view>
+					</view>
+					<view class="tn-color-black tn-text-center">
+						<text class="tn-text-ellipsis">金牌作者</text>
+					</view>
+				</view>
+			</view>
+			
 		</view>
 		<!-- 方式12 end-->
 
 		<!-- 方式12 start-->
 		<view v-else class="tn-flex tn-margin-xs tn-padding-top-sm">
-			<view class="tn-flex-1 tn-padding-sm tn-margin-xs tn-radius" @click="tn('/homePages/hot')">
-				<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
-					<view
-						class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur tn-main-gradient-purplered--light tn-color-purplered">
-						<view class="tn-icon-fire-fill"></view>
-					</view>
-					<view class="tn-color-black tn-text-center">
-						<text class="tn-text-ellipsis">美食广场</text>
-					</view>
-				</view>
-			</view>
 			<view class="tn-flex-1 tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/classify')">
 				<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
 					<view
@@ -95,14 +85,14 @@
 					</view>
 				</view>
 			</view>
-			<view class="tn-flex-1 tn-padding-sm tn-margin-xs tn-radius" @click="tn('/circlePages/business')">
+			<view class="tn-flex-1 tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/people')">
 				<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
 					<view
 						class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur tn-main-gradient-purple--light tn-color-purple">
 						<view class="tn-icon-identity-fill"></view>
 					</view>
 					<view class="tn-color-black tn-text-center">
-						<text class="tn-text-ellipsis">金牌厨师</text>
+						<text class="tn-text-ellipsis">金牌作者</text>
 					</view>
 				</view>
 			</view>
@@ -282,7 +272,8 @@
 			return {
 				cardCur: 0,
 				isAndroid: true,
-				swiperList: [{
+				swiperList: [
+					{
 					id: 0,
 					type: 'image',
 					title: '美味披萨',
@@ -329,52 +320,32 @@
 				resumeList: [{
 					id: 0,
 					type: 'image',
-					title: '徐圆圆',
-					name: '特级大厨',
-					hot: '1.29W',
-					share: '216',
-					love: '962',
+					title: '123',
+					name: '人气榜top1',
+					hot: '9',
+					share: '6',
+					love: '2',
 					avatar: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
 					url: 'https://resource.tuniaokj.com/images/resume/resume-bg.jpg',
 				}, {
 					id: 1,
 					type: 'image',
-					title: '北北',
-					name: '特级大厨',
-					hot: '964',
-					share: '94',
-					love: '186',
+					title: '小美',
+					name: '人气榜top2',
+					hot: '1',
+					share: '1',
+					love: '0',
 					avatar: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg',
 					url: 'https://resource.tuniaokj.com/images/resume/resume-bg2.jpg',
 				}, {
 					id: 2,
 					type: 'image',
-					title: '西西',
-					name: '初级大厨',
-					hot: '3.26K',
-					share: '146',
-					love: '379',
+					title: '18148764734',
+					name: '小白',
+					hot: '0',
+					share: '0',
+					love: '0',
 					avatar: 'https://resource.tuniaokj.com/images/blogger/avatar_2.jpeg',
-					url: 'https://resource.tuniaokj.com/images/resume/resume-bg.jpg',
-				}, {
-					id: 3,
-					type: 'image',
-					title: '南南',
-					name: '初级大厨',
-					hot: '6.32K',
-					share: '133',
-					love: '432',
-					avatar: 'https://resource.tuniaokj.com/images/blogger/avatar_3.jpeg',
-					url: 'https://resource.tuniaokj.com/images/resume/resume-bg2.jpg',
-				}, {
-					id: 4,
-					type: 'image',
-					title: '猪猪',
-					name: '学徒',
-					hot: '8.65K',
-					share: '321',
-					love: '886',
-					avatar: 'https://resource.tuniaokj.com/images/blogger/avatar_4.jpeg',
 					url: 'https://resource.tuniaokj.com/images/resume/resume-bg.jpg',
 				}],
 

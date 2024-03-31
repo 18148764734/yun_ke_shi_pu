@@ -8,7 +8,9 @@
         <text class='icon tn-icon-home-capsule-fill'></text>
       </view>
     </tn-nav-bar>
-    
+    <text class="topTitle">
+    	人气作者
+    </text>
     <view class="" :style="{paddingTop: vuex_custom_bar_height + 'px'}">
       <swiper class="card-swiper tn-margin-top-sm" :circular="true"
         :autoplay="true" duration="500" interval="5000" previous-margin="75rpx" next-margin="75rpx" @change="cardSwiper"> 
@@ -34,39 +36,6 @@
       </view>
       
     </view>
-    
-    
-    <!-- 方式5 start-->
-          <view class="tn-flex tn-margin-sm">
-            <view class="tn-flex-1 tn-padding-sm tn-margin-xs tn-radius">
-              <view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
-                <view class="icon5__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur" style="background-image: url(https://resource.tuniaokj.com/images/icon/1.jpg);background-size:100% 100%;">
-                </view>
-                <view class="tn-color-black tn-text-center">
-                  <text class="tn-text-ellipsis">厨师招新</text>
-                </view>
-              </view>
-            </view>
-            <view class="tn-flex-1 tn-padding-sm tn-margin-xs tn-radius">
-              <view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
-                <view class="icon5__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur" style="background-image: url(https://resource.tuniaokj.com/images/icon/3.jpg);background-size:100% 100%;">
-                </view>
-                <view class="tn-color-black tn-text-center">
-                  <text class="tn-text-ellipsis">名片王者</text>
-                </view>
-              </view>
-            </view>
-            <view class="tn-flex-1 tn-padding-sm tn-margin-xs tn-radius">
-              <view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
-                <view class="icon5__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur" style="background-image: url(https://resource.tuniaokj.com/images/icon/4.jpg);background-size:100% 100%;">
-                </view>
-                <view class="tn-color-black tn-text-center">
-                  <text class="tn-text-ellipsis">扫名片码</text>
-                </view>
-              </view>
-            </view>
-          </view>
-          <!-- 方式5 end-->
           
           
     <view class='nav-list tn-margin-bottom tn-margin-top'>
@@ -86,29 +55,7 @@
         </view>
       </block>
       
-    </view>      
-    
-     
-     <!-- <view class="background">
-       <image src="https://resource.tuniaokj.com/images/gravity/1/5.png"></image>
-     </view> -->
-     
-     <!-- 保留 -->
-     <!-- <view class="item__1 item__animation" :style="{transform: `translateX(${translateInfo[0].x}rpx)`}">
-       <image src="https://resource.tuniaokj.com/images/gravity/1/1.png" mode="widthFix"></image>
-     </view> -->
-     
-     <!-- <view class="item__2 item__animation" :style="{transform: `translateX(${translateInfo[1].x}rpx)`}" @longtap.stop="toggleDirection">
-       <image src="https://resource.tuniaokj.com/images/gravity/1/2.png" mode="widthFix"></image>
-     </view> -->
-     
-    <!-- <view class="item__3 item__animation" :style="{transform: `translateX(${translateInfo[2].x}rpx)`}">
-       <image src="https://resource.tuniaokj.com/images/gravity/1/3.png" mode="widthFix"></image>
-     </view> -->
-     
-    <!-- <view class="item__4 item__animation" :style="{transform: `translateX(${translateInfo[3].x}rpx)`}">
-       <image src="https://resource.tuniaokj.com/images/gravity/1/4.png" mode="widthFix"></image>
-     </view> -->
+    </view>
      
     
   </view>
@@ -123,27 +70,6 @@
       return {
         cardCur: 0,
         swiperList: [{
-          id: 0,
-          type: 'image',
-          title: '海量食谱',
-          name: '总有你想不到的美食',
-          text: '用最少的食材做最骚的美食',
-          url: 'https://media.istockphoto.com/id/1159204281/photo/healthy-food-for-balanced-flexitarian-mediterranean-diet-concept.webp?s=2048x2048&w=is&k=20&c=Mav-2PEhRXUsxPjGCyrlnkOFiwmN1Bz6UKHJmrxZGes=',
-        }, {
-          id: 1,
-          type: 'image',
-          title: '愉快玩耍',
-          name: '寻找一起成长的小伙伴',
-          text: '欢迎加入美食圈',
-          url: 'https://media.istockphoto.com/id/1128687123/photo/shopping-bag-full-of-fresh-vegetables-and-fruits.webp?s=2048x2048&w=is&k=20&c=0JBSwrIo2X2Xj9eCyb0cVTF3DGFosHExsun8wvEtjAM=',
-        }, {
-          id: 2,
-          type: 'image',
-          title: '营养均衡',
-          name: '更多彩蛋等你探索',
-          text: '开启全新的探索之旅',
-          url: 'https://media.istockphoto.com/id/1284690585/photo/colorful-vegetables-and-fruits-vegan-food-in-rainbow-colors.webp?s=2048x2048&w=is&k=20&c=rofZcHwLMQ4j5qQJMrqCltz9MaFvRiJQIQYoZSQqyGY=',
-        }, {
           id: 3,
           type: 'image',
           title: '韵科食谱',
@@ -154,114 +80,23 @@
         
         list1: [
           {
-            icon: 'honor-fill',
-            title: '蔡北北',
-            content: '菜的一撇的北北，前端是真的菜吖',
-            url: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg',
-            color: 'purple'
-          },
-          {
-            icon: 'count-fill',
-            title: '蔡北北',
-            content: '菜的一撇的北北，前端是真的菜吖',
-            url: 'https://resource.tuniaokj.com/images/blogger/avatar_2.jpeg',
-            color: 'purplered'
-          },
-          {
-            icon: 'gloves-fill',
-            title: '蔡北北',
-            content: '菜的一撇的北北，前端是真的菜吖',
-            url: 'https://resource.tuniaokj.com/images/blogger/avatar_3.jpeg',
-            color: 'bluepurple'
-          },
-          {
-            icon: 'trusty-fill',
-            title: '蔡北北',
-            content: '菜的一撇的北北，前端是真的菜吖',
-            url: 'https://resource.tuniaokj.com/images/blogger/avatar_4.jpeg',
-            color: 'red'
-          },
-          {
-            icon: 'hardware-fill',
-            title: '蔡北北',
-            content: '菜的一撇的北北，前端是真的菜吖',
-            url: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
-            color: 'aquablue'
-          },
-          {
-            icon: 'baby-fill',
-            title: '蔡北北',
-            content: '菜的一撇的北北，前端是真的菜吖',
-            url: 'https://resource.tuniaokj.com/images/blogger/avatar_2.jpeg',
-            color: 'orangered'
-          },
-          {
-            icon: 'safe-fill',
-            title: '蔡北北',
-            content: '菜的一撇的北北，前端是真的菜吖',
-            url: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg',
-            color: 'blue'
-          },
-          {
-            icon: 'flag-fill',
-            title: '蔡北北',
-            content: '菜的一撇的北北，前端是真的菜吖',
-            url: 'https://resource.tuniaokj.com/images/blogger/avatar_4.jpeg',
-            color: 'orange'
-          },
-          {
             icon: 'topics-fill',
-            title: '蔡北北',
-            content: '菜的一撇的北北，前端是真的菜吖',
-            url: 'https://resource.tuniaokj.com/images/blogger/avatar_3.jpeg',
-            color: 'indigo'
-          },
-          {
-            icon: 'light-fill',
-            title: '蔡北北',
-            content: '菜的一撇的北北，前端是真的菜吖',
-            url: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
-            color: 'orangeyellow'
-          },
-          {
-            icon: 'hardware-fill',
-            title: '蔡北北',
-            content: '菜的一撇的北北，前端是真的菜吖',
-            url: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
-            color: 'cyan'
-          },
-          {
-            icon: 'baby-fill',
-            title: '蔡北北',
-            content: '菜的一撇的北北，前端是真的菜吖',
-            url: 'https://resource.tuniaokj.com/images/blogger/avatar_2.jpeg',
-            color: 'yellow'
-          },
-          {
-            icon: 'safe-fill',
-            title: '蔡北北',
-            content: '菜的一撇的北北，前端是真的菜吖',
-            url: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg',
-            color: 'teal'
-          },
-          {
-            icon: 'flag-fill',
-            title: '蔡北北',
-            content: '菜的一撇的北北，前端是真的菜吖',
-            url: 'https://resource.tuniaokj.com/images/blogger/avatar_4.jpeg',
-            color: 'lime'
-          },
-          {
-            icon: 'topics-fill',
-            title: '蔡北北',
-            content: '菜的一撇的北北，前端是真的菜吖',
+            title: '123',
+            content: '累计发布：81道菜肴',
             url: 'https://resource.tuniaokj.com/images/blogger/avatar_3.jpeg',
             color: 'green'
           },
           {
             icon: 'light-fill',
-            title: '蔡北北',
-            content: '会员大佬催着上线了，懒得造文案了',
+            title: '小美',
+            content: '累计发布：41道菜肴',
+            url: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
+            color: 'yellowgreen'
+          },
+          {
+            icon: 'light-fill',
+            title: '18148764734',
+            content: '累计发布：1道菜肴',
             url: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
             color: 'yellowgreen'
           }
@@ -305,24 +140,6 @@
         this.acceleronmeterX = res.x.toFixed(2)
         this.acceleronmeterY = res.y.toFixed(2)
         this.acceleronmeterZ = res.z.toFixed(2)
-        
-        // let acceleronmeterX = Math.abs(this.acceleronmeterX) > 0.05 ? this.acceleronmeterX < 0 ? -0.05 : 0.05 : this.acceleronmeterX
-        
-        // if (acceleronmeterX < 0) {
-        //   for (let index in this.translateInfo) {
-        //     let item = this.translateInfo[index]
-        //     const x = item.speed * Math.abs(acceleronmeterX)
-        //     item.x = item.x + x > item.max ? item.max : item.x + x
-        //     this.$set(this.translateInfo, index, item)
-        //   }
-        // } else if (acceleronmeterX > 0) {
-        //   for (let index in this.translateInfo) {
-        //     let item = this.translateInfo[index]
-        //     const x = item.speed * acceleronmeterX
-        //     item.x = item.x - x < item.min ? item.min : item.x - x
-        //     this.$set(this.translateInfo, index, item)
-        //   }
-        // }
         
         if (this.positiveDirection) {
           if (this.acceleronmeterX > 0) {
@@ -373,6 +190,14 @@
 </script>
 
 <style lang="scss" scoped>
+	.topTitle{
+		text-align: center;
+		display:flex;
+		justify-content: center;
+		font-size: 30px;
+		color: #FFA726;
+		margin-top: 200rpx;
+	}
     /* 胶囊*/
     .tn-custom-nav-bar__back {
       width: 100%;

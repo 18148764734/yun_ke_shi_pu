@@ -46,6 +46,14 @@
 		},
 
 		{
+			"path": "pages/people",
+			"style": {
+				"navigationBarTitleText": "人气作者",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		{
 			"path": "pages/review",
 			"style": {
 				"navigationBarTitleText": "审核页面",
@@ -143,13 +151,6 @@
 					"path": "king",
 					"style": {
 						"navigationBarTitleText": "名片王者",
-						"enablePullDownRefresh": false
-					}
-				},
-				{
-					"path": "business",
-					"style": {
-						"navigationBarTitleText": "金牌厨师",
 						"enablePullDownRefresh": false
 					}
 				},
