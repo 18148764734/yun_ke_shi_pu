@@ -212,50 +212,8 @@
 			</view>
 
 
-			<view class="tn-flex tn-flex-row-between tn-margin-top">
-				<view class="justify-content-item tn-margin tn-text-bold tn-text-xxl">
-					其他
-				</view>
-				<view class="justify-content-item tn-margin tn-text-lg tn-color-grey">
-					<text class="tn-padding-xs">全部</text>
-					<text class="tn-icon-topics"></text>
-				</view>
-			</view>
 
-			<view
-				class="tn-info__container tn-flex tn-flex-wrap tn-flex-col-center tn-flex-row-between tn-margin-left tn-margin-right">
-				<block v-for="(item, index) in tuniaoData" :key="index">
-					<view
-						class="tn-info__item tn-flex tn-flex-direction-row tn-flex-col-center tn-flex-row-between tn-color-white tn-shadow-blur"
-						:style="'background-color:'+ item.color +';'" @click="tn('/homePages/profession')">
-						<view class="tn-info__item__left tn-flex tn-flex-direction-row tn-flex-col-center tn-flex-row-left">
-							<!-- <view class="tn-info__item__left--icon tn-flex tn-flex-col-center tn-flex-row-center" :class="[`tn-bg-${item.color}--light tn-color-${item.color}`]">
-                <view :class="[`tn-icon-${item.icon}`]"></view>
-              </view> -->
-							<view class="tn-info__item__left__content">
-								<view class="tn-info__item__left__content--title tn-text-bold" style="font-size: 38rpx;">
-									{{ item.title }}
-								</view>
-								<view class="tn-info__item__left__content--data tn-padding-top-xs">
-									{{ item.value }}
-									<text class="tn-icon-right tn-padding-left-xs"></text>
-								</view>
-							</view>
-						</view>
-						<view class="tn-info__item__right">
-							<view class="tn-info__item__right--icon">
-								<view :class="[`tn-icon-${item.icon}`]"></view>
-							</view>
-						</view>
-						<view class="tn-info__item__bottom">
-							<view class='name tn-text-sm tn-color-gray' style="margin-left: -10rpx;">
-								<text class="tn-icon-code tn-padding-right-xs" style="opacity: 0;"></text>
-							</view>
-						</view>
-					</view>
-				</block>
-			</view>
-
+			
 		</view>
 
 		<view class='tn-tabbar-height'></view>

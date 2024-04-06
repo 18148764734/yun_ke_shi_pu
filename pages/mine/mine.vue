@@ -134,7 +134,7 @@
 				<!-- 方式12 start-->
 				<view class="tn-flex tn-flex-row-center tn-radius tn-padding-top">
 					<view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/review')">
-						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
+						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center bg">
 							<view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-bg-orange">
 								<view class="tn-icon-caring" style="color: #080808;"></view>
 							</view>
@@ -144,7 +144,7 @@
 						</view>
 					</view>
 					<view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/myPages')">
-						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
+						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center bg">
 							<view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-bg-orange">
 								<view class="tn-icon-message" style="color: #080808;"></view>
 							</view>
@@ -276,6 +276,13 @@
 			},
 			// 跳转
 			tn(e) {
+				if(e==='/pages/review' && this.userName!=="123"){
+					uni.showToast({
+						icon:"error",
+						title:"非管理员身份禁止进入"
+					})
+					return;
+				}
 				uni.navigateTo({
 					url: e,
 				});
@@ -308,6 +315,12 @@
 </script>
 
 <style lang="scss" scoped>
+	.bg{
+		background-color: #fafafa;
+		padding: 10px;
+		padding-top: 15px;
+		border-radius: 10px;
+	}
 	.template-mine {
 		max-height: 100vh;
 	}

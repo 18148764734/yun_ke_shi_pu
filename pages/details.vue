@@ -29,7 +29,7 @@
 			</view>
 			<view class="tn-flex tn-flex-row-between tn-margin-top">
 				<view class="justify-content-item tn-text-bold tn-color-purplered">
-					<text class="" style="font-size: 50rpx">免费分享</text>
+					<text style="font-size: 50rpx">免费分享</text>
 				</view>
 				<view class="justify-content-item tn-color-gray tn-padding-top-xs">
 					<view class="">已查看 729</view>
@@ -53,7 +53,7 @@
 				做法步骤
 			</view>
 			<view class="justify-content-item tn-color-gray">
-				
+
 				<view class="justify-content-item tn-color-gray" v-for="(item,index) in data.steps" :key="index">
 					<text class="value">{{(index+1)+"、"+item}}</text>
 				</view>
@@ -74,17 +74,42 @@
 
 		<view class="tn-margin">
 			<view class="tn-flex tn-flex-row-between">
-				<view class="justify-content-item tn-text-bold tn-text-xl"> 标签 </view>
+				<view class="justify-content-item tn-text-bold tn-text-xl"> 评论 </view>
 			</view>
 		</view>
 
-		<view class="">
-			<view class="tn-tag-content tn-margin tn-text-justify">
-				<view v-for="(item, index) in tagList" :key="index"
-					class="tn-tag-content__item tn-margin-right tn-round tn-text-sm tn-text-bold"
-					:class="[`tn-bg-${item.color}--light tn-color-${item.color}`]">
-					<text class="tn-tag-content__item--prefix">#</text> {{ item.title }}
+
+
+		<view class="tn-tag-content tn-margin tn-text-justify commentContainer">
+			<view class="item" style="background-color: #ffaa7f;">
+				<view class="right-top">
+					<image
+						src="https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03"
+						class="avater"></image>
+					<view class="nameTime">
+
+						<text class="userName">{{userName}}</text>
+						<text class="time">{{timestampToDateTime(new Date().getTime())}}</text>
+					</view>
 				</view>
+
+				<!-- <text class="content">我爱你</text> -->
+				<uni-easyinput class="input" type="textarea" v-model="text" placeholder="请尽情发表您的言论吧!" />
+				<button class="button" type="primary" @click="comment">评论</button>
+			</view>
+			<view class="item" v-for="(item,index) in commentList">
+				<view class="right-top">
+					<image
+						src="https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03"
+						class="avater" />
+					<view class="nameTime">
+						<text class="userName">{{item.userName}}</text>
+						<text class="time">{{timestampToDateTime(item.time)}}</text>
+					</view>
+				</view>
+
+				<!-- <text class="content">我爱你</text> -->
+				<text class="content" type="textarea">{{item.text}}</text>
 			</view>
 		</view>
 
@@ -170,39 +195,29 @@
 					series: [{
 						data: [{
 								name: "维生素A",
-								value: Math.random()*100
+								value: Math.random() * 100
 							},
 							{
 								name: "蛋白质",
-								value: Math.random()*100
+								value: Math.random() * 100
 							},
 							{
 								name: "能量",
-								value: Math.random()*100
+								value: Math.random() * 100
 							},
 							{
 								name: "维生素E",
-								value: Math.random()*100
+								value: Math.random() * 100
 							},
 							{
 								name: "矿物质钙",
-								value: Math.random()*100
+								value: Math.random() * 100
 							},
 						],
 					}, ],
 				},
-				swiperList: [{
-						id: 0,
-						type: "image",
-						url: "https://tse2-mm.cn.bing.net/th/id/OIP-C.vxPh7YsBLXwJnrPOzLV99wHaE8?rs=1&pid=ImgDetMain",
-					},
-					{
-						id: 1,
-						type: "image",
-						url: "https://ts1.cn.mm.bing.net/th/id/R-C.08887e425c4d2fc7b09ee3829b0aaff0?rik=4DNFRmlmV5PipQ&riu=http%3a%2f%2fi2.chuimg.com%2f0f643b6289ff11e6b87c0242ac110003_800w_531h.jpg%3fimageView2%2f2%2fw%2f660%2finterlace%2f1%2fq%2f90&ehk=VjRnRx9KMTnBdTGMqWapG4H8fnVMeECwYijqFqRGXaU%3d&risl=&pid=ImgRaw&r=0",
-					},
-				],
 				current: 0,
+				userName: uni.getStorageSync("userName"),
 				tagList: [{
 						color: "cyan",
 						title: "美味",
@@ -217,9 +232,45 @@
 					},
 				],
 				data: {},
+				articleId: "",
+				text: '',
+				commentList: [],
 			};
 		},
 		methods: {
+			async comment() {
+				console.log(this.addData)
+				if (!this.text) {
+					uni.showToast({
+						icon: "error",
+						title: "评论不能为空！"
+					})
+				} else {
+					let res = await db.collection("comments").add({
+						text: this.text,
+						articleId: this.articleId,
+						userName: this.userName
+					});
+					if (res.result.code === 0) {
+						this.text = "";
+						uni.showToast({
+							icon: "success",
+							title: "评论成功！"
+						})
+						let res1 = await db.collection("comments").where({
+							articleId: this.articleId
+						}).get();
+						let data1 = res1.result.data;
+						this.commentList = data1;
+					} else {
+						uni.showToast({
+							icon: "error",
+							title: "评论不能为空！"
+						})
+					}
+					console.log("res: " + JSON.stringify(res));
+				}
+			},
 			// cardSwiper
 			cardSwiper(e) {
 				this.cardCur = e.detail.current;
@@ -237,17 +288,33 @@
 			getRandomCoolBg() {
 				return this.$t.colorUtils.getRandomCoolBgClass();
 			},
+			timestampToDateTime(timestamp) {
+				var date = new Date(timestamp); // 如果时间戳是毫秒级别的，就不需要乘以1000
+				var year = date.getFullYear();
+				var month = ("0" + (date.getMonth() + 1)).slice(-2);
+				var day = ("0" + date.getDate()).slice(-2);
+				var hour = ("0" + date.getHours()).slice(-2);
+				var minute = ("0" + date.getMinutes()).slice(-2);
+				var second = ("0" + date.getSeconds()).slice(-2);
+				return year + "-" + month + "-" + day + " " + hour + ":" + minute;
+			}
 		},
-		onLoad:async function(params) {
+		onLoad: async function(params) {
 			// console.log(params.id);
 			if (!params.id) {
 				this.tn('/preferredPages/classify')
 			} else {
+				this.articleId = params.id;
 				let res = await db.collection("article").where({
 					_id: params.id
 				}).get();
+				let res1 = await db.collection("comments").where({
+					articleId: this.articleId
+				}).get();
 				let data = res.result.data[0];
-				console.log(JSON.stringify(data));
+				let data1 = res1.result.data;
+				this.commentList = data1;
+				console.log(JSON.stringify(this.commentList));
 				this.data = data;
 			}
 
@@ -256,15 +323,104 @@
 </script>
 
 <style lang="scss" scoped>
-	.key{
+	.addComment {
+		display: flex;
+		background: #783737;
+		width: 80px;
+		height: 40px;
+	}
+
+	.flex {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.commentContainer {
+		@extend .flex;
+		flex-direction: column;
+
+		.item {
+			display: flex;
+			justify-content: left;
+			background-color: #f8f9fb;
+			border-radius: 10px;
+			border: #ffd4c6 solid 1px;
+			width: 90vw;
+			flex-direction: column;
+			padding: 10px;
+			margin-top: 10px;
+
+			.right-top {
+				@extend .flex;
+				position: relative;
+				left: 10px;
+				justify-content: left;
+				color: #582828;
+
+				.avater {
+					border-radius: 50%;
+					width: 60px;
+					height: 60px;
+				}
+
+				.nameTime {
+					height: 80%;
+					margin-left: 20px;
+					@extend .flex;
+					flex-direction: column;
+
+					.userName {
+						font-size: 20px;
+						font-weight: 900;
+						display: flex;
+						justify-content: center;
+					}
+
+					.time {
+						font-size: 16px;
+					}
+				}
+
+			}
+
+			.button {
+				@extend .flex;
+				background-color: #3a9a7d;
+				color: #fff;
+				font-size: 16px;
+				width: 80px;
+				height: 28px;
+				border: #a4d8d2 solid 1px;
+				box-shadow: #b4ddd8 0px 0px 10px 2px;
+				position: relative;
+				margin-top: 10px;
+
+			}
+
+			.content {
+				border-radius: 10px;
+				background-color: #fdfdf2;
+				font-size: 16px;
+				margin-top: 10px;
+				color: #28735d;
+				border: #b6e6ca solid 1px;
+				padding: 10px;
+			}
+		}
+	}
+
+	.key {
 		color: #783737;
 		font-size: 16px;
 		margin-right: 5px;
 	}
-	.value{
+
+	.value {
 		color: #9f2620;
 		font-size: 18px;
 	}
+
 	.justify-content-item {
 		margin: 10px;
 	}

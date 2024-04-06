@@ -335,8 +335,7 @@
 				this.totalList = res.result.data;
 				console.log(this.totalList)
 				this.initContentData()
-				this.stateCount.messageCount = this.stateCount.yetCount = this.totalList.filter(item => item.authorId === "0")
-					.length;
+				this.stateCount.messageCount = this.stateCount.yetCount = this.totalList.filter(item => item.authorId === "0").length;
 				this.stateCount.yesCount = this.totalList.filter(item => item.authorId === "1").length;
 				this.stateCount.noCount = this.totalList.filter(item => item.authorId === "2").length;
 				this.contentHideShowHeight = uni.upx2px(56) * 3;
