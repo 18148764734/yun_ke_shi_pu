@@ -179,7 +179,7 @@
 
 
 		<view class="">
-			<view class="tn-flex tn-flex-row-between" @click="tn('/activityPages/project')">
+			<view class="tn-flex tn-flex-row-between" @click="tn('/pages/activity/activity')">
 				<view class="justify-content-item tn-margin tn-text-bold tn-text-xxl">
 					书籍推荐
 				</view>
@@ -189,7 +189,7 @@
 				</view>
 			</view>
 
-			<view class="tn-flex tn-margin-left tn-margin-right tn-margin-top-sm" @click="tn('/circlePages/news')">
+			<view class="tn-flex tn-margin-left tn-margin-right tn-margin-top-sm" @click="tn('/pages/activity/activity')">
 				<view class="tn-flex-2">
 					<view class="image-pic tn-margin-right tn-shadow-blur"
 						style="background-image:url('https://pic1.zhimg.com/80/v2-3dfba5616658eb21ea7f1bdee4cf4646_720w.webp?source=1def8aca')">
@@ -322,6 +322,9 @@
 			tn(e) {
 				uni.navigateTo({
 					url: e,
+					fail(e) {
+						console.log(e);
+					}
 				});
 			},
 		}

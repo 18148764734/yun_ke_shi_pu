@@ -42,7 +42,7 @@
 						index: 0,
 					},
 					{
-						title: '广场',
+						title: '养生书籍',
 						activeIcon: 'menu-circle',
 						inactiveIcon: 'rocket',
 						activeIconColor: '#FFFFFF',
