@@ -150,7 +150,7 @@
                 :src="item.userAvatar">
               </tn-avatar> -->
               <view class="avatar-all">
-                <view class="tn-shadow-blur" style="background-image:url('https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg');width: 80rpx;height: 80rpx;background-size: cover;">
+                <view class="tn-shadow-blur" style="background-image:url('https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03');width: 80rpx;height: 80rpx;background-size: cover;">
                 </view>
               </view>
               <view class="tn-padding-right tn-text-ellipsis">
@@ -339,7 +339,7 @@
             likeCount: 62
           },
           {
-            userAvatar: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
+            userAvatar: 'https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03',
             userNumber: '07',
             userName: '北北猪吖',
             date: '2021年12月20日',
@@ -367,7 +367,7 @@
             likeCount: 62
           },
           {
-            userAvatar: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
+            userAvatar: 'https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03',
             userNumber: '08',
             userName: '北北猪吖',
             date: '2021年12月20日',
@@ -395,7 +395,7 @@
             likeCount: 62
           },
           {
-            userAvatar: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
+            userAvatar: 'https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03',
             userNumber: '09',
             userName: '北北猪吖',
             date: '2021年12月20日',
@@ -423,7 +423,7 @@
             likeCount: 62
           },
           {
-            userAvatar: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
+            userAvatar: 'https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03',
             userNumber: '10',
             userName: '北北猪吖',
             date: '2021年12月20日',
@@ -451,7 +451,7 @@
             likeCount: 62
           },
           {
-            userAvatar: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
+            userAvatar: 'https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03',
             userNumber: '11',
             userName: '北北猪吖',
             date: '2021年12月20日',
@@ -479,7 +479,7 @@
             likeCount: 62
           },
           {
-            userAvatar: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
+            userAvatar: 'https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03',
             userNumber: '12',
             userName: '北北猪吖',
             date: '2021年12月20日',

@@ -30,6 +30,14 @@
 		},
 
 		{
+			"path": "pages/myPages",
+			"style": {
+				"navigationBarTitleText": "我的食谱",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		{
 			"path": "pages/addData",
 			"style": {
 				"navigationBarTitleText": "添加食谱",

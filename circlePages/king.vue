@@ -13,7 +13,7 @@
     <view>
       <view class="tn-strip-bottom">
         <view class="slideshow">
-          <view class="slideshow-image" style="background-image: url('https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg')">
+          <view class="slideshow-image" style="background-image: url('https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03')">
           </view>
           <view class="slideshow-image" style="background-image: url('https://cdn.nlark.com/yuque/0/2021/jpeg/280373/1629377642486-assets/web-upload/4cb7d03d-4873-433e-9a9c-774ffdc490d8.jpeg')">
           </view>
@@ -405,7 +405,7 @@
           {src: 'https://resource.tuniaokj.com/images/blogger/avatar_2.jpeg'},
           {src: 'https://resource.tuniaokj.com/images/blogger/avatar_3.jpeg'},
           {src: 'https://resource.tuniaokj.com/images/blogger/avatar_4.jpeg'},
-          {src: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg'},
+          {src: 'https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03'},
         ]
       }
     },

@@ -19,7 +19,7 @@
           <view class="tn-flex tn-flex-row-between tn-flex-col-center">
             <view class="justify-content-item">
               <view class="tn-flex tn-flex-col-top tn-flex-row-left">
-                <view class="logo-pic tn-shadow-blur tn-margin-top-sm" style="background-image:url('https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg')">
+                <view class="logo-pic tn-shadow-blur tn-margin-top-sm" style="background-image:url('https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03')">
                   <view class="logo-image" >
                   </view>
                 </view>
@@ -52,7 +52,7 @@
           <view class="tn-flex tn-flex-row-between tn-flex-col-center">
             <view class="justify-content-item">
               <view class="tn-flex tn-flex-col-top tn-flex-row-left">
-                <view class="logo-pic tn-shadow-blur tn-margin-top-sm" style="background-image:url('https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg')">
+                <view class="logo-pic tn-shadow-blur tn-margin-top-sm" style="background-image:url('https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03')">
                   <view class="logo-image" >
                   </view>
                 </view>
@@ -85,7 +85,7 @@
           <view class="tn-flex tn-flex-row-between tn-flex-col-center">
             <view class="justify-content-item">
               <view class="tn-flex tn-flex-col-top tn-flex-row-left">
-                <view class="logo-pic tn-shadow-blur tn-margin-top-sm" style="background-image:url('https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg')">
+                <view class="logo-pic tn-shadow-blur tn-margin-top-sm" style="background-image:url('https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03')">
                   <view class="logo-image" >
                   </view>
                 </view>

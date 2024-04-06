@@ -178,7 +178,7 @@
 				  token: 'dffc1e06e636cff0fdf7d877b6ae6a2e',
 				  image: null
 				},
-				fileList: [{url: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg'}, {url: 'https://resource.tuniaokj.com/images/blogger/avatar_2.jpeg'}, {url: 'https://resource.tuniaokj.com/images/blogger/avatar_3.jpeg'}, {url: 'https://resource.tuniaokj.com/images/blogger/avatar_4.jpeg'}, {url: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg'}],
+				fileList: [{url: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg'}, {url: 'https://resource.tuniaokj.com/images/blogger/avatar_2.jpeg'}, {url: 'https://resource.tuniaokj.com/images/blogger/avatar_3.jpeg'}, {url: 'https://resource.tuniaokj.com/images/blogger/avatar_4.jpeg'}, {url: 'https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03'}],
 				showUploadList: true,
 				customBtn: false,
 				autoUpload: true,

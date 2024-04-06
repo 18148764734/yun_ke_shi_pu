@@ -98,7 +98,7 @@
 					<view class="logo-pic tn-shadow">
 						<view class="logo-image">
 							<view class="tn-shadow-blur" style="
-                  background-image: url('https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg');
+                  background-image: url('https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03');
                   width: 110rpx;
                   height: 110rpx;
                   background-size: cover;
@@ -170,23 +170,23 @@
 					series: [{
 						data: [{
 								name: "维生素A",
-								value: 50
+								value: Math.random()*100
 							},
 							{
 								name: "蛋白质",
-								value: 30
+								value: Math.random()*100
 							},
 							{
 								name: "能量",
-								value: 20
+								value: Math.random()*100
 							},
 							{
 								name: "维生素E",
-								value: 18
+								value: Math.random()*100
 							},
 							{
 								name: "矿物质钙",
-								value: 8
+								value: Math.random()*100
 							},
 						],
 					}, ],

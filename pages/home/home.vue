@@ -68,7 +68,7 @@
 					</view>
 				</view>
 			</view>
-			
+
 		</view>
 		<!-- 方式12 end-->
 
@@ -114,8 +114,6 @@
 				名人堂
 			</view>
 			<view class="justify-content-item tn-margin tn-text-lg tn-color-grey">
-				<text class="tn-padding-xs">全部</text>
-				<text class="tn-icon-topics"></text>
 			</view>
 		</view>
 
@@ -272,8 +270,7 @@
 			return {
 				cardCur: 0,
 				isAndroid: true,
-				swiperList: [
-					{
+				swiperList: [{
 					id: 0,
 					type: 'image',
 					title: '美味披萨',
@@ -301,53 +298,9 @@
 					name: '作者：小美',
 					text: '',
 					url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/06/pouring-honey-on-pancakes.jpg',
-				}, {
-					id: 4,
-					type: 'image',
-					title: '青柠',
-					name: '作者：小美',
-					text: '',
-					url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/05/slice-of-lime-under-water.jpg',
-				}, {
-					id: 5,
-					type: 'image',
-					title: '',
-					name: '',
-					text: '',
-					url: 'https://www.foodiesfeed.com/wp-content/uploads/2023/07/fresh-fruit-platter.jpg',
 				}],
 				cardCur2: 0,
-				resumeList: [{
-					id: 0,
-					type: 'image',
-					title: '123',
-					name: '人气榜top1',
-					hot: '9',
-					share: '6',
-					love: '2',
-					avatar: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
-					url: 'https://resource.tuniaokj.com/images/resume/resume-bg.jpg',
-				}, {
-					id: 1,
-					type: 'image',
-					title: '小美',
-					name: '人气榜top2',
-					hot: '1',
-					share: '1',
-					love: '0',
-					avatar: 'https://resource.tuniaokj.com/images/blogger/avatar_1.jpeg',
-					url: 'https://resource.tuniaokj.com/images/resume/resume-bg2.jpg',
-				}, {
-					id: 2,
-					type: 'image',
-					title: '18148764734',
-					name: '小白',
-					hot: '0',
-					share: '0',
-					love: '0',
-					avatar: 'https://resource.tuniaokj.com/images/blogger/avatar_2.jpeg',
-					url: 'https://resource.tuniaokj.com/images/resume/resume-bg.jpg',
-				}],
+				resumeList: [],
 
 				tuniaoData: [{
 						title: '烹饪技巧',
@@ -370,13 +323,33 @@
 				],
 			}
 		},
-		created() {
+		async created() {
 			const systemInfo = uni.getSystemInfoSync()
 			if (systemInfo.system.toLocaleLowerCase().includes('ios')) {
 				this.isAndroid = false
 			} else {
 				this.isAndroid = true
 			}
+
+			let db = uniCloud.database().collection("article");
+			const res = await db
+				.groupBy('author')
+				.groupField('sum(1) as total')
+				.get();
+			this.resumeList = res.result.data.sort((a, b) => b.total - a.total).map((item,index) => {
+				let res = {
+					id: index,
+					type: 'image',
+					title: item.author,
+					name: `人气榜top1${index+1}`,
+					hot: '0',
+					share: item.total,
+					love: '0',
+					avatar: 'https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03',
+					url: 'https://resource.tuniaokj.com/images/resume/resume-bg.jpg',
+				}
+				return res;
+			})
 		},
 		methods: {
 			// cardSwiper

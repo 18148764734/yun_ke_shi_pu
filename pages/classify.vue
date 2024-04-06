@@ -7,13 +7,8 @@
 		<view class="tn-classify__wrap" :style="{paddingTop: vuex_custom_bar_height + 'px'}">
 
 			<!-- 搜索框 -->
-			<view class="tn-classify__search--wrap tn-flex tn-flex-col-center tn-flex-row-center tn-border-solids-bottom"
-				@click="tn('/homePages/search')">
-				<view
-					class="tn-classify__search__box tn-flex tn-flex-col-center tn-flex-row-center tn-bg-gray--light tn-color-gray--dark">
-					<view class="tn-classify__search__icon tn-icon-search"></view>
-					<view class="tn-classify__search__text">请输入商品名称</view>
-				</view>
+			<view class="tn-classify__search--wrap tn-flex tn-flex-col-center tn-flex-row-center tn-border-solids-bottom">
+				<uni-search-bar style="width: 80%;" placeholder="搜索功能" bgColor="#EEEEEE" @confirm="search" />
 			</view>
 
 			<!-- 分类列表和内容 -->
@@ -44,7 +39,8 @@
 								<!-- 分类内容子栏目 -->
 								<view class="tn-classify__content__sub-classify">
 									<view class="tn-classify__content__sub-classify--title tn-text-lg tn-padding-top-sm">
-										{{ tabbar[currentTabbarIndex] }}</view>
+										{{ tabbar[currentTabbarIndex] }}
+									</view>
 
 									<view
 										class="tn-classify__content__sub-classify__content tn-flex tn-flex-wrap tn-flex-col-center tn-flex-row-left">
@@ -56,7 +52,8 @@
 												<image :src="item.swiperImgs[0]" mode="aspectFill"></image>
 											</view>
 											<view class="tn-classify__content__sub-classify__content__title tn-margin-bottom-sm itemText">
-												{{ item.title }}</view>
+												{{ item.title }}
+											</view>
 										</view>
 									</view>
 								</view>
@@ -133,23 +130,31 @@
 				leftScrollViewTop: 0,
 				// 右边scrollView的滚动高度
 				rightScrollViewTop: 0,
-
+				searchValue: ""
 			}
 		},
 		computed: {
 			currentList() {
 				let res = this.totalList.filter(item => {
-					if(this.currentTabbarIndex===3){
+					if (this.currentTabbarIndex === 3) {
 						return item.classify === "低卡美食" || item.classify === "营养美食"
 					}
-					if(this.currentTabbarIndex===4){
+					if (this.currentTabbarIndex === 4) {
 						return item.classify === "营养美食" || item.classify === "绝味美食"
 					}
-					if(this.currentTabbarIndex>=5){
-						return Math.random()>=0.5
+					if (this.currentTabbarIndex == 5) { //第五下标是全部
+						return true;
+					}
+					if (this.currentTabbarIndex > 5) {
+						return Math.random() >= 0.5
 					}
 					return item.classify === this.tabbar[this.currentTabbarIndex]
 				});
+				if (this.searchValue) {
+					res = res.filter(item => {
+						return item.title.includes(this.searchValue);
+					})
+				}
 				return res;
 			},
 			tabbarItemClass() {
@@ -175,12 +180,13 @@
 				this.getTabbarItemRect()
 			})
 			let res = await db.where({
-				authorId:"1"
+				authorId: "1"
 			}).field("id,swiperImgs,title,classify").get();
 			this.totalList = res.result.data;
 			this.tabbar = [...new Set(this.totalList.map(item => item.classify))]
 			this.tabbar.push("早餐搭配")
 			this.tabbar.push("午餐搭配")
+			this.tabbar.push("全部")
 			this.tabbar.push("晚餐搭配")
 			this.tabbar.push("均衡搭配")
 			this.tabbar.push("营养搭配")
@@ -190,8 +196,27 @@
 			this.tabbar.push("随机搭配")
 			this.tabbar.push("热门推荐")
 			this.tabbar.push("独家食谱")
+			this.classifyContent.recommendProduct = this.totalList.filter((item, index) => {
+				return index <= 2;
+			}).map(item => {
+				return {
+					image: item.swiperImgs[0],
+					title: item.title
+				};
+			})
 		},
 		methods: {
+
+			search(e) {
+				console.log(e.value);
+				uni.showLoading({
+					title: "正在加载~"
+				})
+				setTimeout(() => {
+					uni.hideLoading();
+					this.searchValue = e.value;
+				}, 500)
+			},
 			// 跳转
 			tn(e) {
 				uni.navigateTo({
@@ -245,19 +270,14 @@
 				if (this.currentTabbarIndex === index) {
 					return
 				}
-				this.currentTabbarIndex = index
-
-				this.handleLeftScrollView(index)
-				this.switchClassifyContent()
-			},
-			// 点击分类后，处理scrollView滚动到居中位置
-			handleLeftScrollView(index) {
-				const tabbarItemTop = this.tabbarItemInfo[index].top - this.scrollViewBasicTop
-				if (tabbarItemTop > this.scrollViewHeight / 2) {
-					this.leftScrollViewTop = tabbarItemTop - (this.scrollViewHeight / 2) + this.tabbarItemInfo[index].height
-				} else {
-					this.leftScrollViewTop = 0
-				}
+				uni.showLoading({
+					title: "正在加载"
+				})
+				setTimeout(() => {
+					this.currentTabbarIndex = index
+					this.switchClassifyContent()
+					uni.hideLoading();
+				}, 500)
 			},
 			// 切换对应分类的数据
 			switchClassifyContent() {

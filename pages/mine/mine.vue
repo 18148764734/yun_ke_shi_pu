@@ -52,7 +52,7 @@
 						<view class="logo-pic tn-shadow">
 							<view class="logo-image">
 								<view class="tn-shadow-blur"
-									style="background-image:url('https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg');width: 110rpx;height: 110rpx;background-size: cover;">
+									style="background-image:url('https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03');width: 110rpx;height: 110rpx;background-size: cover;">
 								</view>
 							</view>
 						</view>
@@ -143,13 +143,13 @@
 							</view>
 						</view>
 					</view>
-					<view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/minePages/message')">
+					<view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/myPages')">
 						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
 							<view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-bg-orange">
 								<view class="tn-icon-message" style="color: #080808;"></view>
 							</view>
 							<view class="tn-text-center">
-								<text class="tn-text-ellipsis">消息通知</text>
+								<text class="tn-text-ellipsis">我的食谱</text>
 							</view>
 						</view>
 					</view>
@@ -249,8 +249,6 @@
 			}
 		},
 		mounted() {
-			console.log("ss")
-			console.log(this.userName)
 
 			if (!uni.getStorageSync("userName")) {
 				this.$nextTick(() => {

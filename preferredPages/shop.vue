@@ -29,7 +29,7 @@
       <view class="tn-flex tn-flex-row-between tn-flex-col-center tn-margin">
         <view class="justify-content-item">
           <view class="tn-flex tn-flex-col-center tn-flex-row-left">
-            <view class="logo-pic tn-shadow-blur" style="background-image:url('https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg')">
+            <view class="logo-pic tn-shadow-blur" style="background-image:url('https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03')">
               <view class="logo-image" >
               </view>
             </view>
@@ -600,7 +600,7 @@
             likeCount: 899
           },
           {
-            userAvatar: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
+            userAvatar: 'https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03',
             userName: '高产似母猪',
             date: '2021年12月20日',
             label: ['烤肉','烤肉'],
@@ -688,7 +688,7 @@
             likeCount: 62
           },
           {
-            userAvatar: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg',
+            userAvatar: 'https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03',
             userName: '可我会像',
             date: '2021年12月20日',
             label: ['开源','创意'],

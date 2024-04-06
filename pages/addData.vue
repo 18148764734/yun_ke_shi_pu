@@ -250,7 +250,7 @@
 						_id: res.result.id
 					}).get();
 					uni.showToast({
-						title:"发布成功！"
+						title:"发布成功！等待管理员审核"
 					})
 					uni.reLaunch({
 					    url: '/pages/addData'

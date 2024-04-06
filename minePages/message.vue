@@ -98,7 +98,7 @@
               <view class="tn-flex tn-flex-col-center tn-flex-row-left">
                 <view class="logo-pic">
                   <view class="logo-image">
-                    <view class="tn-shadow-blur" style="background-image:url('https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg');width: 110rpx;height: 110rpx;background-size: cover;">
+                    <view class="tn-shadow-blur" style="background-image:url('https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03');width: 110rpx;height: 110rpx;background-size: cover;">
                     </view>
                   </view>
                 </view>

@@ -177,7 +177,7 @@
           {src: 'https://resource.tuniaokj.com/images/blogger/avatar_2.jpeg'},
           {src: 'https://resource.tuniaokj.com/images/blogger/avatar_3.jpeg'},
           {src: 'https://resource.tuniaokj.com/images/blogger/avatar_4.jpeg'},
-          {src: 'https://resource.tuniaokj.com/images/blogger/blogger_beibei.jpg'},
+          {src: 'https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03'},
         ]
       }
     },
