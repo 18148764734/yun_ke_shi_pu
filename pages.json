@@ -100,8 +100,8 @@
 				"enablePullDownRefresh": false
 			}
 		},
-		
-		
+
+
 		{
 			"path": "pages/news",
 			"style": {
@@ -156,7 +156,96 @@
 				"enablePullDownRefresh": false
 			}
 		}
-		
+
+		, {
+			"path": "pages/A-recipes/list",
+			"style": {
+				"navigationBarTitleText": "食谱列表页面",
+				"enablePullDownRefresh": false
+			}
+		}
+
+		, {
+			"path": "pages/A-recipes/update",
+			"style": {
+				"navigationBarTitleText": "修改食谱页面",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		{
+			"path": "pages/classify/add",
+			"style": {
+				"navigationBarTitleText": "新增"
+			}
+		},
+		{
+			"path": "pages/classify/edit",
+			"style": {
+				"navigationBarTitleText": "编辑"
+			}
+		},
+		{
+			"path": "pages/classify/list",
+			"style": {
+				"navigationBarTitleText": "列表"
+			}
+		},
+		{
+			"path": "pages/classify/detail",
+			"style": {
+				"navigationBarTitleText": "详情"
+			}
+		}, {
+			"path": "pages/comments/add",
+			"style": {
+				"navigationBarTitleText": "新增"
+			}
+		},
+		{
+			"path": "pages/comments/edit",
+			"style": {
+				"navigationBarTitleText": "编辑"
+			}
+		},
+		{
+			"path": "pages/comments/list",
+			"style": {
+				"navigationBarTitleText": "列表"
+			}
+		},
+		{
+			"path": "pages/comments/detail",
+			"style": {
+				"navigationBarTitleText": "详情"
+			}
+		},
+		{
+			"path": "pages/book/add",
+			"style": {
+				"navigationBarTitleText": "新增"
+			}
+		},
+		{
+			"path": "pages/book/edit",
+			"style": {
+				"navigationBarTitleText": "编辑"
+			}
+		},
+		{
+			"path": "pages/book/list",
+			"style": {
+				"navigationBarTitleText": "列表"
+			}
+		}
+		// ,
+		// {
+		// 	"path": "pages/book/detail",
+		// 	"style": {
+		// 		"navigationBarTitleText": "详情"
+		// 	}
+		// }
+
 	],
 	"subPackages": [
 		// {

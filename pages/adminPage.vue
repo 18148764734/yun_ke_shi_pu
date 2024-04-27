@@ -89,6 +89,16 @@
 							</view>
 						</view>
 					</view>
+					<view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/A-recipes/list')">
+						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center bg">
+							<view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-bg-orange">
+								<view class="tn-icon-caring" style="color: #080808;"></view>
+							</view>
+							<view class="tn-text-center">
+								<text class="tn-text-ellipsis">食谱管理</text>
+							</view>
+						</view>
+					</view>
 					<view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/A-users/list')">
 						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center bg">
 							<view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-bg-orange">
@@ -109,6 +119,40 @@
 							</view>
 						</view>
 					</view> -->
+
+				</view>
+				<view class="tn-flex tn-flex-row-center tn-radius tn-padding-top">
+					
+					<view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/classify/list')">
+						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center bg">
+							<view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-bg-orange">
+								<view class="tn-icon-caring" style="color: #080808;"></view>
+							</view>
+							<view class="tn-text-center">
+								<text class="tn-text-ellipsis">食谱分类管理</text>
+							</view>
+						</view>
+					</view>
+					<view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/comments/list')">
+						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center bg">
+							<view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-bg-orange">
+								<view class="tn-icon-caring" style="color: #080808;"></view>
+							</view>
+							<view class="tn-text-center">
+								<text class="tn-text-ellipsis">评论管理</text>
+							</view>
+						</view>
+					</view>
+					<view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/book/list')">
+						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center bg">
+							<view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-bg-orange">
+								<view class="tn-icon-caring" style="color: #080808;"></view>
+							</view>
+							<view class="tn-text-center">
+								<text class="tn-text-ellipsis">书籍管理</text>
+							</view>
+						</view>
+					</view>
 
 				</view>
 				<!-- 方式12 end-->
@@ -158,7 +202,6 @@
 					})
 				})
 				this.tn('login')
-				setTimeout(() => {}, 1000)
 			}
 		},
 		onShow() {

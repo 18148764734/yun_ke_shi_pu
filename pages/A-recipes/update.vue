@@ -105,7 +105,7 @@
 					<view class="divider" />
 				</uni-forms>
 				<view style="display: flex;justify-content: center;">
-					<button class="button" @click="addArticle()">发布食谱</button>
+					<button class="button" @click="addArticle()">修改食谱</button>
 				</view>
 			</view>
 
@@ -127,41 +127,9 @@
 				addData: {
 					title: "",
 					author: uni.getStorageSync("userName"),
-					authorId: "0",
-					needs: [{
-							key: "清水",
-							value: "500ml"
-						},
-						{
-							key: "花生油",
-							value: "适量"
-						},
-						{
-							key: "盐",
-							value: "10g"
-						},
-						{
-							key: "姜末",
-							value: "10g"
-						},
-						{
-							key: "葱花",
-							value: "适量"
-						},
-						{
-							key: "小米椒",
-							value: "适量"
-						},
-					],
-					steps: [
-						'洗净去皮，切滚刀块，放入清水中浸泡，可以防止氧化变黑',
-						'斩小块，清水洗净，浸泡一小时，泡出血水，中间换两次水,焯好后直接捞入砂锅，没有砂锅的用普通锅即可，水要适量增加一些，',
-						'起锅热油，放入草鱼块翻炒3分钟，倒入开水没过鱼肉，煮5分钟。',
-						'砂锅加水烧开，放入排骨，放入葱姜，中火煲一个半小时，可以在焯排骨的时候同时开火，焯好后直接捞入砂锅，没有砂锅的用普通锅即可，水要适量增加一些，尽量中间不加水',
-						'中火继续煲半个小时左右，用筷子插一下山药，一插即透即可，不要煮时间太长，山药碎了就不好了',
-						'起锅前只需要加入盐调味即可。撒上葱花，出锅。焯好后直接捞入砂锅，没有砂锅的用普通锅即可，水要适量增加一些，',
-						'肉酥骨烂，山药吸收了排骨的鲜味，不过最好喝的是汤，赶快来一碗吧！',
-					],
+					authorId: "1",
+					needs: [],
+					steps: [],
 					swiperImgs: [],
 					classify: "低卡美食",
 				},
@@ -186,7 +154,7 @@
 
 				show2: false,
 				maskCloseable: true,
-
+				articleId: "",
 				topInfo: {
 					height: 0,
 				},
@@ -194,10 +162,21 @@
 				prevScrollTop: 0
 			}
 		},
-		onLoad() {
-
+		async onLoad(params) {
+			this.articleId = params.id;
+			let res = await db.collection("article").where({
+				_id: params.id
+			}).get();
+			let res1 = await db.collection("comments").where({
+				articleId: this.articleId
+			}).get();
+			let data = res.result.data[0];
+			let data1 = res1.result.data;
+			// this.commentList = data1;
+			// console.log(JSON.stringify(this.commentList));
+			this.addData = data;
 		},
-		async onReady() {
+		async onReady(params) {
 			this.getTopInfoRect()
 
 			let cres = await db.collection("classify").get();
@@ -244,13 +223,14 @@
 
 			},
 			addArticle() {
-				db.collection("article").add(this.addData).then(async (res) => {
+				db.collection("article").doc(this.addData._id).update(this.addData).then(async (res) => {
+					console.log(res);
 					// res 为数据库查询结果
 					let res1 = await db.collection("article").where({
 						_id: res.result.id
 					}).get();
 					uni.showToast({
-						title: "修改成功！等待管理员审核"
+						title: "修改成功！"
 					})
 					setTimeout(() => {
 						uni.reLaunch({

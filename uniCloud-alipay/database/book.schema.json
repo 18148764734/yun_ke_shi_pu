@@ -12,12 +12,12 @@
 		"_id": {
 			"description": "ID，系统自动生成"
 		},
-		"userName":{
+		"title":{
 			"bsonType": "string",
 			"title": "书籍名",
 			"trim": "both"
 		},
-		"phone":{
+		"content":{
 			"bsonType": "string",
 			"title": "内容",
 			"trim": "both"

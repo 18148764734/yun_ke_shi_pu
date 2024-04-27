@@ -9,37 +9,17 @@
 		</tn-nav-bar>
 
 		<!-- 立体头像-->
-		<view class='cube' :style="'background-image: url(https://resource.tuniaokj.com/images/blogger/bg_image_1.jpg);'">
-			<view class="cube__container">
-				<view class="cube__container__body">
-					<view class="cube__container__body__item cube__container__body__item--front"
-						:style="{backgroundImage: `url(${userInfo.avatar[0]})`}"></view>
-					<view class="cube__container__body__item cube__container__body__item--back"
-						:style="{backgroundImage: `url(${userInfo.avatar[0]})`}"></view>
-					<view class="cube__container__body__item cube__container__body__item--right"
-						:style="{backgroundImage: `url(${userInfo.avatar[1]})`}"></view>
-					<view class="cube__container__body__item cube__container__body__item--left"
-						:style="{backgroundImage: `url(${userInfo.avatar[1]})`}"></view>
-					<view class="cube__container__body__item cube__container__body__item--top"
-						:style="{backgroundImage: `url(${userInfo.avatar[2]})`}"></view>
-					<view class="cube__container__body__item cube__container__body__item--bottom"
-						:style="{backgroundImage: `url(${userInfo.avatar[2]})`}"></view>
-				</view>
-			</view>
-
-
-			<view class='tn-text-center tn-margin-top-lg'>
-				<view class="tn-padding tn-text-bold tn-text-lg">{{ userInfo.username }}</view>
-				<view class="tn-padding-bottom-xl tn-text-lg">{{ userInfo.title }}</view>
-			</view>
+		<view class='tn-text-center tn-margin-top-lg'>
+			<view class="tn-padding tn-text-bold tn-text-lg">{{ userInfo.username }}</view>
+			<view class="tn-padding-bottom-xl tn-text-lg">{{ userInfo.title }}</view>
 		</view>
 
 		<!-- 消息&数据 -->
-		<view class="blogger-tips-data">
-			<view class="blogger-tips-data__wrap tn-bg-white">
-				<view class="blogger-tips-data__message tn-flex tn-flex-row-center" @click="tn('/minePages/message')">
+		<view class="blogger-tips-data"  style="background-color: transparent;">
+			<view class="blogger-tips-data__wrap tn-bg-white" style="background-color: transparent;border-radius: 0;">
+				<view class="blogger-tips-data__message tn-flex tn-flex-row-center" @click="tn('/minePages/message')" style="background-color: transparent;">
 					<view
-						class="blogger-tips-data__message__container tn-flex tn-flex-row-center tn-flex-col-center tn-bg-gray--light">
+						class="blogger-tips-data__message__container tn-flex tn-flex-row-center tn-flex-col-center tn-bg-gray--light" style="background-color:black;">
 						<view style="border-radius: 50%;background-color: red;height: 20rpx;width: 20rpx;margin-left: 20rpx">
 						</view>
 						<view class="tn-padding-right tn-padding-left">{{ stateCount.messageCount }} 条未审核</view>
@@ -68,7 +48,7 @@
 							</view>
 							<view class="tn-margin-top-xs tn-color-gray tn-text-df tn-text-center">
 								<text class="tn-icon-message"></text>
-								<text class="tn-padding-left-xs" >已审核</text>
+								<text class="tn-padding-left-xs">已审核</text>
 							</view>
 						</view>
 					</view>
@@ -106,10 +86,8 @@
 										</view> -->
 									</view>
 									<view style="position: absolute;right: 30px;">
-										<button type="primary" size="mini" style="margin-right: 20px;" @click="setType(item._id,1)"
-											v-if="currentState!=='1'">合格</button>
-										<button type="primary" style="background-color: red;" size="mini" @click="setType(item._id,2)"
-											v-if="currentState!=='1'">不合格</button>
+										<button type="primary" size="mini" style="margin-right: 20px;" @click="edit(item._id)">修改</button>
+										<button type="primary" style="background-color: red;" size="mini" @click="deleteById(item._id)">删除</button>
 									</view>
 								</view>
 							</view>
@@ -128,23 +106,6 @@
 						<text v-if="!item.label || item.label.length < 4"
 							class="blogger__title__content tn-flex-1 tn-text-justify tn-text-df">{{"作者:" + item.author }}</text>
 					</view>
-
-					<!-- 内容太多疲劳了-->
-					<!-- <view
-            v-if="item.content"
-            class="blogger__content"
-            :id="`blogger__content--${index}`"
-          @click="tn('/circlePages/details')">
-            <view
-              class="blogger__content__data"
-              :style="{
-                height: `${item.contentContainerInit ? (!item.showAllContent ? contentHideShowHeight : item.contentContainerHeight) + 'px' : 'auto'}`
-              }"
-            >
-              {{ item.content }}
-            </view>
-            <view v-if="item.hideContent" class="blogger__content__status" @tap="switchContentShowStatus(index)">{{ item.showAllContent ? '收起' : '全文'}}</view>
-          </view> -->
 
 					<block v-if="item.swiperImgs">
 						<view v-if="[1,2,4].indexOf(item.swiperImgs.length) != -1" class="tn-padding-top-xs"
@@ -282,8 +243,7 @@
 						'https://resource.tuniaokj.com/images/blogger/blogger_avatar_2.jpeg',
 						'https://resource.tuniaokj.com/images/blogger/blogger_avatar_3.jpeg',
 					],
-					username: "审核官：" + uni.getStorageSync("userName"),
-					title: '认真审核，服务至上'
+					username: "管理员：" + uni.getStorageSync("userName")
 				},
 				stateCount: {
 					latestMessageUserAvatar: 'https://resource.tuniaokj.com/images/blogger/avatar_2.jpeg',
@@ -335,7 +295,8 @@
 				this.totalList = res.result.data;
 				console.log(this.totalList)
 				this.initContentData()
-				this.stateCount.messageCount = this.stateCount.yetCount = this.totalList.filter(item => item.authorId === "0").length;
+				this.stateCount.messageCount = this.stateCount.yetCount = this.totalList.filter(item => item.authorId === "0")
+					.length;
 				this.stateCount.yesCount = this.totalList.filter(item => item.authorId === "1").length;
 				this.stateCount.noCount = this.totalList.filter(item => item.authorId === "2").length;
 				this.contentHideShowHeight = uni.upx2px(56) * 3;
@@ -343,11 +304,18 @@
 			changeState(state) {
 				this.currentState = state;
 			},
-			async setType(id, state) {
-				let res = await db.doc(id).update({
-					authorId: JSON.stringify(state)
-				});
-				console.log(res)
+			async edit(id) {
+				uni.navigateTo({
+					url:"/pages/A-recipes/update?id="+id
+				})
+				await this.init();
+			},
+			async deleteById(id) {
+				let res = await db.where({_id:id}).remove()
+				console.log("删除",res);
+				uni.showToast({
+					title:"删除成功"
+				})
 				await this.init();
 			},
 			// 跳转
@@ -435,10 +403,13 @@
 		border: #ffe203 solid 2px;
 		border-width: 1px;
 		margin: 5px;
-		background-color: #F8F7F3;
+		color: #FFFFFF;
+		background-color: #393939;
 	}
 
-	.template-blogger {}
+	.template-blogger {
+		background-color: #8077e7;
+	}
 
 	/* 胶囊*/
 	.tn-custom-nav-bar__back {

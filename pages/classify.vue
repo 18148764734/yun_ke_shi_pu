@@ -70,6 +70,7 @@
 
 <script>
 	const db = uniCloud.database().collection("article");
+	const cdb = uniCloud.database().collection("classify");
 	export default {
 		name: 'templateShopClassify',
 		data() {
@@ -184,18 +185,18 @@
 			}).field("id,swiperImgs,title,classify").get();
 			this.totalList = res.result.data;
 			this.tabbar = [...new Set(this.totalList.map(item => item.classify))]
-			this.tabbar.push("早餐搭配")
-			this.tabbar.push("午餐搭配")
-			this.tabbar.push("全部")
-			this.tabbar.push("晚餐搭配")
-			this.tabbar.push("均衡搭配")
-			this.tabbar.push("营养搭配")
-			this.tabbar.push("膳食搭配")
-			this.tabbar.push("均衡搭配")
-			this.tabbar.push("养生搭配")
-			this.tabbar.push("随机搭配")
-			this.tabbar.push("热门推荐")
-			this.tabbar.push("独家食谱")
+			// this.tabbar.push("早餐搭配")
+			// this.tabbar.push("午餐搭配")
+			// this.tabbar.push("全部")
+			// this.tabbar.push("晚餐搭配")
+			// this.tabbar.push("均衡搭配")
+			// this.tabbar.push("营养搭配")
+			// this.tabbar.push("膳食搭配")
+			// this.tabbar.push("均衡搭配")
+			// this.tabbar.push("养生搭配")
+			// this.tabbar.push("随机搭配")
+			// this.tabbar.push("热门推荐")
+			// this.tabbar.push("独家食谱")
 			this.classifyContent.recommendProduct = this.totalList.filter((item, index) => {
 				return index <= 2;
 			}).map(item => {
@@ -204,6 +205,9 @@
 					title: item.title
 				};
 			})
+			let cres = await cdb.get();
+			console.log(cres.result.data);
+			this.tabbar = cres.result.data.map(item => item.classify)
 		},
 		methods: {
 
