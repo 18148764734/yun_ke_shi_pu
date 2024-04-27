@@ -1,20 +1,5 @@
 <template>
 	<view class="template-mine tn-safe-area-inset-bottom">
-
-		<!-- 顶部自定义导航 -->
-		<tn-nav-bar :isBack="false" :bottomShadow="false" backgroundColor="none">
-			<view class="custom-nav tn-flex tn-flex-col-center tn-flex-row-left" @click="tn('/minePages/message')">
-				<view class="custom-nav__back">
-					<view class="tn-icon-notice tn-color-brown" style="font-size: 50rpx;">
-						<!-- <tn-badge backgroundColor="#E72F8C" fontColor="#FFFFFF" :absolute="true" :translateCenter="false">
-              <text>12</text>
-            </tn-badge> -->
-					</view>
-				</view>
-			</view>
-		</tn-nav-bar>
-
-
 		<view class="top-backgroup">
 			<image src='https://resource.tuniaokj.com/images/my/my-bg2.png' mode='widthFix' class='backgroud-image'></image>
 		</view>
@@ -48,15 +33,19 @@
 			<!-- 图标logo/头像 -->
 			<view class="tn-flex tn-flex-row-between tn-flex-col-center tn-margin-bottom">
 				<view class="justify-content-item">
-					<view class="tn-flex tn-flex-col-center tn-flex-row-left" @click="tn('/pages/mine/setMyData')">
+					<view class="tn-flex tn-flex-col-center tn-flex-row-left" @click="tn('set')">
 						<view class="logo-pic tn-shadow">
 							<view class="logo-image">
-								<image style="height: 65px;width: 65px;" :src="userData.avator" mode=""></image>
+								<image :src="userData.avator" style="height: 65px;width: 65px;border-radius: 50%;" mode=""></image>
 							</view>
 						</view>
 						<view class="tn-padding-right">
 							<view class="tn-padding-right tn-padding-left-sm tn-text-xl tn-text-bold">
-								<text class="tn-color-brown--dark">{{userName||未登录}}</text>
+								<text class="tn-color-brown--dark">{{userName}}</text>
+							</view>
+							<view class="tn-padding-right tn-padding-top-xs tn-padding-left-sm tn-text-ellipsis">
+								<text class="tn-color-brown" style="opacity: 0.5;">认证会员</text>
+								<text class="tn-color-brown tn-text-bold tn-padding-left-sm">SVIP 6</text>
 							</view>
 						</view>
 
@@ -65,167 +54,83 @@
 			</view>
 
 			<!-- 授权按钮-->
-			<!-- <view class="tn-flex tn-flex-row-between" @click="tn('login')">
-        <view class="tn-flex-1 justify-content-item tn-margin-xs tn-text-center">
-          <tn-button shape="round" backgroundColor="#00d886" fontColor="#ffffff" padding="20rpx 0" width="40%" shadow>
-            <text class="tn-icon-wechat tn-padding-right-xs tn-text-xl"></text>
-            <text class="">授权登录</text>
-          </tn-button>
-        </view>
-      </view> -->
-
-			<!-- <view class="" style="padding-top: 60rpx;">
-        <view class="nav_title--wrap">
-          <view class="nav_title">
-            <text class="tn-icon-relation tn-padding-right-sm tn-text-xxl"></text>
-            <text class="tn-text-xl">会员尊享 · 超值特权</text>
-            <text class="tn-icon-relation tn-padding-left-sm tn-text-xxl"></text>
-          </view>
-        </view>
-      </view> -->
 
 
-			<!-- <view class="tn-flex tn-flex-row-between tn-padding-top-xl">
-        <view class="justify-content-item tn-text-bold tn-text-lg">
-          <text class="">常用功能</text>
-        </view>
-        <view class="justify-content-item tn-text-df">
-          <text class="tn-padding-xs">全部</text>
-          <text class="tn-icon-right"></text>
-        </view>
-      </view> -->
-
-			<!-- 方式12 start-->
-			<view class="tn-flex">
-				<view class="tn-flex-1 about-shadow tn-bg-white" style="margin: 30rpx 15rpx 0 0;padding: 30rpx 0;"
-					@click="navTuniaoWebsite">
-					<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
-						<view
-							class="icon20__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur tn-bg-orangered tn-color-white">
-							<view class="tn-icon-computer-fill"></view>
-						</view>
-						<view class="tn-text-center" style="font-size: 30rpx;">
-							<view class="tn-text-ellipsis">韵科食谱官网</view>
-						</view>
-					</view>
-				</view>
-				<view class="tn-flex-1 about-shadow tn-bg-white" style="margin: 30rpx 0 0 15rpx;padding: 30rpx 0;"
-					@click="navTuniaoUI">
-					<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
-						<view
-							class="icon20__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur tn-bg-purplered tn-color-white">
-							<view class="tn-icon-moon-fill"></view>
-						</view>
-						<view class="tn-text-center" style="font-size: 30rpx;">
-							<view class="tn-text-ellipsis">免责声明</view>
-						</view>
+			<view class="" style="padding-top: 60rpx;">
+				<view class="nav_title--wrap">
+					<view class="nav_title">
+						<text class="tn-icon-relation tn-padding-right-sm tn-text-xxl"></text>
+						<text class="tn-text-xl">管理员面板</text>
+						<text class="tn-icon-relation tn-padding-left-sm tn-text-xxl"></text>
 					</view>
 				</view>
 			</view>
+
+
+			<view class="tn-flex tn-flex-row-between tn-padding-top-xl">
+				<view class="justify-content-item tn-text-bold tn-text-lg">
+					<text class="">常用功能</text>
+				</view>
+			</view>
+
+
 
 			<!-- 更多信息-->
 			<view class="about-shadow tn-margin-top-xl tn-padding-top-sm tn-padding-bottom-sm tn-bg-white">
 				<!-- 方式12 start-->
 				<view class="tn-flex tn-flex-row-center tn-radius tn-padding-top">
-					<view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/adminPage')">
+					<view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/A-recipes/review')">
 						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center bg">
 							<view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-bg-orange">
 								<view class="tn-icon-caring" style="color: #080808;"></view>
 							</view>
 							<view class="tn-text-center">
-								<text class="tn-text-ellipsis">管理菜单</text>
+								<text class="tn-text-ellipsis">管理员审核</text>
 							</view>
 						</view>
 					</view>
-					<view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/myPages')">
+					<view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/A-users/list')">
 						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center bg">
 							<view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-bg-orange">
-								<view class="tn-icon-message" style="color: #080808;"></view>
+								<view class="tn-icon-caring" style="color: #080808;"></view>
+							</view>
+							<view class="tn-text-center">
+								<text class="tn-text-ellipsis">用户管理</text>
+							</view>
+						</view>
+					</view>
+					<!-- <view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/myPages')">
+						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center bg">
+							<view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-bg-orange">
+								<view class="tn-icon-caring" style="color: #080808;"></view>
 							</view>
 							<view class="tn-text-center">
 								<text class="tn-text-ellipsis">我的食谱</text>
 							</view>
 						</view>
-					</view>
+					</view> -->
+
 				</view>
 				<!-- 方式12 end-->
 			</view>
 
-
-			<!-- 更多信息-->
-			<view class="about-shadow tn-margin-top-xl tn-padding-top-sm tn-padding-bottom-sm">
-				<tn-list-cell :hover="true" :unlined="true" :radius="true" :fontSize="30" @click="tn('/homePages/about')">
-					<view class="tn-flex tn-flex-col-center">
-						<view
-							class="icon1__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-cool-bg-color-15 tn-color-white">
-							<view class="tn-icon-logo-tuniao"></view>
-						</view>
-						<view class="tn-margin-left-sm tn-flex-1">关于韵科食谱</view>
-						<view class="tn-color-cyan--light tn-icon-link"></view>
-					</view>
-				</tn-list-cell>
-				<tn-list-cell :hover="true" :unlined="true" :radius="true" :fontSize="30" @click="copySource">
-					<view class="tn-flex tn-flex-col-center">
-						<view
-							class="icon1__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-cool-bg-color-2 tn-color-white">
-							<view class="tn-icon-light-fill"></view>
-						</view>
-						<view class="tn-margin-left-sm tn-flex-1">开源地址</view>
-						<view class="tn-color-blue--light tn-icon-copy"></view>
-					</view>
-				</tn-list-cell>
-				<tn-list-cell :hover="true" :unlined="true" :radius="true" :fontSize="30" @click="tn('/minePages/protocol')">
-					<view class="tn-flex tn-flex-col-center">
-						<view
-							class="icon1__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-cool-bg-color-3 tn-color-white">
-							<view class="tn-icon-safe-fill"></view>
-						</view>
-						<view class="tn-margin-left-sm tn-flex-1">使用协议</view>
-						<view class="tn-color-red--light tn-icon-tips"></view>
-					</view>
-				</tn-list-cell>
+			<view class="tn-flex tn-flex-row-between" @click="tn('/pages/mine/mine')">
+				<view class="tn-flex-1 justify-content-item tn-margin-xs tn-text-center">
+					<tn-button shape="round" backgroundColor="#38bed8" fontColor="#ffffff" padding="20rpx 0" width="40%" shadow>
+						<text class="">返回首页</text>
+					</tn-button>
+				</view>
 			</view>
 
-			<view class="about-shadow tn-margin-top-lg tn-margin-bottom-lg tn-padding-top-sm tn-padding-bottom-sm">
-				<tn-list-cell :hover="true" :unlined="true" :radius="true" :fontSize="30">
-					<button class="tn-flex tn-flex-col-center tn-button--clear-style" open-type="contact">
-						<view
-							class="icon1__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-cool-bg-color-5 tn-color-white">
-							<view class="tn-icon-wechat-fill"></view>
-						</view>
-						<view class="tn-flex tn-flex-row-between" style="width: 100%;">
-							<view class="tn-margin-left-sm">合作勾搭</view>
-							<view class="tn-color-orange--light tn-icon-trust"></view>
-						</view>
-					</button>
-				</tn-list-cell>
-				<tn-list-cell :hover="true" :unlined="true" :radius="true" :fontSize="30">
-					<button class="tn-flex tn-flex-col-center tn-button--clear-style" open-type="feedback">
-						<view
-							class="icon1__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-cool-bg-color-7 tn-color-white">
-							<view class="tn-icon-comment-fill"></view>
-						</view>
-						<view class="tn-flex tn-flex-row-between" style="width: 100%;">
-							<view class="tn-margin-left-sm">问题反馈</view>
-							<view class="tn-color-green--light tn-icon-edit"></view>
-						</view>
-					</button>
-				</tn-list-cell>
-
-				<tn-list-cell :hover="true" :unlined="true" :radius="true" :fontSize="30" @click="callPhoneNumber"
-					data-number="18219126666">
-					<view class="tn-flex tn-flex-col-center">
-						<view
-							class="icon1__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-cool-bg-color-9 tn-color-white">
-							<view class="tn-icon-phone-fill"></view>
-						</view>
-						<view class="tn-margin-left-sm tn-flex-1">技术支持</view>
-						<view
-							class="tn-margin-left-sm tn-color-orangered tn-text-sm tn-padding-left-xs tn-padding-right-xs tn-bg-orange--disabled tn-round">
-							181****4734</view>
-					</view>
-				</tn-list-cell>
+			<view class="tn-flex tn-flex-row-between" @click="tn('login')">
+				<view class="tn-flex-1 justify-content-item tn-margin-xs tn-text-center">
+					<tn-button shape="round" backgroundColor="#d80003" fontColor="#ffffff" padding="20rpx 0" width="40%" shadow>
+						<text class="">退出登录</text>
+					</tn-button>
+				</view>
 			</view>
+
+
 
 		</view>
 
@@ -240,11 +145,11 @@
 		data() {
 			return {
 				userName: uni.getStorageSync("userName"),
-				userData: uni.getStorageSync("userData"),
+				userData: uni.getStorageSync("userData")
 			}
 		},
 		mounted() {
-			console.log(this.userData)
+
 			if (!uni.getStorageSync("userName")) {
 				this.$nextTick(() => {
 					uni.showToast({
@@ -274,10 +179,10 @@
 			},
 			// 跳转
 			tn(e) {
-				if(e==='/pages/adminPage' && !this.userData.type){
+				if (e === '/pages/A-recipes/review' && this.userName !== "123") {
 					uni.showToast({
-						icon:"error",
-						title:"非管理员身份禁止进入"
+						icon: "error",
+						title: "非管理员身份禁止进入"
 					})
 					return;
 				}
@@ -316,12 +221,13 @@
 </script>
 
 <style lang="scss" scoped>
-	.bg{
+	.bg {
 		background-color: #fafafa;
 		padding: 10px;
 		padding-top: 15px;
 		border-radius: 10px;
 	}
+
 	.template-mine {
 		max-height: 100vh;
 	}

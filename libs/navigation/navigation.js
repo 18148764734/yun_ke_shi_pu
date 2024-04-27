@@ -225,7 +225,7 @@ export default {
         {
           icon: 'code',
           title: '授权登录',
-          url: '/minePages/login',
+          url: 'login',
           author: '韵科食谱'
         },
         {
@@ -237,7 +237,7 @@ export default {
         {
           icon: 'code',
           title: '全局设置',
-          url: '/minePages/set',
+          url: 'set',
           author: '韵科食谱'
         },
         {

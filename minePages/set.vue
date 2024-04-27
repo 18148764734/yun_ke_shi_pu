@@ -53,7 +53,7 @@
       
       <!-- 悬浮按钮-->
       <view class="tn-flex  tn-footerfixed">
-        <view class="tn-flex-1 justify-content-item tn-margin-sm tn-text-center" @click="tn('/minePages/login')">
+        <view class="tn-flex-1 justify-content-item tn-margin-sm tn-text-center" @click="tn('login')">
           <tn-button shape="round" backgroundColor="tn-cool-bg-color-15" padding="40rpx 0" width="60%" shadow fontBold>
             <!-- <text class="tn-icon-light tn-padding-right-xs tn-color-black"></text> -->
             <text class="tn-color-white">退出登录</text>
@@ -118,7 +118,7 @@
     },
 		onShow(){
 			console.log(uni.getStorageSync("userName"))
-			if(!uni.getStorageSync("userName"))tn('/minePages/login')
+			if(!uni.getStorageSync("userName"))tn('login')
 		}
   }
 </script>

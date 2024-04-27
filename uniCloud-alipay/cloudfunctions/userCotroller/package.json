@@ -1,0 +1,7 @@
+{
+  "name": "userCotroller",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

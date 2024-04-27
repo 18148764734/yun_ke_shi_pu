@@ -24,7 +24,47 @@
 		{
 			"path": "pages/classify",
 			"style": {
-				"navigationBarTitleText": "食谱大全",
+				"navigationBarTitleText": "用户列表",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		{
+			"path": "pages/A-users/add",
+			"style": {
+				"navigationBarTitleText": "用户添加",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		{
+			"path": "pages/A-users/detail",
+			"style": {
+				"navigationBarTitleText": "用户细节",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		{
+			"path": "pages/A-users/edit",
+			"style": {
+				"navigationBarTitleText": "用户修改",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		{
+			"path": "pages/A-users/list",
+			"style": {
+				"navigationBarTitleText": "食谱列表",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		{
+			"path": "pages/login",
+			"style": {
+				"navigationBarTitleText": "登录",
 				"enablePullDownRefresh": false
 			}
 		},
@@ -33,6 +73,14 @@
 			"path": "pages/myPages",
 			"style": {
 				"navigationBarTitleText": "我的食谱",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		{
+			"path": "pages/adminPage",
+			"style": {
+				"navigationBarTitleText": "管理页面",
 				"enablePullDownRefresh": false
 			}
 		},
@@ -71,6 +119,21 @@
 		},
 
 		{
+			"path": "pages/mine/setMyData",
+			"style": {
+				"navigationBarTitleText": "设置个人信息",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "个人信息",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		{
 			"path": "pages/people",
 			"style": {
 				"navigationBarTitleText": "人气作者",
@@ -87,7 +150,7 @@
 		},
 
 		{
-			"path": "pages/review",
+			"path": "pages/A-recipes/review",
 			"style": {
 				"navigationBarTitleText": "审核页面",
 				"enablePullDownRefresh": false

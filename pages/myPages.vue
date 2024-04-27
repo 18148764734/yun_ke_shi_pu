@@ -98,20 +98,6 @@
 					<view class="blogger__author tn-flex tn-flex-row-between tn-flex-col-center">
 						<view class="justify__author__info">
 							<view class="tn-flex tn-flex-row-center">
-								<view class="tn-flex tn-flex-row-center tn-flex-col-center">
-									<view class="tn-padding-right tn-text-ellipsis">
-										<view class="tn-padding-right tn-padding-left-sm tn-text-bold tn-text-lg">{{ item.title }}
-										</view>
-										<!-- <view class="tn-padding-right tn-padding-left-sm tn-padding-top-xs tn-color-gray">{{ "2023年3" }}
-										</view> -->
-									</view>
-									<view style="position: absolute;right: 30px;">
-										<button type="primary" size="mini" style="margin-right: 20px;" @click="setType(item._id,1)"
-											v-if="currentState!=='1'">合格</button>
-										<button type="primary" style="background-color: red;" size="mini" @click="setType(item._id,2)"
-											v-if="currentState!=='1'">不合格</button>
-									</view>
-								</view>
 							</view>
 						</view>
 					</view>
@@ -260,6 +246,71 @@
         </view>
       </view>
     </view> -->
+		
+		<!-- 顶部自定义导航 -->
+		<tn-nav-bar fixed alpha customBack>
+		  <view slot="back" class='tn-custom-nav-bar__back'
+		    @click="goBack">
+		    <text class='icon tn-icon-left-arrow'></text>
+		  </view>
+		</tn-nav-bar>
+		
+		<view class="tn-margin-top" :style="{paddingTop: vuex_custom_bar_height + 'px'}">
+		  
+		  
+		  <view class="tn-flex tn-flex-row-between tn-strip-bottom-min tn-padding" @click="tn('/minePages/avatar')">
+		    <view class="justify-content-item">
+		      <view class="tn-text-bold tn-text-lg">
+		        用户头像
+		      </view>
+		      <view class="tn-color-gray tn-padding-top-xs">
+		        有趣的头像，百里挑一
+		      </view>
+		    </view>
+		    <view class="justify-content-item tn-text-lg tn-color-grey">
+		      <image src="https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03" style="height: 50px;width: 50px;"></image>
+		    </view>
+		  </view>
+		  
+		  <view class="tn-flex tn-flex-row-between tn-strip-bottom tn-padding" @click="tn('/minePages/safety')">
+		    <view class="justify-content-item">
+		      <view class="tn-text-bold tn-text-lg">
+		        账号安全
+		      </view>
+		      <view class="tn-color-gray tn-padding-top-xs">
+		        修改用户昵称、密码
+		      </view>
+		    </view>
+		    <view class="justify-content-item tn-text-lg tn-color-grey">
+		      <view class="tn-icon-right tn-padding-top"></view>
+		    </view>
+		  </view>
+		  
+		  <view class="tn-flex tn-flex-row-between tn-strip-bottom-min tn-padding tn-margin-top-xs" v-for="(item, index) in setList" :key="index" @click="tn(item.url)">
+		    <view class="justify-content-item">
+		      <view class="tn-text-bold tn-text-lg">
+		        {{ item.title }}
+		      </view>
+		    </view>
+		    <view class="justify-content-item tn-text-lg tn-color-grey">
+		      <view class="tn-icon-right"></view>
+		    </view>
+		  </view>
+		  
+		  
+		  <!-- 悬浮按钮-->
+		  <view class="tn-flex  tn-footerfixed">
+		    <view class="tn-flex-1 justify-content-item tn-margin-sm tn-text-center" @click="tn('login')">
+		      <tn-button shape="round" backgroundColor="tn-cool-bg-color-15" padding="40rpx 0" width="60%" shadow fontBold>
+		        <!-- <text class="tn-icon-light tn-padding-right-xs tn-color-black"></text> -->
+		        <text class="tn-color-white">退出登录</text>
+		        <!-- <text class="tn-icon-light tn-padding-left-xs tn-color-black"></text> -->
+		      </tn-button>
+		    </view>
+		  </view>
+		  
+		</view>
+		
 
 
 

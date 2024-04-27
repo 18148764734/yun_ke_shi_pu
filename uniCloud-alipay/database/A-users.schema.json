@@ -9,6 +9,7 @@
 		"delete": true
 	},
 	"properties": {
+		"required":["userName","phone","type","password"],
 		"_id": {
 			"description": "ID，系统自动生成"
 		},
@@ -16,6 +17,27 @@
 			"bsonType": "string",
 			"title": "用户名",
 			"trim": "both"
+		},
+		"phone":{
+			"bsonType": "string",
+			"title": "电话",
+			"trim": "both"
+		},
+		
+		"email":{
+			"bsonType": "string",
+			"title": "邮箱",
+			"trim": "both"
+		},
+		"type":{
+			"bsonType": "bool",
+			"title": "用户类型(是否为管理员)",
+			"description": "false为用户，true为管理员",
+			"defaultValue": false
+		},
+		"avator":{
+			"bsonType": "string",
+			"title": "用户头像"
 		},
 		"password":{
 			"bsonType": "string",

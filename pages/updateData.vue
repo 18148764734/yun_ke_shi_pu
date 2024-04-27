@@ -250,7 +250,7 @@
 						_id: res.result.id
 					}).get();
 					uni.showToast({
-						title: "修改成功！等待管理员审核"
+						title: "发布成功！等待管理员审核"
 					})
 					setTimeout(() => {
 						uni.reLaunch({
@@ -261,7 +261,7 @@
 					console.log(res1);
 				}).catch((err) => {
 					uni.showToast({
-						title: "修改失败!",
+						title: "发布失败!",
 						icon: 'error'
 					})
 					console.log(err.message)
