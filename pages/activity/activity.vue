@@ -77,6 +77,11 @@
 				return this.swiperList[this.curIndex]
 			}
 		},
+		async mounted() {
+			const res = await db.collection("book").get();
+			console.log(res.result.data)
+			this.swiperList = res.result.data;
+		},
 		async onReady() {
 			const res = await db.collection("book").get();
 			console.log(res.result.data)
