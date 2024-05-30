@@ -235,7 +235,6 @@
 								console.log(err);
 							}
 						})
-
 					},
 					fail(err) {
 						console.log(err)

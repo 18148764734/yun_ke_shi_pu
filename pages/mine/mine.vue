@@ -64,92 +64,35 @@
 				</view>
 			</view>
 
-			<!-- 授权按钮-->
-			<!-- <view class="tn-flex tn-flex-row-between" @click="tn('login')">
-        <view class="tn-flex-1 justify-content-item tn-margin-xs tn-text-center">
-          <tn-button shape="round" backgroundColor="#00d886" fontColor="#ffffff" padding="20rpx 0" width="40%" shadow>
-            <text class="tn-icon-wechat tn-padding-right-xs tn-text-xl"></text>
-            <text class="">授权登录</text>
-          </tn-button>
-        </view>
-      </view> -->
-
-			<!-- <view class="" style="padding-top: 60rpx;">
-        <view class="nav_title--wrap">
-          <view class="nav_title">
-            <text class="tn-icon-relation tn-padding-right-sm tn-text-xxl"></text>
-            <text class="tn-text-xl">会员尊享 · 超值特权</text>
-            <text class="tn-icon-relation tn-padding-left-sm tn-text-xxl"></text>
-          </view>
-        </view>
-      </view> -->
-
-
-			<!-- <view class="tn-flex tn-flex-row-between tn-padding-top-xl">
-        <view class="justify-content-item tn-text-bold tn-text-lg">
-          <text class="">常用功能</text>
-        </view>
-        <view class="justify-content-item tn-text-df">
-          <text class="tn-padding-xs">全部</text>
-          <text class="tn-icon-right"></text>
-        </view>
-      </view> -->
 
 			<!-- 方式12 start-->
 			<view class="tn-flex">
 				<view class="tn-flex-1 about-shadow tn-bg-white" style="margin: 30rpx 15rpx 0 0;padding: 30rpx 0;"
-					@click="navTuniaoWebsite">
+					 @click="tn('/pages/adminPage')">
 					<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
 						<view
 							class="icon20__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur tn-bg-orangered tn-color-white">
 							<view class="tn-icon-computer-fill"></view>
 						</view>
 						<view class="tn-text-center" style="font-size: 30rpx;">
-							<view class="tn-text-ellipsis">韵科食谱官网</view>
+							<view class="tn-text-ellipsis">管理菜单</view>
 						</view>
 					</view>
 				</view>
 				<view class="tn-flex-1 about-shadow tn-bg-white" style="margin: 30rpx 0 0 15rpx;padding: 30rpx 0;"
-					@click="navTuniaoUI">
+					@click="tn('/pages/myRecipece')">
 					<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
 						<view
 							class="icon20__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur tn-bg-purplered tn-color-white">
 							<view class="tn-icon-moon-fill"></view>
 						</view>
 						<view class="tn-text-center" style="font-size: 30rpx;">
-							<view class="tn-text-ellipsis">免责声明</view>
+							<view class="tn-text-ellipsis">我的食谱</view>
 						</view>
 					</view>
 				</view>
 			</view>
 
-			<!-- 更多信息-->
-			<view class="about-shadow tn-margin-top-xl tn-padding-top-sm tn-padding-bottom-sm tn-bg-white">
-				<!-- 方式12 start-->
-				<view class="tn-flex tn-flex-row-center tn-radius tn-padding-top">
-					<view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/adminPage')">
-						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center bg">
-							<view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-bg-orange">
-								<view class="tn-icon-caring" style="color: #080808;"></view>
-							</view>
-							<view class="tn-text-center">
-								<text class="tn-text-ellipsis">管理菜单</text>
-							</view>
-						</view>
-					</view>
-					<view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/myPages')">
-						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center bg">
-							<view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-bg-orange">
-								<view class="tn-icon-message" style="color: #080808;"></view>
-							</view>
-							<view class="tn-text-center">
-								<text class="tn-text-ellipsis">我的食谱</text>
-							</view>
-						</view>
-					</view>
-				</view>
-				<!-- 方式12 end-->
-			</view>
 
 
 			<!-- 更多信息-->
@@ -260,18 +203,6 @@
 			this.userName = uni.getStorageSync("userName")
 		},
 		methods: {
-			// 跳转到韵科食谱官网
-			navTuniaoWebsite() {
-				uni.navigateToMiniProgram({
-					appId: 'wxa698b1eee960632f'
-				})
-			},
-			// 跳转到韵科食谱UI
-			navTuniaoUI() {
-				uni.navigateToMiniProgram({
-					appId: 'wxf3d81a452b88ff4b'
-				})
-			},
 			// 跳转
 			tn(e) {
 				if(e==='/pages/adminPage' && !this.userData.type){
@@ -287,10 +218,6 @@
 						console.log(e);
 					}
 				});
-			},
-			// 收货地址
-			navAddress() {
-				uni.chooseAddress({})
 			},
 			// 震动跳转
 			navThanks(e) {

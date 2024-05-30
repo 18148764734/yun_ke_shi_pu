@@ -71,6 +71,16 @@
 				return index === tabbar_index;
 			})
 			this.switchTabbar(index)
+			uniCloud.callFunction({
+				name:"userServices",
+				data:{a:1},
+				success(res) {
+					console.log(res);
+				},
+				fail(err){
+					console.log(err)
+				}
+			})
 		},
 		methods: {
 			// 切换导航

@@ -33,7 +33,7 @@
 			"bsonType": "bool",
 			"title": "用户类型(是否为管理员)",
 			"description": "false为用户，true为管理员",
-			"defaultValue": false
+			"defaultValue": "false"
 		},
 		"avator":{
 			"bsonType": "string",

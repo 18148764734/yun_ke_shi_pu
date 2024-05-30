@@ -1,0 +1,7 @@
+{
+  "name": "recipeService",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

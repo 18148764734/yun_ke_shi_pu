@@ -200,91 +200,9 @@
 
 		</view>
 
-		<!-- 悬浮按钮-->
-		<!-- <view class="tn-flex tn-flex-row-between tn-footerfixed">
-      <view class="tn-flex-1 justify-content-item tn-margin-xs tn-text-center">
-        <tn-button backgroundColor="#00FFC6" padding="40rpx 0" width="90%" shadow fontBold>
-          <text class="tn-icon-add tn-padding-right-xs tn-color-black"></text>
-          <text class="tn-color-black">关 注</text>
-        </tn-button>
-      </view>
-      <view class="tn-flex-1 justify-content-item tn-margin-xs tn-text-center">
-        <tn-button backgroundColor="#FFF00D" padding="40rpx 0" width="90%" shadow fontBold open-type="share">
-          <text class="tn-icon-share-triangle tn-padding-right-xs tn-color-black"></text>
-          <text class="tn-color-black">分 享</text>
-        </tn-button>
-      </view>
-    </view> -->
-
-
-		<!-- <view class="edit tnxuanfu" @click="navEdit">
-      <view class="bg0 pa">
-        <view class="bg1">
-          <image src="https://resource.tuniaokj.com/images/my/my6.png" class="button-shop shadow"></image>
-        </view>
-      </view>
-      <view class="hx-box pa">
-        <view class="pr">
-          <view class="hx-k1 pa0">
-            <view class="span"></view>
-          </view>
-          <view class="hx-k2 pa0">
-            <view class="span"></view>
-          </view>
-          <view class="hx-k3 pa0">
-            <view class="span"></view>
-          </view>
-          <view class="hx-k4 pa0">
-            <view class="span"></view>
-          </view>
-          <view class="hx-k5 pa0">
-            <view class="span"></view>
-          </view>
-          <view class="hx-k6 pa0">
-            <view class="span"></view>
-          </view>
-        </view>
-      </view>
-    </view> -->
-		
-		<!-- 顶部自定义导航 -->
-		<tn-nav-bar fixed alpha customBack>
-		  <view slot="back" class='tn-custom-nav-bar__back'
-		    @click="goBack">
-		    <text class='icon tn-icon-left-arrow'></text>
-		  </view>
-		</tn-nav-bar>
 		
 		<view class="tn-margin-top" :style="{paddingTop: vuex_custom_bar_height + 'px'}">
 		  
-		  
-		  <view class="tn-flex tn-flex-row-between tn-strip-bottom-min tn-padding" @click="tn('/minePages/avatar')">
-		    <view class="justify-content-item">
-		      <view class="tn-text-bold tn-text-lg">
-		        用户头像
-		      </view>
-		      <view class="tn-color-gray tn-padding-top-xs">
-		        有趣的头像，百里挑一
-		      </view>
-		    </view>
-		    <view class="justify-content-item tn-text-lg tn-color-grey">
-		      <image src="https://env-00jx4xgopeln.normal.cloudstatic.cn/avater.png?expire_at=1712395186&er_sign=35a275d82b0ccb4d3d28e56c0e130a03" style="height: 50px;width: 50px;"></image>
-		    </view>
-		  </view>
-		  
-		  <view class="tn-flex tn-flex-row-between tn-strip-bottom tn-padding" @click="tn('/minePages/safety')">
-		    <view class="justify-content-item">
-		      <view class="tn-text-bold tn-text-lg">
-		        账号安全
-		      </view>
-		      <view class="tn-color-gray tn-padding-top-xs">
-		        修改用户昵称、密码
-		      </view>
-		    </view>
-		    <view class="justify-content-item tn-text-lg tn-color-grey">
-		      <view class="tn-icon-right tn-padding-top"></view>
-		    </view>
-		  </view>
 		  
 		  <view class="tn-flex tn-flex-row-between tn-strip-bottom-min tn-padding tn-margin-top-xs" v-for="(item, index) in setList" :key="index" @click="tn(item.url)">
 		    <view class="justify-content-item">
@@ -329,9 +247,9 @@
 				contentHideShowHeight: 0,
 				userInfo: {
 					avatar: [
-						'https://resource.tuniaokj.com/images/blogger/blogger_avatar_1.jpeg',
-						'https://resource.tuniaokj.com/images/blogger/blogger_avatar_2.jpeg',
-						'https://resource.tuniaokj.com/images/blogger/blogger_avatar_3.jpeg',
+						'https://env-00jx4xgopeln.normal.cloudstatic.cn/userAvator18148764734.png',
+						'https://env-00jx4xgopeln.normal.cloudstatic.cn/userAvator18148764734.png',
+						'https://env-00jx4xgopeln.normal.cloudstatic.cn/userAvator18148764734.png',
 					],
 					username: uni.getStorageSync("userName"),
 					title: '用户签名'

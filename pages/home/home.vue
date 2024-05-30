@@ -4,21 +4,13 @@
 		<tn-nav-bar fixed alpha :isBack="false" :bottomShadow="false">
 			<view class="custom-nav tn-flex tn-flex-col-center tn-flex-row-left">
 				<!-- 图标logo -->
-				<view class="custom-nav__back" @click="tn('/homePages/about')">
+				<!-- <view class="custom-nav__back" @click="tn('/homePages/about')">
 					<view class="logo-pic tn-shadow-blur"
 						style="background-image:url('https://resource.tuniaokj.com/images/logo/logo2.png')">
 						<view class="logo-image">
 						</view>
 					</view>
-					<!-- <view class="tn-icon-left"></view> -->
-				</view>
-				<!-- 搜索框 -->
-				<!-- <view class="custom-nav__search tn-flex tn-flex-col-center tn-flex-row-center" @click="tn('/homePages/search')">
-					<view class="custom-nav__search__box tn-flex tn-flex-col-center tn-flex-row-left"
-						style="background-color: rgba(230,230,230,0.3);">
-						<view class="custom-nav__search__icon tn-icon-search tn-color-white"></view>
-						<view class="custom-nav__search__text tn-padding-left-xs tn-color-white">搜索 韵科食谱</view>
-					</view>
+					<view class="tn-icon-left"></view>
 				</view> -->
 			</view>
 		</tn-nav-bar>
@@ -100,7 +92,7 @@
 		<!-- 方式12 end-->
 
 		<!-- banner start-->
-		<view class="tn-flex tn-flex-wrap tn-padding-xs" @click="tn('/pages/addData?id=1')">
+		<view class="tn-flex tn-flex-wrap tn-padding-xs" @click="tn('/pages/addData')">
 			<view class="" style="width: 100%;">
 				<image class="image"
 					src="https://env-00jx4xgopeln.normal.cloudstatic.cn/首页胶囊.png?expire_at=1711179533&er_sign=c7882189c06c439a9c8daee9fe4853c5"
@@ -226,6 +218,7 @@
 		name: 'Index',
 		data() {
 			return {
+				userName: uni.getStorageSync("userName"),
 				cardCur: 0,
 				isAndroid: true,
 				swiperList: [{
@@ -320,6 +313,13 @@
 			},
 			// 跳转
 			tn(e) {
+				if(e==="/pages/addData" && !this.userName){
+					uni.showToast({
+						title:"未登录无法发布食谱!",
+						icon:'error'
+					})
+					return;
+				}
 				uni.navigateTo({
 					url: e,
 					fail(e) {

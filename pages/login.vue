@@ -37,7 +37,7 @@
 				<!-- 输入框内容-->
 				<view class="login__info tn-flex tn-flex-direction-column tn-flex-col-center tn-flex-row-center">
 					<!-- 登录 -->
-					<block v-if="currentModeIndex === 0">
+					<block>
 						<view
 							class="login__info__item__input tn-flex tn-flex-direction-row tn-flex-nowrap tn-flex-col-center tn-flex-row-left">
 							<view class="login__info__item__input__left-icon">
@@ -56,31 +56,6 @@
 							<view class="login__info__item__input__content">
 								<input v-model="password" :password="!showPassword" placeholder-class="input-placeholder"
 									placeholder="请输入登录密码" />
-							</view>
-							<view class="login__info__item__input__right-icon" @click="showPassword = !showPassword">
-								<view :class="[showPassword ? 'tn-icon-eye' : 'tn-icon-eye-hide']"></view>
-							</view>
-						</view>
-					</block>
-					<!-- 注册 -->
-					<block v-if="currentModeIndex === 1">
-						<view
-							class="login__info__item__input tn-flex tn-flex-direction-row tn-flex-nowrap tn-flex-col-center tn-flex-row-left">
-							<view class="login__info__item__input__left-icon">
-								<view class="tn-icon-phone"></view>
-							</view>
-							<view class="login__info__item__input__content">
-								<input maxlength="20" placeholder-class="input-placeholder" placeholder="请输入用户名" />
-							</view>
-						</view>
-
-						<view
-							class="login__info__item__input tn-flex tn-flex-direction-row tn-flex-nowrap tn-flex-col-center tn-flex-row-left">
-							<view class="login__info__item__input__left-icon">
-								<view class="tn-icon-lock"></view>
-							</view>
-							<view class="login__info__item__input__content">
-								<input :password="!showPassword" placeholder-class="input-placeholder" placeholder="请输入登录密码" />
 							</view>
 							<view class="login__info__item__input__right-icon" @click="showPassword = !showPassword">
 								<view :class="[showPassword ? 'tn-icon-eye' : 'tn-icon-eye-hide']"></view>
@@ -107,9 +82,6 @@
 						</view>
 					</view>
 
-					<!-- <view class="login__info__item__button tn-cool-bg-color-7--reverse" hover-class="tn-hover" :hover-stay-time="150">{{ currentModeIndex === 0 ? '登录' : '注册'}}</view> -->
-
-					<view v-if="currentModeIndex === 0" class="login__info__item__tips">忘记密码?</view>
 				</view>
 
 				<!-- 其他登录方式 -->
@@ -195,51 +167,94 @@
 			// 切换模式
 			modeSwitch(index) {
 				this.currentModeIndex = index;
+				this.userName = "";
+				this.password = "";
 				this.showPassword = false;
 			},
 			async login() {
-				let {
-					result
-				} = await db.where({
-					userName: this.userName,
-					password: this.password
-				}).get();
-				console.log(result.data);
-				if (result.data.length != 0) {
-					uni.setStorageSync("userName", result.data[0].userName);
-					uni.setStorageSync("userData", result.data[0]);
-					this.$t.message.toast("登录成功");
-					console.log(uni.getStorageSync("userData").type)
-
-					setTimeout(() => {
-						if (uni.getStorageSync("userData").type) {
-							uni.navigateTo({
-								url: "/pages/adminPage",
-							});
-						} else {
-							uni.reLaunch({
-								url: "/pages/index",
-							});
+				// let {
+				// 	result
+				// } = await db.where({
+				// 	userName: this.userName,
+				// 	password: this.password
+				// }).get();
+				let result = await uniCloud.callFunction({
+					name: "userServices",
+					data: {
+						type: "login",
+						data: {
+							userName: this.userName,
+							password: this.password
 						}
-					}, 1000)
+					},
+					success: (json) => {
+						console.log("成功:", json.result.data[0]);
+						let {
+							result
+						} = json;
+						if (result.data.length != 0) {
+							uni.setStorageSync("userName", result.data[0].userName);
+							uni.setStorageSync("userData", result.data[0]);
+							this.$t.message.toast("登录成功");
+							console.log(uni.getStorageSync("userData").type)
+							setTimeout(() => {
+								if (uni.getStorageSync("userData").type) {
+									uni.navigateTo({
+										url: "/pages/adminPage",
+									});
+								} else {
+									uni.reLaunch({
+										url: "/pages/index",
+									});
+								}
+							}, 1000)
+						} else {
+							uni.showToast({
+								title: "账号或密码错误",
+								icon: "error"
+							})
+						}
+					},
+					fail: (res) => {
+						uni.showToast({
+							title: "系统异常",
+							icon: "error"
+						})
+					}
+				})
 
-
-				} else {
-					uni.showToast({
-						title: "账号或密码错误",
-						icon: "error"
-					})
-				}
 			},
 			async registry() {
-				let {
-					result
-				} = await db.add({
-					userName: this.userName,
-					password: this.password
+				let result = await uniCloud.callFunction({
+					name: "userServices",
+					data: {
+						type: "registry",
+						data: {
+							userName: this.userName,
+							password: this.password
+						}
+					},
+					success: (json) => {
+						console.log("成功:", json.result);
+						let {
+							result
+						} = json;
+
+						uni.showToast({
+							title: result.message,
+							icon: result.success?"success":"error"
+						})
+						if (result.success) {
+							this.currentModeIndex = 0;
+						} else {}
+					},
+					fail: (res) => {
+						uni.showToast({
+							title: "系统异常",
+							icon: "error"
+						})
+					}
 				})
-				this.$t.message.toast("注册成功");
-				console.log(result);
 			},
 		},
 	};

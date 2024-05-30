@@ -31,9 +31,6 @@
 				<view class="justify-content-item tn-text-bold tn-color-purplered">
 					<text style="font-size: 50rpx">免费分享</text>
 				</view>
-				<view class="justify-content-item tn-color-gray tn-padding-top-xs">
-					<view class="">已查看 729</view>
-				</view>
 			</view>
 		</view>
 
@@ -240,6 +237,18 @@
 		methods: {
 			async comment() {
 				console.log(this.addData)
+				if(!this.userName){
+					uni.showToast({
+						icon: "error",
+						title: "没登录不能评论"
+					})
+					setTimeout(()=>{
+						uni.navigateTo({
+							url:"/pages/login"
+						})
+					},1000)
+					
+				}
 				if (!this.text) {
 					uni.showToast({
 						icon: "error",

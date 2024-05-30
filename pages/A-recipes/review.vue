@@ -278,9 +278,9 @@
 				contentHideShowHeight: 0,
 				userInfo: {
 					avatar: [
-						'https://resource.tuniaokj.com/images/blogger/blogger_avatar_1.jpeg',
-						'https://resource.tuniaokj.com/images/blogger/blogger_avatar_2.jpeg',
-						'https://resource.tuniaokj.com/images/blogger/blogger_avatar_3.jpeg',
+						'https://env-00jx4xgopeln.normal.cloudstatic.cn/userAvator18148764734.png',
+						'https://env-00jx4xgopeln.normal.cloudstatic.cn/userAvator18148764734.png',
+						'https://env-00jx4xgopeln.normal.cloudstatic.cn/userAvator18148764734.png',
 					],
 					username: "审核官：" + uni.getStorageSync("userName"),
 					title: '认真审核，服务至上'

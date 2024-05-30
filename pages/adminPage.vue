@@ -109,7 +109,7 @@
 							</view>
 						</view>
 					</view>
-					<!-- <view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/myPages')">
+					<!-- <view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/myRecipece')">
 						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center bg">
 							<view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-bg-orange">
 								<view class="tn-icon-caring" style="color: #080808;"></view>
@@ -158,7 +158,7 @@
 				<!-- 方式12 end-->
 			</view>
 
-			<view class="tn-flex tn-flex-row-between" @click="tn('/pages/mine/mine')">
+			<view class="tn-flex tn-flex-row-between" @click="tn('/pages/index')">
 				<view class="tn-flex-1 justify-content-item tn-margin-xs tn-text-center">
 					<tn-button shape="round" backgroundColor="#38bed8" fontColor="#ffffff" padding="20rpx 0" width="40%" shadow>
 						<text class="">返回首页</text>
