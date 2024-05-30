@@ -1,26 +1,73 @@
 'use strict';
 const db = uniCloud.database().collection('A-users');
 
-function addUser(event) {
-	if (collection.where({
-			"userName": event.user.userName
-		}).get()) {
-		return "添加失败！已存在该用户名！"
+async function addUser(event) {
+	let {
+		userName,
+		password
+	} = e.data;
+	let res = {
+		success: false,
+		message: ""
+	};
+	if (!userName || !password) {
+		res.message = "用户名或密码不能为空！";
+		return res;
 	}
-	collection.addUser(event.user)
-	return "操作成功！"
+	let query = await db.where({
+		userName: e.data.userName
+	}).get();
+	if (!query.data[0]) {
+		let res = await db.add({
+			userName: e.data.userName,
+			password: e.data.password,
+			type: false,
+			avator: "https://env-00jx4xgopeln.normal.cloudstatic.cn/userAvator18148764734.png",
+			email: "",
+			phone: "",
+		})
+		console.log("result", res)
+		return {
+			success: true,
+			message: "操作成功"
+		};
+	} else {
+		res.message = "操作失败，用户名重复";
+		return res;
+	}
 }
 
-function editUser(event) {
-	return "editUser"
+async function editUser(event) {
+	let {
+		userName,
+		password
+	} = e.data;
+	let res = {
+		success: false,
+		message: ""
+	};
+	if (!id) {
+		res.message = "未找到该ID！";
+		return res;
+	}
+	let query = await db.where({
+		userName: e.data.userName
+	}).get();
+	if (!query.data[0]) {
+		let res = await db.update(event.data.userData)
+		return {
+			success: true,
+			message: "操作成功"
+		};
+	} else {
+		res.message = "操作失败，用户名重复";
+		return res;
+	}
 }
 
-function deleteUserById(event) {
-	return "deleteUser"
-}
-
-function getUser(event) {
-	return "deleteUser"
+async function deleteUserById(event) {
+	let result = await db.where({event.data}).remove()
+	return result;
 }
 
 async function login(e) {
@@ -33,9 +80,15 @@ async function login(e) {
 }
 
 async function registry(e) {
-	let {userName,password} = e.data;
-	let res = {success:false,message:""};
-	if(!userName || !password){
+	let {
+		userName,
+		password
+	} = e.data;
+	let res = {
+		success: false,
+		message: ""
+	};
+	if (!userName || !password) {
 		res.message = "用户名或密码不能为空！";
 		return res;
 	}
@@ -48,14 +101,14 @@ async function registry(e) {
 			userName: e.data.userName,
 			password: e.data.password,
 			type: false,
-			avator:"https://env-00jx4xgopeln.normal.cloudstatic.cn/userAvator18148764734.png",
-			email:"",
-			phone:"",
+			avator: "https://env-00jx4xgopeln.normal.cloudstatic.cn/userAvator18148764734.png",
+			email: "",
+			phone: "",
 		})
 		console.log("result", res)
 		return {
-			success:true,
-			message:"注册成功"
+			success: true,
+			message: "注册成功"
 		};
 	} else {
 		res.message = "注册失败，用户名重复";

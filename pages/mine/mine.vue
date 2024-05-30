@@ -80,7 +80,7 @@
 					</view>
 				</view>
 				<view class="tn-flex-1 about-shadow tn-bg-white" style="margin: 30rpx 0 0 15rpx;padding: 30rpx 0;"
-					@click="tn('/pages/myRecipece')">
+					@click="tn('/pages/mine/myRecipece')">
 					<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
 						<view
 							class="icon20__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-shadow-blur tn-bg-purplered tn-color-white">
@@ -117,20 +117,10 @@
 						<view class="tn-color-blue--light tn-icon-copy"></view>
 					</view>
 				</tn-list-cell>
-				<tn-list-cell :hover="true" :unlined="true" :radius="true" :fontSize="30" @click="tn('/minePages/protocol')">
-					<view class="tn-flex tn-flex-col-center">
-						<view
-							class="icon1__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-cool-bg-color-3 tn-color-white">
-							<view class="tn-icon-safe-fill"></view>
-						</view>
-						<view class="tn-margin-left-sm tn-flex-1">使用协议</view>
-						<view class="tn-color-red--light tn-icon-tips"></view>
-					</view>
-				</tn-list-cell>
 			</view>
 
 			<view class="about-shadow tn-margin-top-lg tn-margin-bottom-lg tn-padding-top-sm tn-padding-bottom-sm">
-				<tn-list-cell :hover="true" :unlined="true" :radius="true" :fontSize="30">
+				<tn-list-cell :hover="true" :unlined="true" :radius="true" :fontSize="30" @click="copySource">
 					<button class="tn-flex tn-flex-col-center tn-button--clear-style" open-type="contact">
 						<view
 							class="icon1__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-cool-bg-color-5 tn-color-white">
@@ -139,18 +129,6 @@
 						<view class="tn-flex tn-flex-row-between" style="width: 100%;">
 							<view class="tn-margin-left-sm">合作勾搭</view>
 							<view class="tn-color-orange--light tn-icon-trust"></view>
-						</view>
-					</button>
-				</tn-list-cell>
-				<tn-list-cell :hover="true" :unlined="true" :radius="true" :fontSize="30">
-					<button class="tn-flex tn-flex-col-center tn-button--clear-style" open-type="feedback">
-						<view
-							class="icon1__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-cool-bg-color-7 tn-color-white">
-							<view class="tn-icon-comment-fill"></view>
-						</view>
-						<view class="tn-flex tn-flex-row-between" style="width: 100%;">
-							<view class="tn-margin-left-sm">问题反馈</view>
-							<view class="tn-color-green--light tn-icon-edit"></view>
 						</view>
 					</button>
 				</tn-list-cell>
@@ -235,7 +213,7 @@
 			// 复制开源地址
 			copySource() {
 				uni.setClipboardData({
-					data: "https://ext.dcloud.net.cn/plugin?id=8503",
+					data: "https://github.com/18148764734?tab=repositories",
 				})
 			},
 		}

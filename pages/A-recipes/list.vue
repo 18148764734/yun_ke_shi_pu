@@ -15,18 +15,20 @@
 		</view>
 
 		<!-- 消息&数据 -->
-		<view class="blogger-tips-data"  style="background-color: transparent;">
+		<view class="blogger-tips-data" style="background-color: transparent;">
 			<view class="blogger-tips-data__wrap tn-bg-white" style="background-color: transparent;border-radius: 0;">
-				<view class="blogger-tips-data__message tn-flex tn-flex-row-center" @click="tn('/minePages/message')" style="background-color: transparent;">
+				<view class="blogger-tips-data__message tn-flex tn-flex-row-center" @click="tn('/minePages/message')"
+					style="background-color: transparent;">
 					<view
-						class="blogger-tips-data__message__container tn-flex tn-flex-row-center tn-flex-col-center tn-bg-gray--light" style="background-color:black;">
+						class="blogger-tips-data__message__container tn-flex tn-flex-row-center tn-flex-col-center tn-bg-gray--light"
+						style="background-color:black;">
 						<view style="border-radius: 50%;background-color: red;height: 20rpx;width: 20rpx;margin-left: 20rpx">
 						</view>
 						<view class="tn-padding-right tn-padding-left">{{ stateCount.messageCount }} 条未审核</view>
 					</view>
 				</view>
 				<view class="blogger-tips-data__info tn-flex">
-					<view class="tn-flex-1 tn-padding-sm tn-margin-xs" @click="changeState('0')" style="background-color: #f3f3f3;border-radius: 10px;">
+					<view class="tn-flex-1 tn-padding-sm tn-margin-xs" @click="changeState('0')" :class="getStateClass('0')">
 						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
 							<view class="">
 								<view class="tn-text-xxl tn-color-orange">
@@ -39,7 +41,7 @@
 							</view>
 						</view>
 					</view>
-					<view class="tn-flex-1 tn-padding-sm tn-margin-xs" @click="changeState('1')" style="background-color: #f3f3f3;border-radius: 10px;">
+					<view class="tn-flex-1 tn-padding-sm tn-margin-xs" @click="changeState('1')" :class="getStateClass('1')">
 						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
 							<view class="">
 								<view class="tn-text-xxl tn-color-blue">
@@ -52,7 +54,7 @@
 							</view>
 						</view>
 					</view>
-					<view class="tn-flex-1 tn-padding-sm tn-margin-xs" @click="changeState('2')" style="background-color: #f3f3f3;border-radius: 10px;">
+					<view class="tn-flex-1 tn-padding-sm tn-margin-xs" @click="changeState('2')" :class="getStateClass('2')">
 						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
 							<view class="">
 								<view class="tn-text-xxl tn-color-red">
@@ -87,7 +89,8 @@
 									</view>
 									<view style="position: absolute;right: 30px;">
 										<button type="primary" size="mini" style="margin-right: 20px;" @click="edit(item._id)">修改</button>
-										<button type="primary" style="background-color: red;" size="mini" @click="deleteById(item._id)">删除</button>
+										<button type="primary" style="background-color: red;" size="mini"
+											@click="deleteById(item._id)">删除</button>
 									</view>
 								</view>
 							</view>
@@ -144,86 +147,9 @@
 			<!-- 边距间隔 -->
 			<view class="tn-strip-bottom"></view>
 
-			<!-- 广告 -->
-			<view class="blogger__item" @click="tn('/circlePages/advertise')">
-				<view class="tn-flex tn-flex-row-between tn-flex-col-center tn-margin-bottom">
-					<view class="justify-content-item">
-						<view class="tn-flex tn-flex-col-center tn-flex-row-left">
-							<!-- 图标logo -->
-							<view class="ad-pic tn-shadow-blur"
-								style="background-image:url('https://resource.tuniaokj.com/images/logo/logo2.png')">
-								<view class="ad-image">
-								</view>
-							</view>
-							<view class="tn-padding-right" style="width: 65vw;">
-								<view class="tn-padding-right tn-padding-left-sm tn-text-bold tn-text-lg">韵科食谱招商广告</view>
-								<view class="tn-padding-right tn-padding-left-sm tn-color-gray tn-text-ellipsis">请联系我们</view>
-							</view>
-
-						</view>
-					</view>
-					<view class="tn-color-gray">广告</view>
-				</view>
-				<tn-stack-swiper ref="stackSwiper" :list="adList" :switchRate="30" :height="360" width="92%"
-					:autoplay="adAutoplay"></tn-stack-swiper>
-			</view>
-
 			<!-- 边距间隔 -->
 			<view class="tn-strip-bottom"></view>
-
-
-
 		</view>
-
-		<!-- 悬浮按钮-->
-		<!-- <view class="tn-flex tn-flex-row-between tn-footerfixed">
-      <view class="tn-flex-1 justify-content-item tn-margin-xs tn-text-center">
-        <tn-button backgroundColor="#00FFC6" padding="40rpx 0" width="90%" shadow fontBold>
-          <text class="tn-icon-add tn-padding-right-xs tn-color-black"></text>
-          <text class="tn-color-black">关 注</text>
-        </tn-button>
-      </view>
-      <view class="tn-flex-1 justify-content-item tn-margin-xs tn-text-center">
-        <tn-button backgroundColor="#FFF00D" padding="40rpx 0" width="90%" shadow fontBold open-type="share">
-          <text class="tn-icon-share-triangle tn-padding-right-xs tn-color-black"></text>
-          <text class="tn-color-black">分 享</text>
-        </tn-button>
-      </view>
-    </view> -->
-
-
-		<!-- <view class="edit tnxuanfu" @click="navEdit">
-      <view class="bg0 pa">
-        <view class="bg1">
-          <image src="https://resource.tuniaokj.com/images/my/my6.png" class="button-shop shadow"></image>
-        </view>
-      </view>
-      <view class="hx-box pa">
-        <view class="pr">
-          <view class="hx-k1 pa0">
-            <view class="span"></view>
-          </view>
-          <view class="hx-k2 pa0">
-            <view class="span"></view>
-          </view>
-          <view class="hx-k3 pa0">
-            <view class="span"></view>
-          </view>
-          <view class="hx-k4 pa0">
-            <view class="span"></view>
-          </view>
-          <view class="hx-k5 pa0">
-            <view class="span"></view>
-          </view>
-          <view class="hx-k6 pa0">
-            <view class="span"></view>
-          </view>
-        </view>
-      </view>
-    </view> -->
-
-
-
 	</view>
 </template>
 
@@ -274,6 +200,9 @@
 				let res = this.totalList.filter(item => item.authorId === this.currentState)
 				return res;
 			},
+			getStateClass(state) {
+				return (state) => this.currentState === state ? "selected" : "nomal";
+			},
 		},
 		async onLoad() {
 			await this.init();
@@ -306,15 +235,17 @@
 			},
 			async edit(id) {
 				uni.navigateTo({
-					url:"/pages/A-recipes/update?id="+id
+					url: "/pages/A-recipes/update?id=" + id
 				})
 				await this.init();
 			},
 			async deleteById(id) {
-				let res = await db.where({_id:id}).remove()
-				console.log("删除",res);
+				let res = await db.where({
+					_id: id
+				}).remove()
+				console.log("删除", res);
 				uni.showToast({
-					title:"删除成功"
+					title: "删除成功"
 				})
 				await this.init();
 			},
@@ -398,6 +329,18 @@
 </script>
 
 <style lang="scss" scoped>
+	.selected {
+		background-color: #c2c2c2;
+		color: black;
+		box-shadow: #242424 0 0 5px 1px;
+		border-radius: 10px;
+	}
+
+	.nomal {
+		background-color: #f3f3f3;
+		border-radius: 10px;
+	}
+
 	.box {
 		border-radius: 10px;
 		border: #ffe203 solid 2px;

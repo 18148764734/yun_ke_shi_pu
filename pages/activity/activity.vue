@@ -10,7 +10,7 @@
 		</tn-nav-bar>
 
 		<view class="top-backgroup">
-			<image src='https://resource.tuniaokj.com/images/index_bg/tuniao2.jpg' mode='widthFix' class='backgroud-image'>
+			<image src='https://resource.tuniaokj.com/images/title_bg/title44.png' mode='widthFix' class='backgroud-image'>
 			</image>
 		</view>
 
@@ -367,12 +367,14 @@
 
 	/* 顶部背景图 start */
 	.top-backgroup {
-		height: 450rpx;
-		z-index: -1;
+		height: 200rpx;
+		z-index: -5;
+		background-color: #f2eefa;
+		box-shadow: #E9E5F3 0 0 30px 10px;
 
 		.backgroud-image {
 			width: 100%;
-			height: 667rpx;
+			height: 600rpx;
 			// z-index: -1;
 		}
 	}

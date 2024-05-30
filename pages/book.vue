@@ -24,12 +24,6 @@
 				<view class="spot" :class="cardCur==index?'active':''"></view>
 			</block>
 		</view>
-
-
-
-
-
-
 	</view>
 </template>
 

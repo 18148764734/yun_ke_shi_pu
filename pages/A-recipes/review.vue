@@ -46,7 +46,7 @@
 					</view>
 				</view>
 				<view class="blogger-tips-data__info tn-flex">
-					<view class="tn-flex-1 tn-padding-sm tn-margin-xs" @click="changeState('0')" style="background-color: #f3f3f3;border-radius: 10px;">
+					<view class="tn-flex-1 tn-padding-sm tn-margin-xs" @click="changeState('0')" :class="getStateClass('0')">
 						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
 							<view class="">
 								<view class="tn-text-xxl tn-color-orange">
@@ -54,12 +54,12 @@
 								</view>
 							</view>
 							<view class="tn-margin-top-xs tn-color-gray tn-text-df tn-text-center">
-								<text class="tn-icon-like"></text>
 								<text class="tn-padding-left-xs">未审核</text>
 							</view>
 						</view>
 					</view>
-					<view class="tn-flex-1 tn-padding-sm tn-margin-xs" @click="changeState('1')" style="background-color: #f3f3f3;border-radius: 10px;">
+					<view class="tn-flex-1 tn-padding-sm tn-margin-xs" @click="changeState('1')"
+						:class="getStateClass('1')">
 						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
 							<view class="">
 								<view class="tn-text-xxl tn-color-blue">
@@ -67,12 +67,12 @@
 								</view>
 							</view>
 							<view class="tn-margin-top-xs tn-color-gray tn-text-df tn-text-center">
-								<text class="tn-icon-message"></text>
-								<text class="tn-padding-left-xs" >已审核</text>
+								<text class="tn-padding-left-xs">已审核</text>
 							</view>
 						</view>
 					</view>
-					<view class="tn-flex-1 tn-padding-sm tn-margin-xs" @click="changeState('2')" style="background-color: #f3f3f3;border-radius: 10px;">
+					<view class="tn-flex-1 tn-padding-sm tn-margin-xs" @click="changeState('2')"
+						:class="getStateClass('2')">
 						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
 							<view class="">
 								<view class="tn-text-xxl tn-color-red">
@@ -80,7 +80,6 @@
 								</view>
 							</view>
 							<view class="tn-margin-top-xs tn-color-gray tn-text-df tn-text-center">
-								<text class="tn-icon-vip"></text>
 								<text class="tn-padding-left-xs">未通过审核</text>
 							</view>
 						</view>
@@ -129,22 +128,6 @@
 							class="blogger__title__content tn-flex-1 tn-text-justify tn-text-df">{{"作者:" + item.author }}</text>
 					</view>
 
-					<!-- 内容太多疲劳了-->
-					<!-- <view
-            v-if="item.content"
-            class="blogger__content"
-            :id="`blogger__content--${index}`"
-          @click="tn('/circlePages/details')">
-            <view
-              class="blogger__content__data"
-              :style="{
-                height: `${item.contentContainerInit ? (!item.showAllContent ? contentHideShowHeight : item.contentContainerHeight) + 'px' : 'auto'}`
-              }"
-            >
-              {{ item.content }}
-            </view>
-            <view v-if="item.hideContent" class="blogger__content__status" @tap="switchContentShowStatus(index)">{{ item.showAllContent ? '收起' : '全文'}}</view>
-          </view> -->
 
 					<block v-if="item.swiperImgs">
 						<view v-if="[1,2,4].indexOf(item.swiperImgs.length) != -1" class="tn-padding-top-xs"
@@ -209,60 +192,7 @@
 
 			<!-- 边距间隔 -->
 			<view class="tn-strip-bottom"></view>
-
-
-
 		</view>
-
-		<!-- 悬浮按钮-->
-		<!-- <view class="tn-flex tn-flex-row-between tn-footerfixed">
-      <view class="tn-flex-1 justify-content-item tn-margin-xs tn-text-center">
-        <tn-button backgroundColor="#00FFC6" padding="40rpx 0" width="90%" shadow fontBold>
-          <text class="tn-icon-add tn-padding-right-xs tn-color-black"></text>
-          <text class="tn-color-black">关 注</text>
-        </tn-button>
-      </view>
-      <view class="tn-flex-1 justify-content-item tn-margin-xs tn-text-center">
-        <tn-button backgroundColor="#FFF00D" padding="40rpx 0" width="90%" shadow fontBold open-type="share">
-          <text class="tn-icon-share-triangle tn-padding-right-xs tn-color-black"></text>
-          <text class="tn-color-black">分 享</text>
-        </tn-button>
-      </view>
-    </view> -->
-
-
-		<!-- <view class="edit tnxuanfu" @click="navEdit">
-      <view class="bg0 pa">
-        <view class="bg1">
-          <image src="https://resource.tuniaokj.com/images/my/my6.png" class="button-shop shadow"></image>
-        </view>
-      </view>
-      <view class="hx-box pa">
-        <view class="pr">
-          <view class="hx-k1 pa0">
-            <view class="span"></view>
-          </view>
-          <view class="hx-k2 pa0">
-            <view class="span"></view>
-          </view>
-          <view class="hx-k3 pa0">
-            <view class="span"></view>
-          </view>
-          <view class="hx-k4 pa0">
-            <view class="span"></view>
-          </view>
-          <view class="hx-k5 pa0">
-            <view class="span"></view>
-          </view>
-          <view class="hx-k6 pa0">
-            <view class="span"></view>
-          </view>
-        </view>
-      </view>
-    </view> -->
-
-
-
 	</view>
 </template>
 
@@ -314,6 +244,10 @@
 				let res = this.totalList.filter(item => item.authorId === this.currentState)
 				return res;
 			},
+
+			getStateClass(state) {
+				return (state) => this.currentState === state ? "selected" : "nomal";
+			},
 		},
 		async onLoad() {
 			await this.init();
@@ -335,7 +269,8 @@
 				this.totalList = res.result.data;
 				console.log(this.totalList)
 				this.initContentData()
-				this.stateCount.messageCount = this.stateCount.yetCount = this.totalList.filter(item => item.authorId === "0").length;
+				this.stateCount.messageCount = this.stateCount.yetCount = this.totalList.filter(item => item.authorId === "0")
+					.length;
 				this.stateCount.yesCount = this.totalList.filter(item => item.authorId === "1").length;
 				this.stateCount.noCount = this.totalList.filter(item => item.authorId === "2").length;
 				this.contentHideShowHeight = uni.upx2px(56) * 3;
@@ -430,6 +365,18 @@
 </script>
 
 <style lang="scss" scoped>
+	.selected {
+		background-color: #c2c2c2;
+		color: black;
+		box-shadow: #242424 0 0 5px 1px;
+		border-radius: 10px;
+	}
+
+	.nomal {
+		background-color: #f3f3f3;
+		border-radius: 10px;
+	}
+
 	.box {
 		border-radius: 10px;
 		border: #ffe203 solid 2px;

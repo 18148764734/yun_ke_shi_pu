@@ -37,16 +37,8 @@
 		<!-- 消息&数据 -->
 		<view class="blogger-tips-data">
 			<view class="blogger-tips-data__wrap tn-bg-white">
-				<view class="blogger-tips-data__message tn-flex tn-flex-row-center" @click="tn('/minePages/message')">
-					<view
-						class="blogger-tips-data__message__container tn-flex tn-flex-row-center tn-flex-col-center tn-bg-gray--light">
-						<view style="border-radius: 50%;background-color: red;height: 20rpx;width: 20rpx;margin-left: 20rpx">
-						</view>
-						<view class="tn-padding-right tn-padding-left">{{ stateCount.messageCount }} 条未审核</view>
-					</view>
-				</view>
 				<view class="blogger-tips-data__info tn-flex">
-					<view class="tn-flex-1 tn-padding-sm tn-margin-xs" @click="changeState('0')">
+					<view class="tn-flex-1 tn-padding-sm tn-margin-xs" @click="changeState('0')" :class="getStateClass('0')">
 						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
 							<view class="">
 								<view class="tn-text-xxl tn-color-orange">
@@ -54,12 +46,11 @@
 								</view>
 							</view>
 							<view class="tn-margin-top-xs tn-color-gray tn-text-df tn-text-center">
-								<text class="tn-icon-like"></text>
 								<text class="tn-padding-left-xs">未审核</text>
 							</view>
 						</view>
 					</view>
-					<view class="tn-flex-1 tn-padding-sm tn-margin-xs" @click="changeState('1')">
+					<view class="tn-flex-1 tn-padding-sm tn-margin-xs" @click="changeState('1')" :class="getStateClass('1')">
 						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
 							<view class="">
 								<view class="tn-text-xxl tn-color-blue">
@@ -67,12 +58,11 @@
 								</view>
 							</view>
 							<view class="tn-margin-top-xs tn-color-gray tn-text-df tn-text-center">
-								<text class="tn-icon-message"></text>
 								<text class="tn-padding-left-xs">已审核</text>
 							</view>
 						</view>
 					</view>
-					<view class="tn-flex-1 tn-padding-sm tn-margin-xs" @click="changeState('2')">
+					<view class="tn-flex-1 tn-padding-sm tn-margin-xs" @click="changeState('2')" :class="getStateClass('2')">
 						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
 							<view class="">
 								<view class="tn-text-xxl tn-color-red">
@@ -80,7 +70,6 @@
 								</view>
 							</view>
 							<view class="tn-margin-top-xs tn-color-gray tn-text-df tn-text-center">
-								<text class="tn-icon-vip"></text>
 								<text class="tn-padding-left-xs">未通过审核</text>
 							</view>
 						</view>
@@ -95,6 +84,10 @@
 			<!-- 图文信息 -->
 			<block v-for="(item,index) in content" :key="index">
 				<view class="blogger__item  box">
+					<view class="tn-padding-right tn-text-ellipsis">
+						<view class="tn-padding-right tn-padding-left-sm tn-text-bold tn-text-lg">{{ item.title }}
+						</view>
+					</view>
 					<view class="blogger__author tn-flex tn-flex-row-between tn-flex-col-center">
 						<view class="justify__author__info">
 							<view class="tn-flex tn-flex-row-center">
@@ -115,22 +108,6 @@
 							class="blogger__title__content tn-flex-1 tn-text-justify tn-text-df">{{"作者:" + item.author }}</text>
 					</view>
 
-					<!-- 内容太多疲劳了-->
-					<!-- <view
-            v-if="item.content"
-            class="blogger__content"
-            :id="`blogger__content--${index}`"
-          @click="tn('/circlePages/details')">
-            <view
-              class="blogger__content__data"
-              :style="{
-                height: `${item.contentContainerInit ? (!item.showAllContent ? contentHideShowHeight : item.contentContainerHeight) + 'px' : 'auto'}`
-              }"
-            >
-              {{ item.content }}
-            </view>
-            <view v-if="item.hideContent" class="blogger__content__status" @tap="switchContentShowStatus(index)">{{ item.showAllContent ? '收起' : '全文'}}</view>
-          </view> -->
 
 					<block v-if="item.swiperImgs">
 						<view v-if="[1,2,4].indexOf(item.swiperImgs.length) != -1" class="tn-padding-top-xs"
@@ -169,30 +146,6 @@
 			<!-- 边距间隔 -->
 			<view class="tn-strip-bottom"></view>
 
-			<!-- 广告 -->
-			<view class="blogger__item" @click="tn('/circlePages/advertise')">
-				<view class="tn-flex tn-flex-row-between tn-flex-col-center tn-margin-bottom">
-					<view class="justify-content-item">
-						<view class="tn-flex tn-flex-col-center tn-flex-row-left">
-							<!-- 图标logo -->
-							<view class="ad-pic tn-shadow-blur"
-								style="background-image:url('https://resource.tuniaokj.com/images/logo/logo2.png')">
-								<view class="ad-image">
-								</view>
-							</view>
-							<view class="tn-padding-right" style="width: 65vw;">
-								<view class="tn-padding-right tn-padding-left-sm tn-text-bold tn-text-lg">韵科食谱招商广告</view>
-								<view class="tn-padding-right tn-padding-left-sm tn-color-gray tn-text-ellipsis">请联系我们</view>
-							</view>
-
-						</view>
-					</view>
-					<view class="tn-color-gray">广告</view>
-				</view>
-				<tn-stack-swiper ref="stackSwiper" :list="adList" :switchRate="30" :height="360" width="92%"
-					:autoplay="adAutoplay"></tn-stack-swiper>
-			</view>
-
 			<!-- 边距间隔 -->
 			<view class="tn-strip-bottom"></view>
 
@@ -200,38 +153,34 @@
 
 		</view>
 
-		
+
 		<view class="tn-margin-top" :style="{paddingTop: vuex_custom_bar_height + 'px'}">
-		  
-		  
-		  <view class="tn-flex tn-flex-row-between tn-strip-bottom-min tn-padding tn-margin-top-xs" v-for="(item, index) in setList" :key="index" @click="tn(item.url)">
-		    <view class="justify-content-item">
-		      <view class="tn-text-bold tn-text-lg">
-		        {{ item.title }}
-		      </view>
-		    </view>
-		    <view class="justify-content-item tn-text-lg tn-color-grey">
-		      <view class="tn-icon-right"></view>
-		    </view>
-		  </view>
-		  
-		  
-		  <!-- 悬浮按钮-->
-		  <view class="tn-flex  tn-footerfixed">
-		    <view class="tn-flex-1 justify-content-item tn-margin-sm tn-text-center" @click="tn('login')">
-		      <tn-button shape="round" backgroundColor="tn-cool-bg-color-15" padding="40rpx 0" width="60%" shadow fontBold>
-		        <!-- <text class="tn-icon-light tn-padding-right-xs tn-color-black"></text> -->
-		        <text class="tn-color-white">退出登录</text>
-		        <!-- <text class="tn-icon-light tn-padding-left-xs tn-color-black"></text> -->
-		      </tn-button>
-		    </view>
-		  </view>
-		  
+
+
+			<view class="tn-flex tn-flex-row-between tn-strip-bottom-min tn-padding tn-margin-top-xs"
+				v-for="(item, index) in setList" :key="index" @click="tn(item.url)">
+				<view class="justify-content-item">
+					<view class="tn-text-bold tn-text-lg">
+						{{ item.title }}
+					</view>
+				</view>
+				<view class="justify-content-item tn-text-lg tn-color-grey">
+					<view class="tn-icon-right"></view>
+				</view>
+			</view>
+
+
+			<!-- 悬浮按钮-->
+			<!-- <view class="tn-flex  tn-footerfixed">
+				<view class="tn-flex-1 justify-content-item tn-margin-sm tn-text-center" @click="tn('login')">
+					<tn-button shape="round" backgroundColor="tn-cool-bg-color-15" padding="40rpx 0" width="60%" shadow fontBold>
+						<text class="tn-icon-light tn-padding-right-xs tn-color-black"></text>
+						<text class="tn-color-white">退出登录</text>
+						<text class="tn-icon-light tn-padding-left-xs tn-color-black"></text>
+					</tn-button>
+				</view>
+			</view> -->
 		</view>
-		
-
-
-
 	</view>
 </template>
 
@@ -276,13 +225,17 @@
 					}
 				],
 				adAutoplay: false,
-				
+
 			}
 		},
 		computed: {
 			content() {
 				let res = this.totalList.filter(item => item.authorId === this.currentState)
 				return res;
+			},
+
+			getStateClass(state) {
+				return (state) => this.currentState === state ? "selected" : "nomal";
 			},
 		},
 		async onLoad() {
@@ -302,7 +255,9 @@
 		methods: {
 			async init() {
 				console.log(this.userInfo.username)
-				let res = await db.where({author:this.userInfo.username}).field("id,swiperImgs,title,classify,author,authorId").get();
+				let res = await db.where({
+					author: this.userInfo.username
+				}).field("id,swiperImgs,title,classify,author,authorId").get();
 				this.totalList = res.result.data;
 				console.log(this.totalList)
 				this.initContentData()
@@ -408,6 +363,18 @@
 		border-width: 1px;
 		margin: 5px;
 		background-color: #f8e5e6;
+	}
+
+	.selected {
+		background-color: #c2c2c2;
+		color: black;
+		box-shadow: #242424 0 0 5px 1px;
+		border-radius: 10px;
+	}
+
+	.nomal {
+		background-color: #f3f3f3;
+		border-radius: 10px;
 	}
 
 	.template-blogger {}

@@ -44,8 +44,7 @@
 								<text class="tn-color-brown--dark">{{userName}}</text>
 							</view>
 							<view class="tn-padding-right tn-padding-top-xs tn-padding-left-sm tn-text-ellipsis">
-								<text class="tn-color-brown" style="opacity: 0.5;">认证会员</text>
-								<text class="tn-color-brown tn-text-bold tn-padding-left-sm">SVIP 6</text>
+								<text class="tn-color-brown" style="opacity: 0.5;">热爱生活~</text>
 							</view>
 						</view>
 
@@ -109,7 +108,7 @@
 							</view>
 						</view>
 					</view>
-					<!-- <view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/myRecipece')">
+					<!-- <view class="tn-padding-sm tn-margin-xs tn-radius" @click="tn('/pages/mine/myRecipece')">
 						<view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center bg">
 							<view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center tn-bg-orange">
 								<view class="tn-icon-caring" style="color: #080808;"></view>
